@@ -14,7 +14,6 @@ function Herramienta(props) {
 
   return (
     <div>
-      {/* <h1>{select}</h1> */}
       <select value={select} onChange={handleSelectChange}>
 
         {

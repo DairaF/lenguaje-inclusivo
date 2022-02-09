@@ -24,7 +24,6 @@ const End = (props) => {
   console.log("renderea end");
   return(
     <div >
-        <h1>{results}</h1>
         {sortResults()}
         <h1>Herramientas usadas</h1>
         1) rae {raeCounter}

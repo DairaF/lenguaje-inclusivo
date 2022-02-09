@@ -8,30 +8,10 @@ function Situacion(props) {
     const opciones1=props.opciones1;
     const opciones2=props.opciones2;
     const opciones3=props.opciones3;
-    // const [answer1, setAnswer1] = useState(1);
-    // const [answer2, setAnswer2] = useState(1);
-    // const [answer3, setAnswer3] = useState(1);
-    // const [pushArray, setPushArray] = useState([]);
-    // const handleAnswers = () => {
-    //   console.log(answer1, answer2, answer3);
-    //   setPushArray(pushArray => [...pushArray,answer1] );
-    //   setPushArray(pushArray => [...pushArray,answer2] );
-    //   setPushArray(pushArray => [...pushArray,answer3] );
-    //   console.log("pusharray"+ pushArray);
-    // };
     const handleAnswers = props.handleAnswers;
     const handleAnswer1 = props.handleAnswer1;
     const handleAnswer2 = props.handleAnswer2;
     const handleAnswer3 = props.handleAnswer3;
-    // const handleAnswer1=(answer)=>{
-    //   setAnswer1(answer);
-    // }
-    // const handleAnswer2=(answer)=>{
-    //   setAnswer2(answer)
-    // }
-    // const handleAnswer3=(answer)=>{
-    //   setAnswer3(answer)
-    // }
     console.log("entra a situacion");
   return (
     <div>
