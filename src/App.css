@@ -6,7 +6,28 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+/* p{
+  display: block;
+  background-color: darksalmon;
+  width: auto;
+}
+.selectHerramientas{
+  display: block;
+  background-color:burlywood;
+  width: auto;
+} */
+select{
+  border: none;
+  /* display: block;
+  width: auto;
+  background-color: aliceblue; */
+}
+select::-ms-expand {
+  display: none;
+}
+.options{
+  background-color: aqua;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -4,7 +4,8 @@ function Herramienta(props) {
   const handleAnswer = props.handleAnswer;
   const [select,setSelect] = useState(1);
   
-  function handleSelectChange(event) {
+  const handleSelectChange = (event) => {
+    console.log(event.target.value + " event.target.value")
       setSelect(event.target.value);
       handleAnswer(select);
   }
@@ -15,10 +16,12 @@ function Herramienta(props) {
   return (
     <div>
       {/* <h1>{select}</h1> */}
-      <select  value={select} onChange={handleSelectChange}>
+      <select value={select} onChange={handleSelectChange}>
+
         {
-        opciones.map(n => { return <option value={n[2]}>{n[2]} {n[0]} {n[1]}</option> } )
+        opciones.map(n => { return <option className='options' value={n[2]}>{n[2]}) {n[0]} - {n[1]}</option> } )
         }
+
       </select>
     </div>
   );

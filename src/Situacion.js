@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Herramienta from './Herramienta';
 function Situacion(props) {
     const block1=props.block1;
@@ -8,46 +8,42 @@ function Situacion(props) {
     const opciones1=props.opciones1;
     const opciones2=props.opciones2;
     const opciones3=props.opciones3;
-    const [answer1, setAnswer1] = useState(1);
-    const [answer2, setAnswer2] = useState(1);
-    const [answer3, setAnswer3] = useState(1);
-    const [pushArray, setPushArray] = useState([]);
-    // const insertArray = (newValue) => {
-    //   setPushArray(pushArray => [...pushArray,newValue] );
-    //   console.log("newvalue" + newValue);
-    //   console.log("pusharray"+pushArray);
+    // const [answer1, setAnswer1] = useState(1);
+    // const [answer2, setAnswer2] = useState(1);
+    // const [answer3, setAnswer3] = useState(1);
+    // const [pushArray, setPushArray] = useState([]);
+    // const handleAnswers = () => {
+    //   console.log(answer1, answer2, answer3);
+    //   setPushArray(pushArray => [...pushArray,answer1] );
+    //   setPushArray(pushArray => [...pushArray,answer2] );
+    //   setPushArray(pushArray => [...pushArray,answer3] );
+    //   console.log("pusharray"+ pushArray);
     // };
-    const insertArray = () => {
-console.log(answer1, answer2, answer3);
-      // setPushArray(pushArray => [...pushArray,answer1] );
-      // setPushArray(pushArray => [...pushArray,answer2] );
-      // setPushArray(pushArray => [...pushArray,answer3] );
-      console.log("pusharray"+pushArray);
-    };
-    const handleAnswer1=(answer)=>{
-      console.log("entra 1:", answer);
-      setAnswer1(answer);
-    }
-    const handleAnswer2=(answer)=>{
-      console.log("entra 2:", answer);
-      setAnswer2(answer)
-    }
-    const handleAnswer3=(answer)=>{
-      console.log("entra 3:", answer);
-      setAnswer3(answer)
-    }
+    const handleAnswers = props.handleAnswers;
+    const handleAnswer1 = props.handleAnswer1;
+    const handleAnswer2 = props.handleAnswer2;
+    const handleAnswer3 = props.handleAnswer3;
+    // const handleAnswer1=(answer)=>{
+    //   setAnswer1(answer);
+    // }
+    // const handleAnswer2=(answer)=>{
+    //   setAnswer2(answer)
+    // }
+    // const handleAnswer3=(answer)=>{
+    //   setAnswer3(answer)
+    // }
   return (
     <div>
         <div>
-          <h1>{pushArray}</h1>
-           {block1}
-            <Herramienta opciones={opciones1} handleAnswer={handleAnswer1} />
-           {block2}
+          <p>{block1}
+            <Herramienta classname="selectHerramientas" opciones={opciones1} handleAnswer={handleAnswer1} />
+            </p>
+          <p>{block2}</p>
            <Herramienta opciones={opciones2} handleAnswer={handleAnswer2} />
-           {block3}
+          <p>{block3}</p>
            <Herramienta opciones={opciones3} handleAnswer={handleAnswer3} />
-           {block4}
-           <button onClick={insertArray}>Continuar</button>
+          <p>{block4}</p>
+           <button onClick={handleAnswers}>Continuar</button>
         </div>
     </div>
   );
