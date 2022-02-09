@@ -32,6 +32,7 @@ function Situacion(props) {
     // const handleAnswer3=(answer)=>{
     //   setAnswer3(answer)
     // }
+    console.log("entra a situacion");
   return (
     <div>
         <div>

@@ -52,12 +52,12 @@ function App() {
   const handleAnswer3=useCallback((answer)=>{
     setAnswer3(answer);
   },[answer3])
-  useEffect(() => {
-    handleAnswer1(answer1);
-    handleAnswer2(answer2);
-    handleAnswer3(answer3);
-   // handleAnswers(pushArray);
-});
+//   useEffect(() => {
+//     handleAnswer1(answer1);
+//     handleAnswer2(answer2);
+//     handleAnswer3(answer3);
+//    // handleAnswers(pushArray);
+// });
 
 const [page,setPage]=useState(0);
 const nextSituatcion = () =>{

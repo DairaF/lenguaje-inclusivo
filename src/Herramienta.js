@@ -5,7 +5,6 @@ function Herramienta(props) {
   const [select,setSelect] = useState(1);
   
   const handleSelectChange = (event) => {
-    console.log(event.target.value + " event.target.value")
       setSelect(event.target.value);
       handleAnswer(select);
   }
