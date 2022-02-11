@@ -3,8 +3,19 @@ import '../App.css';
 import Situacion from '../components/Situacion';
 import Start from '../components/Start';
 import End from '../components/End';
+import data from '../data.json';
 
 function Quiz() {
+  // console.log(data);
+  // console.log(data[1]);
+  // console.log(data[1].opciones1[0]);
+  // console.log(data[1].opciones1[0].texto);
+  // for (var i=0; i<2; i++){
+  //   console.log(data[i]);
+  // }
+
+  console.log(Object.keys(data).length);
+  
     /*
   1 rae
   2 desdoblamiento
