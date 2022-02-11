@@ -1,6 +1,6 @@
-{
-    "1":
+[
     {      
+        "id":1,
         "block1":"@fundesarg Estamos muy ",
         "opciones1":[
             {
@@ -62,8 +62,8 @@
         ],
         "block4":"sean 4, en lugar de 3, como se había establecido inicialmente."
     },
-    "2":
     {
+        "id":2,
         "block1":"El factor más importante según las investigaciones sobre educación es la familia y las circunstancias del " ,
         "opciones1":[
             {
@@ -135,4 +135,4 @@
         ],
         "block4":", cómo pagarles mejor. Todo eso es importante. "
     }
-}
+]

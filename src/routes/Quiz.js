@@ -6,15 +6,7 @@ import End from '../components/End';
 import data from '../data.json';
 
 function Quiz() {
-  // console.log(data);
-  // console.log(data[1]);
-  // console.log(data[1].opciones1[0]);
-  // console.log(data[1].opciones1[0].texto);
-  // for (var i=0; i<2; i++){
-  //   console.log(data[i]);
-  // }
 
-  console.log(Object.keys(data).length);
   
     /*
   1 rae
@@ -72,7 +64,37 @@ const nextSituatcion = () =>{
 
   return (
     <div className="App">
+      
       {page === 0 && <Start handleStart={nextSituatcion} />}
+      {
+        data.map((dato, index)=>{
+          return (
+          page === (index+1) && <Situacion 
+            key = {index}
+            handleRealize={handleRealize}
+            handleAnswers={handleAnswers}
+            handleAnswer1={handleAnswer1}
+            handleAnswer2={handleAnswer2}
+            handleAnswer3={handleAnswer3}
+            situation="tweet"
+            block1={dato.block1} 
+            opciones1={dato.opciones1} 
+            block2={dato.block2}
+            opciones2={dato.opciones2}
+            block3={dato.block3}
+            opciones3={dato.opciones3}
+            block4={dato.block4}
+            /> 
+
+
+
+          )
+        }
+        )
+      }             
+      
+      
+{/*       
       {page === 1 && <Situacion 
             handleRealize={handleRealize}
             handleAnswers={handleAnswers}
@@ -109,7 +131,7 @@ const nextSituatcion = () =>{
             block3=". Entonces, hay que pensar cómo mejorar la formación de "
             opciones3={[["los docentes","rae",1],["del cuerpo docente","sustantivos referidos a grupos", 7],["les docentes","nuevos morfemas",3],["los/as docentes","desdoblamiento",2]]}
             block4=", cómo pagarles mejor. Todo eso es importante. "
-            /> }
+            /> } */}
       {page === 3 && <End fullArray={pushArray} realize={realize} /> }
 
     </div>

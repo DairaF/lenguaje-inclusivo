@@ -24,7 +24,7 @@ function Herramienta(props) {
     {/* <div  className={isActive ? 'activo': 'noactivo'} onClick={e => isActive ? handleRealize() : toggleOnce()} > */}
       <select value={select} onChange={handleSelectChange} >
         {
-        opciones.map(n => { return <option className='options' value={n[2]}>{n[2]}) {n[0]} - {n[1]}</option> } )
+        opciones.map(n => { return <option className='options' value={n.valor}>{n.valor}) {n.texto} - {n.categoria}</option> } )
         }
 
       </select>

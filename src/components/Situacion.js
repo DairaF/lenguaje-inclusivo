@@ -17,12 +17,12 @@ function Situacion(props) {
     <div>
         <div>
           <p>{block1}
-            <Herramienta opciones={opciones1} handleAnswer={handleAnswer1} handleRealize={handleRealize} />
+            <Herramienta key={1} opciones={opciones1} handleAnswer={handleAnswer1} handleRealize={handleRealize} />
             </p>
           <p>{block2}</p>
-           <Herramienta opciones={opciones2} handleAnswer={handleAnswer2} handleRealize={handleRealize} />
+           <Herramienta key={2} opciones={opciones2} handleAnswer={handleAnswer2} handleRealize={handleRealize} />
           <p>{block3}</p>
-           <Herramienta opciones={opciones3} handleAnswer={handleAnswer3} handleRealize={handleRealize} />
+           <Herramienta key={3} opciones={opciones3} handleAnswer={handleAnswer3} handleRealize={handleRealize} />
           <p>{block4}</p>
            <button onClick={handleAnswers}>Continuar</button>
         </div>
