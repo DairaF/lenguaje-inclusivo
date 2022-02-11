@@ -13,14 +13,15 @@ function Quiz() {
   5 pronombres relativos
   6 sustantivo abstracto
   7 sustantivo colectivo/asociado a grupos
-  elipsis
-  formas impersonales
-  pronombres indefinidos
-  sustantivo epiceno
-  sustantivo asociado a personas o entiudades
-  sustantivos con terminaciones especiales
-  metonimia
+  8 elipsis
+  9 formas impersonales
+  10 pronombres indefinidos
+  11 sustantivo epiceno
+  12 sustantivo asociado a personas o entiudades
+  13 sustantivos con terminaciones especiales
+  14 metonimia
   */
+  const [realize, setRealize] = useState(1);
   const [answer1, setAnswer1] = useState(1);
   const [answer2, setAnswer2] = useState(1);
   const [answer3, setAnswer3] = useState(1);
@@ -33,6 +34,10 @@ function Quiz() {
     console.log("pusharray"+ pushArray);
   };
 
+  const handleRealize = useCallback(() =>{
+    setRealize(realize+1);
+    console.log("ralize"+realize);
+  })
   const handleAnswer1=useCallback((answer)=>{
     setAnswer1(answer);
   },[answer1])
@@ -58,6 +63,7 @@ const nextSituatcion = () =>{
     <div className="App">
       {page === 0 && <Start handleStart={nextSituatcion} />}
       {page === 1 && <Situacion 
+            handleRealize={handleRealize}
             handleAnswers={handleAnswers}
             handleAnswer1={handleAnswer1}
             handleAnswer2={handleAnswer2}
@@ -79,6 +85,7 @@ const nextSituatcion = () =>{
             block4="sean 4, en lugar de 3, como se había establecido inicialmente."
             /> }
       {page === 2 &&  <Situacion 
+            handleRealize={handleRealize}
             handleAnswers={handleAnswers}
             handleAnswer1={handleAnswer1}
             handleAnswer2={handleAnswer2}
@@ -92,7 +99,7 @@ const nextSituatcion = () =>{
             opciones3={[["los docentes","rae",1],["del cuerpo docente","sustantivos referidos a grupos", 7],["les docentes","nuevos morfemas",3],["los/as docentes","desdoblamiento",2]]}
             block4=", cómo pagarles mejor. Todo eso es importante. "
             /> }
-      {page === 3 && <End fullArray={pushArray} /> }
+      {page === 3 && <End fullArray={pushArray} realize={realize} /> }
 
     </div>
   );

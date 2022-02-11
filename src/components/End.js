@@ -9,6 +9,7 @@ const End = (props) => {
     let sabstractoCounter = 0;
     let sColectivoCounter = 0;
     let results=props.fullArray;
+    let realize = props.realize;
     let sortResults = () => {
       results.forEach(result => { 
         console.log(result);
@@ -25,6 +26,7 @@ const End = (props) => {
   return(
     <div >
         {sortResults()}
+        <h1>Te diste cuenta de {realize}/9 oportunidades</h1>
         <h1>Herramientas usadas</h1>
         1) rae {raeCounter}
         <br/>
