@@ -1,5 +1,21 @@
+div{
+  margin: 5%;
+}
 .fullHeight{
   height: 100vh;
+}
+p{
+  width: auto;
+  display: block;
+}
+.herramienta{
+  display: block;
+  width: auto;
+  background-color:violet;
+  color: turquoise;
+}
+.opciones::backdrop{
+  cursor: pointer;
 }
 select{
   border: none;
@@ -10,6 +26,30 @@ select{
 select::-ms-expand {
   display: none;
 }
+option:checked{
+  background-color:chartreuse;
+  border-radius: 50px;
+}
 .options{
   background-color: aqua;
+}
+.option{
+  display: inline;
+  width: 100%;
+  background-color: chartreuse;
+}
+.activo1{
+  font-weight: bold;
+}
+.activo2{
+  font-weight: bold;
+}
+.activo3{
+  font-weight: bold;
+}
+.activa{
+  display: block;
+}
+.noactiva{
+  display: none;
 }

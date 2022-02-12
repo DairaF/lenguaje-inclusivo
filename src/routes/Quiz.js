@@ -24,17 +24,17 @@ function Quiz() {
   13 sustantivos con terminaciones especiales
   14 metonimia
   */
-  const [realize, setRealize] = useState(1);
+  const [realize, setRealize] = useState(0);
   const [answer1, setAnswer1] = useState(1);
   const [answer2, setAnswer2] = useState(1);
   const [answer3, setAnswer3] = useState(1);
   const [pushArray, setPushArray] = useState([]);
   const handleAnswers = () => {
-    nextSituatcion();
     setPushArray(pushArray => [...pushArray,answer1] );
     setPushArray(pushArray => [...pushArray,answer2] );
     setPushArray(pushArray => [...pushArray,answer3] );
     console.log("pusharray"+ pushArray);
+    nextSituatcion();
   };
 
   const handleRealize = useCallback(() =>{
@@ -42,13 +42,19 @@ function Quiz() {
     console.log("ralize"+realize);
   })
   const handleAnswer1=useCallback((answer)=>{
+    console.log("loq  recibe 1"+answer);
     setAnswer1(answer);
+    console.log("handle1 "+answer1);
   },[answer1])
   const handleAnswer2=useCallback((answer)=>{
+    console.log("loq  recibe 1"+answer);
     setAnswer2(answer);
+    console.log("handle2 "+answer2);
   },[answer2])
   const handleAnswer3=useCallback((answer)=>{
+    console.log("loq  recibe 1"+answer);
     setAnswer3(answer);
+    console.log("handle3 "+answer3);
   },[answer3])
 //   useEffect(() => {
 //     handleAnswer1(answer1);
@@ -85,7 +91,6 @@ const nextSituatcion = () =>{
             opciones3={dato.opciones3}
             block4={dato.block4}
             /> 
-
 
 
           )
