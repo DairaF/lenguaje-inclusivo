@@ -1,32 +1,12 @@
 import React, { useState, useEffect } from 'react';
 function Herramienta(props) {
-  const opciones = props.opciones;
-  const handleAnswer = props.handleAnswer;
-  const handleRealize = props.handleRealize;
-  const [select,setSelect] = useState(1);
-  const [isActive, setActive] = useState(false);
-  const toggleOnce = () => {
-    if(!isActive){
-    setActive(!isActive);
-    handleRealize();
-  }
-  };
-  const handleSelectChange = (event) => {
-      setSelect(event.target.value);
-      handleAnswer(select);
-  }
-  useEffect(() => {
-      handleAnswer(select);
-  });
-
   return (
-    <div  className={isActive ? 'activo': 'noactivo'} onClick={toggleOnce} >
-      <select value={select} onChange={handleSelectChange} >
-        {
-        opciones.map(n => { return <option className='options' value={n.valor}>{n.valor}) {n.texto} - {n.categoria}</option> } )
-        }
-
-      </select>
+    <div>
+      <h1>{props.titulo}</h1>
+      <p>{props.texto}</p>
+      <p>Ejemplo:{props.ejemplo1}</p>
+      <p>MasInfo:{props.masInfo}</p>
+      <p>Ejemplo:{props.ejemplo2}</p>
     </div>
   );
 }

@@ -1,0 +1,22 @@
+[
+    { 
+        "key":1,
+        "titulo":"Guía 1",
+        "texto":"A no desesperar: acá traemos algunas preguntas que pueden servir de guía para que revises tus textos. "
+    },
+    { 
+        "key":2,
+        "titulo":"Guía 2",
+        "texto":"¿Qué palabras usás para referirte a personas? Revisá el texto e identificá esas palabras y el contexto. ¿En qué género gramatical están? Los sustantivos que no marcan género ¿de qué adjetivos o artículos están rodeados?"
+    },
+    { 
+        "key":3,
+        "titulo":"Guía 3",
+        "texto":"¿Usaste el masculino genérico? Prestá atención no solo a si lo usaste o no, sino cuántas veces aparece. Ese masculino genérico ¿se puede reemplazar? Podés usar algún recurso de los de la caja de herramientas para evitarlo. "
+    },
+    { 
+        "key":4,
+        "titulo":"Guía 4",
+        "texto":"¿Usaste el masculino relacionado con la sabiduría o el poder?"
+    }
+]

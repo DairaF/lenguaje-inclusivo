@@ -1,0 +1,80 @@
+[
+    {
+        "id":1,
+        "titulo":"Pronombres relativos",
+        "texto":"Son palabras que reemplazan a los sustantivos y permiten evitar el masculino genérico. 'Quien' y 'quienes' refieren siempre a personas y no requieren concordancia de género.",
+        "ejemplo1": "'hay quienes sostienen que' / 'quien lo desee puede...'",
+        "masInfo": "A veces el pronombre solo no alcanza: tené cuidado con las palabras que están alrededor y pueden modificar al pronombre con un masculino genérico.",
+        "ejemplo2": "❌quienes serán beneficiados ✅ quienes obtendrán el beneficio."
+    },{
+        "id":2,
+        "titulo":"Pronombres indefinidos",
+        "texto":"Son pronombres que no aportan una identificación clara, pero nos sirven para evitar el masculino genérico.",
+        "ejemplo1": "alguien, cualquiera, nadie.",
+        "masInfo": " A veces el pronombre solo no alcanza: tené cuidado con las palabras que están alrededor y pueden modificar al pronombre con un masculino genérico.",
+        "ejemplo2": "❌nadie va a ser obligado ✅ no se obligará a nadie."
+    },{
+        "id":3,
+        "titulo":"Sustantivos asociados a grupos",
+        "texto":"Son aquellos que se refieren a un conjunto de personas a las que no se les asigna un género particular. También acá podemos incluir sustantivos colectivos o algunos que designan a una porción de la sociedad. ",
+        "ejemplo1": "sectores, población, audiencia",
+        "masInfo": "",
+        "ejemplo2": ""
+    },{
+        "id":4,
+        "titulo":"Sustantivos asociados a personas o entidades",
+        "texto":"Son los que agrupan a personas, instituciones, empresas u otras entidades. Como no se refieren exclusivamente a personas, entendemos que el género gramatical no se refiere a un género social.",
+        "ejemplo1": "agentes, actores",
+        "masInfo": "",
+        "ejemplo2": ""
+    },{
+        "id":5,
+        "titulo":"Sustantivos abstractos",
+        "texto":"En este contexto, son palabras que hablan de condiciones, posiciones laborales o habilidades, en lugar de personas u objetos concretos.",
+        "ejemplo1": "jefatura, presidencia,",
+        "masInfo": "",
+        "ejemplo2": ""
+    },{
+        "id":6,
+        "titulo":"Sustantivos con terminaciones especiales",
+        "texto":"Son sustantivos que por sí mismos no marcan género, pero que adoptan el de las palabras que los rodean.",
+        "ejemplo1": "cliente, intérprete, joven",
+        "masInfo": " La marca de género aparece en las palabras que rodean al sustantivo, por lo que tenemos que tener cuidado a la hora de elegir artículos y adjetivos.",
+        "ejemplo2": "❌los economistas ✅ Las y los economistas | Las/os economistas | Les economistas. | Cada economista"
+    },{
+        "id":7,
+        "titulo":"Sustantivos epicenos",
+        "texto":"Son los sustantivos que siempre mantienen el mismo género gramatical, aunque se refieran a personas de distintos géneros.",
+        "ejemplo1": "persona, víctima, individuo, autoridades.",
+        "masInfo": "",
+        "ejemplo2": ""
+    },{
+        "id":8,
+        "titulo":"Elipisis",
+        "texto":"Con este recurso podemos eliminar la referencia a las personas, lo que no solo evita usar masculino genérico, sino también impide repeticiones innecesarias.",
+        "ejemplo1": "❌Los invitamos a  ✅Invitamos a | ❌Los funcionarios advierten que ✅ Advierten que",
+        "masInfo": "Para tener cuidado: la palabra que no usamos tiene que estar clara, para evitar ambiguedades",
+        "ejemplo2": ""
+    },{
+        "id":9,
+        "titulo":"Sinécdoque",
+        "texto":"Este recurso se usa para nombrar a una cosa con el nombre de una de sus partes. Nos permite evitar el masculino genérico usando una parte del cuerpo o acción en lugar de la referencia a la persona.",
+        "ejemplo1": "Voces, Miradas. | Todavía hay voces que expresan desacuerdo | Traen una mirada fresca",
+        "masInfo": "",
+        "ejemplo2": ""
+    },{
+        "id":10,
+        "titulo":"Metonimia",
+        "texto":"En este contexto, podemos usar este recurso para mencionar el efecto en vez de la causa, o viceversa. Es decir, ponemos el peso en el resultado en lugar de las personas que lo crearon.",
+        "ejemplo1": " los estudios indican | hay argumentos a favor | existen cuestionamientos",
+        "masInfo": "",
+        "ejemplo2": ""
+    },{
+        "id":11,
+        "titulo":"Desdoblamiento",
+        "texto":"Este recurso duplica la terminación de género. Incluye el femenino y el masculino con un nexo adversativo o copulativo.",
+        "ejemplo1": "un/a investigador/a | Autoras y autor.",
+        "masInfo": "Este recurso refleja una concepción binaria de los géneros, por lo que no representa a quienes no entran en esa dicotomía. Está dentro de lo gramaticalmente adecuado, aunque atenta contra la economía del lenguaje.",
+        "ejemplo2": ""
+    }
+]

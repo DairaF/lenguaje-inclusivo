@@ -24,6 +24,11 @@ function Landing() {
         <p>Te dejamos herramientas útiles para expresarte en escritos, exposiciones o en la vida cotidiana.</p>
         <a href="caja-de-herramientas">ir a caja de herramientas</a>
       </div>
+      <div className='fullHeight'>
+        <h1>¿Qué sentido tiene el “lenguaje inclusivo”? </h1>
+        <p>Aportes lingüísticos para una discusión incómoda</p>
+        <a href="texto-expositivo">Ver más</a>
+      </div>
     </div>
   );
 }

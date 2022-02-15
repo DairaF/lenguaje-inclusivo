@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import guias from '../data/guias.json';
+import Guia from './Guia';
 
 const End = (props) => {
     const [page,setPage]=useState(0);
@@ -68,20 +70,40 @@ const End = (props) => {
         
         {page === 7 && 
           <div> 
-            <h1>Herramientas usadas</h1>
-            1) rae {raeCounter}
-            <br/>
-            2) Desdoblamiento {DesdoblamientoCounter}
-            <br/>
-            3) nuevos morfemas {morfemasCounter}
-            <br/>
-            4) No dice {idkCounter}
-            <br/>
-            5) pronombres relativos {prelativosCounter}
-            <br/>
-            6) sustantivos abstractos {sabstractoCounter}
-            <br/>
-            7) sustantivos Colectivos {sColectivoCounter}
+            <div>
+              <h1>Herramientas usadas</h1>
+              1) rae {raeCounter}
+              <br/>
+              2) Desdoblamiento {DesdoblamientoCounter}
+              <br/>
+              3) nuevos morfemas {morfemasCounter}
+              <br/>
+              4) No dice {idkCounter}
+              <br/>
+              5) pronombres relativos {prelativosCounter}
+              <br/>
+              6) sustantivos abstractos {sabstractoCounter}
+              <br/>
+              7) sustantivos Colectivos {sColectivoCounter}
+            </div> 
+
+
+            <div>
+              <h1>Guía de autoevaluación</h1>
+
+            {
+              guias.map((guia, index)=>{
+                return (
+                  <Guia
+                    key = {index}
+                    titulo = {guia.titulo}
+                    texto= {guia.texto}     
+                  />
+                )
+              }
+              )
+            }
+            </div>
           </div> 
         }
         
