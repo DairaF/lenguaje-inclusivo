@@ -31,12 +31,11 @@ option:checked{
   border-radius: 50px;
 }
 .options{
-  background-color: aqua;
+  background-color: rgb(210, 231, 231);
+  width: 100%;
 }
 .option{
-  display: inline;
-  width: 100%;
-  background-color: chartreuse;
+  /* background-color: rgb(95, 185, 185); */
 }
 .activo1{
   font-weight: bold;

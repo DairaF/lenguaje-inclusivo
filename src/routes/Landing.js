@@ -22,7 +22,7 @@ function Landing() {
       <div className='fullHeight'>
         <h1>Caja de Herramientas</h1>
         <p>Te dejamos herramientas útiles para expresarte en escritos, exposiciones o en la vida cotidiana.</p>
-        <a href="caja">ir a caja de herramientas</a>
+        <a href="caja-de-herramientas">ir a caja de herramientas</a>
       </div>
     </div>
   );

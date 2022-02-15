@@ -108,13 +108,13 @@ function Situacion(props) {
           {block4}</p>
            <button onClick={()=>{handleAnswers(); setActiveOptions1(false); setActiveOptions2(false); setActiveOptions3(false);}}>Continuar</button>
         </div>
-        <div className={activeOptions1 ? 'activa': 'noactiva'}  >
+        <div className={activeOptions1 ? 'activa options': 'noactiva'}  >
           { opciones1.map(n => { return <span onClick={()=>elegirTexto(n.valor, n.texto, 1)} className='option' value={n.valor}>{n.valor}) {n.texto} - {n.categoria}<br/></span> } ) }
         </div>
-        <div className={activeOptions2 ? 'activa': 'noactiva'} >
+        <div className={activeOptions2 ? 'activa options': 'noactiva'} >
           { opciones2.map(n => { return <span onClick={()=>elegirTexto(n.valor, n.texto, 2)} className='option' value={n.valor}>{n.valor}) {n.texto} - {n.categoria}<br/></span> } ) }
         </div>
-        <div className={activeOptions3 ? 'activa': 'noactiva'} >
+        <div className={activeOptions3 ? 'activa options': 'noactiva'} >
           { opciones3.map(n => { return <span onClick={()=>elegirTexto(n.valor, n.texto, 3)} className='option' value={n.valor}>{n.valor}) {n.texto} - {n.categoria}<br/></span> } ) }
         </div>
     </div>
