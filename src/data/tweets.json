@@ -1,0 +1,211 @@
+[
+    {      
+        "id":1,
+        "block1":"@fundesarg Estamos muy ",
+        "opciones1":[
+            {
+                "texto":"orgullosos ",
+                "categoria":"rae", 
+                "valor":1
+            },
+            {
+                "texto":"orgullosas y orgullosos ",
+                "categoria":"desdoblamiento",
+                "valor":2
+            }, 
+            {
+                "texto":"orgulloses ",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            }
+        ] ,
+        "block2":"de presentar a quienes quedaron",
+        "opciones2":[
+            {
+                "texto":"seleccionados ",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"la selección ",
+                "categoria":"no se", 
+                "valor":4
+            },
+            {
+                "texto":"seleccionades ",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            }
+        ],
+        "block3":"para la primera edición de la beca Fundatos. La calidad de las propuestas recibidas motivó que ",
+        "opciones3":[
+            {
+                "texto":"los beneficiarios ",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"las becas ",
+                "categoria":"no se", 
+                "valor":4
+            },
+            {
+                "texto":"les beneficiaries ",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            },
+            {
+                "texto":"quienes recibirán la beca ",
+                "categoria":"pronombre relativo",
+                "valor":5
+            }
+        ],
+        "block4":"sean 4, en lugar de 3, como se había establecido inicialmente."
+    },
+    {      
+        "id":2,
+        "block1":"@fundesarg Hubo ",
+        "opciones1":[
+            {
+                "texto":"un ganador ",
+                "categoria":"rae", 
+                "valor":1
+            },
+            {
+                "texto":"Se ganó ",
+                "categoria":"formas impersonales",
+                "valor":9
+            }, 
+            {
+                "texto":"Alguien ganó ",
+                "categoria":"pronombres indefinidos",
+                "valor":10
+            }, 
+            {
+                "texto":"quien ganó ",
+                "categoria":"pronombres relativos",
+                "valor":5
+            }, 
+            {
+                "texto":"une ganadore ",
+                "categoria":"morfemas nuevos",
+                "valor":3
+            }
+        ] ,
+        "block2":"y ",
+        "opciones2":[
+            {
+                "texto":"un perdedor ",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"Se perdió ",
+                "categoria":"formas impersonales", 
+                "valor":4
+            },
+            {
+                "texto":"Une perdedore ",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            },
+            {
+                "texto":"quien perdió ",
+                "categoria":"pronombre relativo",
+                "valor":5
+            },
+            {
+                "texto":"Alguien perdió ",
+                "categoria":"pronombre indefnido",
+                "valor":5
+            }
+        ],
+        "block3":", pero eso no es lo importante aquí, sino mostrar que ese concurso anticipaba un cambio de época. El uso de datos se volvió un elemento fundamental en las decisiones de ",
+        "opciones3":[
+            {
+                "texto":"los empresarios ",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"corporativas ",
+                "categoria":"no se", 
+                "valor":4
+            },
+            {
+                "texto":"de las empresas ",
+                "categoria":"no se", 
+                "valor":4
+            }
+        ],
+        "block4":"."
+    },
+    {      
+        "id":3,
+        "block1":"@fundesarg En nuestra encuesta imaginaria, el tío insiste que el candidato A es el más votado por ",
+        "opciones1":[
+            {
+                "texto":"jóvenes y adultos ",
+                "categoria":"rae", 
+                "valor":1
+            },
+            {
+                "texto":"les jóvenes y les adultes ",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            }, 
+            {
+                "texto":"la juventud, adultos y adultas ",
+                "categoria":"sustantivo colectivo",
+                "valor":7
+            }, 
+            {
+                "texto":"la ciudadanía ",
+                "categoria":"sustantivo abstracto",
+                "valor":6
+            }
+        ] ,
+        "block2":"La sobrina contraataca diciendo que ese mismo estudio muestra que Bárbara es la candidata favorita si tenemos en cuenta a  ",
+        "opciones2":[
+            {
+                "texto":"Todos ",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"cada sector ",
+                "categoria":"sustantivo asociado a personas o entidades", 
+                "valor":12
+            },
+            {
+                "texto":"toda la población ",
+                "categoria":"sustantivo asociado a grupos",
+                "valor":7
+            },
+            {
+                "texto":"todes ",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            }
+        ],
+        "block3":"¿Cómo puede ser? ¿",
+        "opciones3":[
+            {
+                "texto":"Los dos ",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"Les dos ",
+                "categoria":"nuevos morfemas", 
+                "valor":3
+            },
+            {
+                "texto":"Quien ",
+                "categoria":"pronombre relativo", 
+                "valor":5
+            }
+        ],
+        "block4":"tienen razón?"
+    }
+]

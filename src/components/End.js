@@ -12,7 +12,6 @@ const End = (props) => {
     let realize = props.realize;
     let sortResults = () => {
       results.forEach(result => { 
-        console.log(result);
         if (result === 1) { raeCounter = raeCounter + 1 }
         else if (result === 2) { DesdoblamientoCounter = DesdoblamientoCounter+1}
         else if (result === 3) { morfemasCounter = morfemasCounter+1}
@@ -22,7 +21,6 @@ const End = (props) => {
         else if (result === 7) { sColectivoCounter = sColectivoCounter+1}
       });
   }
-  console.log("renderea end");
   return(
     <div >
         {sortResults()}

@@ -1,0 +1,148 @@
+[
+    {
+        "id":1,
+        "block1":"El factor más importante según las investigaciones sobre educación es la familia y las circunstancias del " ,
+        "opciones1":[
+            {
+                "texto":"niño",
+                "categoria":"rae", 
+                "valor":1
+            },
+            {
+                "texto":"los niños y niñas ",
+                "categoria":"desdoblamiento",
+                "valor":2
+            }, 
+            {
+                "texto":"les niñes",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            },
+            {
+                "texto":"las infancias",
+                "categoria":"sustantivos abstractos",
+                "valor":6
+            }
+        ],
+        "block2":"El segundo es",
+        "opciones2":[
+            {
+                "texto":"el profesor",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"profesor/a ",
+                "categoria":"desdoblamiento",
+                "valor":2
+            },
+            {
+                "texto":"el personal docente", 
+                "categoria":"sustantivos asociados a grupos",
+                "valor":7
+            },
+            {
+                "texto":"quien educa",
+                "categoria":"pronombre relativo",
+                "valor":5
+            }
+        ],
+        "block3":". Entonces, hay que pensar cómo mejorar la formación de ",
+        "opciones3":[
+            {
+                "texto":"los docentes",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"del cuerpo docente",
+                "categoria":"sustantivos referidos a grupos", 
+                "valor":7
+            },
+            {
+                "texto":"les docentes",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            },
+            {
+                "texto":"los/as docentes",
+                "categoria":"desdoblamiento",
+                "valor":2
+            }
+        ],
+        "block4":", cómo pagarles mejor. Todo eso es importante. "
+    },
+    {
+        "id":2,
+        "block1":"No es menos cierto que el cortísimo plazo de Argentina involucra a más del 50% de " ,
+        "opciones1":[
+            {
+                "texto":"los jóvenes y niños",
+                "categoria":"rae", 
+                "valor":1
+            },
+            {
+                "texto":"la juventud y la infancia ",
+                "categoria":"sustantivo abstracto",
+                "valor":6
+            }, 
+            {
+                "texto":"jóvenes y niñes",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            },
+            {
+                "texto":"jóvenes y niños/as",
+                "categoria":"desdoblamiento",
+                "valor":2
+            }
+        ],
+        "block2":"en situación de pobreza.",
+        "opciones2":[
+            {
+                "texto":"Los expertos afirman",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"Hay argumentos que afirman",
+                "categoria":"metonimia",
+                "valor":14
+            },
+            {
+                "texto":"Especialistas afirman", 
+                "categoria":"sustantivos con terminaciones especiales",
+                "valor":13
+            },
+            {
+                "texto":"Hay quienes afirman",
+                "categoria":"pronombre relativo",
+                "valor":5
+            }
+        ],
+        "block3":"que los continuos fracasos para lograr un proceso de desarrollo sostenido han hipotecado el futuro de buena parte de ",
+        "opciones3":[
+            {
+                "texto":"los ciudadanos",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"las personas",
+                "categoria":"sustantivo epiceno", 
+                "valor":11
+            },
+            {
+                "texto":"les ciudadanes",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            },
+            {
+                "texto":"la ciudadanía",
+                "categoria":"sustantivo abstracto",
+                "valor":6
+            }
+        ],
+        "block4":"."
+    }
+]

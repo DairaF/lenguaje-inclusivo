@@ -1,0 +1,75 @@
+[
+    {
+        "id":1,
+        "block1":"Hay una alta diversidad en quienes forman parte de las movilizaciones lo que explica la alta incidencia en los resultados. Participaron organizaciones locales," ,
+        "opciones1":[
+            {
+                "texto":"vecinos",
+                "categoria":"rae", 
+                "valor":1
+            },
+            {
+                "texto":"vecinos y vecinas",
+                "categoria":"desdoblamiento",
+                "valor":2
+            }, 
+            {
+                "texto":"vecines",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            },
+            {
+                "texto":"la población",
+                "categoria":"sustantivo asociado a grupos",
+                "valor":7
+            }
+        ],
+        "block2":"partidos políticos, grupos religiosos, ",
+        "opciones2":[
+            {
+                "texto":"funcionarios del gobierno,",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"Funcionaries",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            },
+            {
+                "texto":"actores gubernamentales", 
+                "categoria":"sustantivos asociados a grupos",
+                "valor":7
+            },
+            {
+                "texto":"autoridades",
+                "categoria":"sustantivo epiceno",
+                "valor":11
+            }
+        ],
+        "block3":"sindicatos, comunidades indígenas y",
+        "opciones3":[
+            {
+                "texto":"campesinos",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"Población rural",
+                "categoria":"sustantivos referidos a grupos", 
+                "valor":7
+            },
+            {
+                "texto":"campesines",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            },
+            {
+                "texto":"campesinos y campesinas",
+                "categoria":"desdoblamiento",
+                "valor":2
+            }
+        ],
+        "block4":"."
+    }
+]

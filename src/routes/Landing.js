@@ -1,8 +1,7 @@
 import React, { } from 'react';
 
 function Landing() {
-
-  return (
+    return (
     <div className="App">
       <div className='fullHeight'>
         <p>El feminismo nos invita a cuestionar mucho de nuestro día a día: estereotipos, acciones cotidianas e incluso nos invita a preguntarnos por cómo hablamos.

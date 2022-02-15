@@ -1,0 +1,206 @@
+[
+    {
+        "id":1,
+        "block1":" ",
+        "opciones1":[
+            {
+                "texto":"Existe un consenso entre los expertos de que",
+                "categoria":"rae", 
+                "valor":1
+            },
+            {
+                "texto":"Existe un consenso de que",
+                "categoria":"elipsis",
+                "valor":8
+            }, 
+            {
+                "texto":"Existe un consenso entre especialistas de que",
+                "categoria":"sustantivos con terminaciones especiales",
+                "valor":13
+            },
+            {
+                "texto":"Hay argumentos que afirman que",
+                "categoria":"metonimia",
+                "valor":14
+            }
+        ],
+        "block2":"las pensiones no contributivas son un pilar necesario. Como veremos en las conclusiones, la solución para rebalancear el gasto público destinado a ",
+        "opciones2":[
+            {
+                "texto":"adultos mayores y niños",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"Adultes mayores y niñes",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            },
+            {
+                "texto":"la vejez y la niñez", 
+                "categoria":"sustantivos abstractos",
+                "valor":6
+            },
+            {
+                "texto":"Adultos y adultas mayores y niños y niñas",
+                "categoria":"desdoblamiento",
+                "valor":2
+            }
+        ],
+        "block3":"pasa por aumentar la inversión pública en",
+        "opciones3":[
+            {
+                "texto":"los niños",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"la niñez",
+                "categoria":"sustantivo abstracto", 
+                "valor":6
+            },
+            {
+                "texto":"les niñes",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            },
+            {
+                "texto":"niños y niñas",
+                "categoria":"desdoblamiento",
+                "valor":2
+            }
+        ],
+        "block4":"."
+    },
+    {
+        "id":2,
+        "block1":"Pensemos esta situación hipotética. Si deseamos estudiar el efecto que la malnutrición puede tener en el rendimiento escolar de ",
+        "opciones1":[
+            {
+                "texto":"los alumnos",
+                "categoria":"rae", 
+                "valor":1
+            },
+            {
+                "texto":"de los alumnos y alumnas",
+                "categoria":"desdoblamiento",
+                "valor":2
+            }, 
+            {
+                "texto":"del alumnado",
+                "categoria":"sustantivos colectivos",
+                "valor":7
+            },
+            {
+                "texto":"Omitir la referencia a persona",
+                "categoria":"elipsis",
+                "valor":8
+            }
+        ],
+        "block2":"¿deberíamos asignar aleatoriamente a",
+        "opciones2":[
+            {
+                "texto":"algunos",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"algunes",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            },
+            {
+                "texto":"estudiantes", 
+                "categoria":"sustantivo con terminación especial",
+                "valor":13
+            },
+            {
+                "texto":"algunos/as",
+                "categoria":"desdoblamiento",
+                "valor":2
+            }
+        ],
+        "block3":"para ",
+        "opciones3":[
+            {
+                "texto":"exponerlos a ",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"exponerles",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            },
+            {
+                "texto":"exponerlos/as",
+                "categoria":"desdoblamiento",
+                "valor":2
+            }
+        ],
+        "block4":"una mala alimentación? "
+    },
+    {
+        "id":3,
+        "block1":"La mayoría de las provincias cuenta con equipos de",
+        "opciones1":[
+            {
+                "texto":"rastreadores",
+                "categoria":"rae", 
+                "valor":1
+            },
+            {
+                "texto":"rastreadores y rastreadoras",
+                "categoria":"desdoblamiento",
+                "valor":2
+            }, 
+            {
+                "texto":"Equipos rastreadores",
+                "categoria":"no se",
+                "valor":4
+            }
+        ],
+        "block2":"que combinan varios perfiles. La opción más señalada la constituyen ",
+        "opciones2":[
+            {
+                "texto":"los trabajadores de los servicios de salud",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"lxs trabajadorxs ",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            },
+            {
+                "texto":"el personal de salud", 
+                "categoria":"sustantivos  asociados a grupos",
+                "valor":7
+            },
+            {
+                "texto":"trabajadores y trabajadoras",
+                "categoria":"desdoblamiento",
+                "valor":2
+            }
+        ],
+        "block3":"como ",
+        "opciones3":[
+            {
+                "texto":"médicos o enfermeros",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"médicxs y enfermerxs",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            },
+            {
+                "texto":"médicos/as y enfermeros/a",
+                "categoria":"desdoblamiento",
+                "valor":2
+            }
+        ],
+        "block4":"."
+    }
+]

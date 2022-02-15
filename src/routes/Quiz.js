@@ -3,76 +3,124 @@ import '../App.css';
 import Situacion from '../components/Situacion';
 import Start from '../components/Start';
 import End from '../components/End';
-import data from '../data.json';
+import tweets from '../data/tweets.json';
+import notas from '../data/notas.json';
+import papers from '../data/papers.json';
+import hablados from '../data/hablados.json';
 
 function Quiz() {
 
-  
-    /*
-  1 rae
-  2 desdoblamiento
-  3 nuevos morfemas
-  4 sin especificar
-  5 pronombres relativos
-  6 sustantivo abstracto
-  7 sustantivo colectivo/asociado a grupos
-  8 elipsis
-  9 formas impersonales
-  10 pronombres indefinidos
-  11 sustantivo epiceno
-  12 sustantivo asociado a personas o entiudades
-  13 sustantivos con terminaciones especiales
-  14 metonimia
-  */
+  const [randomTweet, setRandomTweet] = useState(0);
+  const [randomNota, setRandomNota] = useState(0);
+  const [randomPaper, setRandomPaper] = useState(0);
+  const [randomSpeak, setRandomSpeak] = useState(0);
   const [realize, setRealize] = useState(0);
   const [answer1, setAnswer1] = useState(1);
   const [answer2, setAnswer2] = useState(1);
   const [answer3, setAnswer3] = useState(1);
   const [pushArray, setPushArray] = useState([]);
+  const [page,setPage]=useState(0);
   const handleAnswers = () => {
     setPushArray(pushArray => [...pushArray,answer1] );
     setPushArray(pushArray => [...pushArray,answer2] );
     setPushArray(pushArray => [...pushArray,answer3] );
-    console.log("pusharray"+ pushArray);
     nextSituatcion();
   };
-
+  const setRandomValues = () => {
+    setRandomTweet( Math.floor(Math.random() * ((Object.keys(tweets).length) - 1))) ;
+    setRandomNota( Math.floor(Math.random() * ((Object.keys(notas).length) - 1))) ;
+    setRandomPaper( Math.floor(Math.random() * ((Object.keys(papers).length) - 1))) ;
+    setRandomSpeak( Math.floor(Math.random() * ((Object.keys(hablados).length) - 1))) ;
+  }
   const handleRealize = useCallback(() =>{
     setRealize(realize+1);
-    console.log("ralize"+realize);
   })
   const handleAnswer1=useCallback((answer)=>{
-    console.log("loq  recibe 1"+answer);
     setAnswer1(answer);
-    console.log("handle1 "+answer1);
   },[answer1])
   const handleAnswer2=useCallback((answer)=>{
-    console.log("loq  recibe 1"+answer);
     setAnswer2(answer);
-    console.log("handle2 "+answer2);
   },[answer2])
   const handleAnswer3=useCallback((answer)=>{
-    console.log("loq  recibe 1"+answer);
     setAnswer3(answer);
-    console.log("handle3 "+answer3);
   },[answer3])
-//   useEffect(() => {
-//     handleAnswer1(answer1);
-//     handleAnswer2(answer2);
-//     handleAnswer3(answer3);
-//    // handleAnswers(pushArray);
-// });
-const [page,setPage]=useState(0);
-const nextSituatcion = () =>{
-  console.log('cambia a '+ page);
-  setPage(page+1);
-}
 
+const nextSituatcion = () =>{
+  setPage(page+1);
+  setRandomValues();
+}
   return (
     <div className="App">
-      
       {page === 0 && <Start handleStart={nextSituatcion} />}
-      {
+      {page === 1 && <Situacion 
+                      key = {1}
+                      handleRealize={handleRealize}
+                      handleAnswers={handleAnswers}
+                      handleAnswer1={handleAnswer1}
+                      handleAnswer2={handleAnswer2}
+                      handleAnswer3={handleAnswer3}
+                      situation="tweet"
+                      block1={tweets[randomTweet].block1} 
+                      opciones1={tweets[randomTweet].opciones1} 
+                      block2={tweets[randomTweet].block2}
+                      opciones2={tweets[randomTweet].opciones2}
+                      block3={tweets[randomTweet].block3}
+                      opciones3={tweets[randomTweet].opciones3}
+                      block4={tweets[randomTweet].block4}
+                      />
+      }
+      {page === 2 && <Situacion 
+                      key = {2}
+                      handleRealize={handleRealize}
+                      handleAnswers={handleAnswers}
+                      handleAnswer1={handleAnswer1}
+                      handleAnswer2={handleAnswer2}
+                      handleAnswer3={handleAnswer3}
+                      situation="notas"
+                      block1={notas[randomNota].block1} 
+                      opciones1={notas[randomNota].opciones1} 
+                      block2={notas[randomNota].block2}
+                      opciones2={notas[randomNota].opciones2}
+                      block3={notas[randomNota].block3}
+                      opciones3={notas[randomNota].opciones3}
+                      block4={notas[randomNota].block4}
+                      />}
+      {page === 3 && <Situacion 
+                      key = {3}
+                      handleRealize={handleRealize}
+                      handleAnswers={handleAnswers}
+                      handleAnswer1={handleAnswer1}
+                      handleAnswer2={handleAnswer2}
+                      handleAnswer3={handleAnswer3}
+                      situation="papers"
+                      block1={papers[randomPaper].block1} 
+                      opciones1={papers[randomPaper].opciones1} 
+                      block2={papers[randomPaper].block2}
+                      opciones2={papers[randomPaper].opciones2}
+                      block3={papers[randomPaper].block3}
+                      opciones3={papers[randomPaper].opciones3}
+                      block4={papers[randomPaper].block4}
+                      />
+      }
+      {page === 4 && <Situacion 
+                      key = {4}
+                      handleRealize={handleRealize}
+                      handleAnswers={handleAnswers}
+                      handleAnswer1={handleAnswer1}
+                      handleAnswer2={handleAnswer2}
+                      handleAnswer3={handleAnswer3}
+                      situation="hablados"
+                      block1={hablados[randomSpeak].block1} 
+                      opciones1={hablados[randomSpeak].opciones1} 
+                      block2={hablados[randomSpeak].block2}
+                      opciones2={hablados[randomSpeak].opciones2}
+                      block3={hablados[randomSpeak].block3}
+                      opciones3={hablados[randomSpeak].opciones3}
+                      block4={hablados[randomSpeak].block4}
+                      />
+        }
+      
+      {/* {
         data.map((dato, index)=>{
           return (
           page === (index+1) && <Situacion 
@@ -91,53 +139,12 @@ const nextSituatcion = () =>{
             opciones3={dato.opciones3}
             block4={dato.block4}
             /> 
-
-
           )
         }
         )
-      }             
-      
-      
-{/*       
-      {page === 1 && <Situacion 
-            handleRealize={handleRealize}
-            handleAnswers={handleAnswers}
-            handleAnswer1={handleAnswer1}
-            handleAnswer2={handleAnswer2}
-            handleAnswer3={handleAnswer3}
-            situation="tweet"
-            block1="@fundesarg Estamos muy " 
-            opciones1={[["orgullosos ","rae", 1],
-                        ["orgullosas y orgullosos ","desdoblamiento",2], 
-                        ["orgulloses ","nuevos morfemas",3]]} 
-            block2="de presentar a quienes quedaron"
-            opciones2={[["seleccionados ","rae",1],
-                        ["la selección ","no se", 4],
-                        ["seleccionades ","nuevos morfemas",3]]}
-            block3="para la primera edición de la beca Fundatos. La calidad de las propuestas recibidas motivó que "
-            opciones3={[["los beneficiarios ","rae",1],
-                        ["las becas ","no se", 4],
-                        ["les beneficiaries ","nuevos morfemas",3],
-                        ["quienes recibirán la beca ","pronombre relativo",5]]}
-            block4="sean 4, en lugar de 3, como se había establecido inicialmente."
-            /> }
-      {page === 2 &&  <Situacion 
-            handleRealize={handleRealize}
-            handleAnswers={handleAnswers}
-            handleAnswer1={handleAnswer1}
-            handleAnswer2={handleAnswer2}
-            handleAnswer3={handleAnswer3}
-            situation="academico"
-            block1="El factor más importante según las investigaciones sobre educación es la familia y las circunstancias del " 
-            opciones1={[["niño","rae", 1],["los niños y niñas ","desdoblamiento",2], ["les niñes","nuevos morfemas",3],["las infancias","sustantivos abstractos",6]]} 
-            block2="El segundo es"
-            opciones2={[["el profesor","rae",1],["profesor/a ","desdoblamiento",2],["el personal docente", "sustantivos asociados a grupos",7],["quien educa","pronombre relativo",5]]}
-            block3=". Entonces, hay que pensar cómo mejorar la formación de "
-            opciones3={[["los docentes","rae",1],["del cuerpo docente","sustantivos referidos a grupos", 7],["les docentes","nuevos morfemas",3],["los/as docentes","desdoblamiento",2]]}
-            block4=", cómo pagarles mejor. Todo eso es importante. "
-            /> } */}
-      {page === 3 && <End fullArray={pushArray} realize={realize} /> }
+      }              */}
+
+      {page === 5 && <End fullArray={pushArray} realize={realize} /> }
 
     </div>
   );
