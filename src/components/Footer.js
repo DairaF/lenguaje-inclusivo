@@ -3,7 +3,7 @@ import React, { useState, useCallback, useEffect } from 'react';
 
 function Footer() {
   return (
-    <div >
+    <div className="footer"  >
         <a href='/'>Hablemos de como hablamos</a>
         <a href='quiz'> Descubrí tu personalidad gramatical </a>
         <a href='caja-de-herramientas'> caja de herramientas </a>
