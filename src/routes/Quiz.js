@@ -67,6 +67,7 @@ const nextSituatcion = () =>{
                       block3={tweets[randomTweet].block3}
                       opciones3={tweets[randomTweet].opciones3}
                       block4={tweets[randomTweet].block4}
+                      step="1"
                       />
       }
       {page === 2 && <Situacion 
@@ -84,6 +85,7 @@ const nextSituatcion = () =>{
                       block3={notas[randomNota].block3}
                       opciones3={notas[randomNota].opciones3}
                       block4={notas[randomNota].block4}
+                      step="2"
                       />}
       {page === 3 && <Situacion 
                       key = {3}
@@ -100,6 +102,7 @@ const nextSituatcion = () =>{
                       block3={papers[randomPaper].block3}
                       opciones3={papers[randomPaper].opciones3}
                       block4={papers[randomPaper].block4}
+                      step="3"
                       />
       }
       {page === 4 && <Situacion 
@@ -117,6 +120,7 @@ const nextSituatcion = () =>{
                       block3={hablados[randomSpeak].block3}
                       opciones3={hablados[randomSpeak].opciones3}
                       block4={hablados[randomSpeak].block4}
+                      step="4"
                       />
         }
       

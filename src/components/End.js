@@ -2,6 +2,17 @@ import React, { useState } from 'react';
 import guias from '../data/guias.json';
 import Guia from './Guia';
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper";
+
 const End = (props) => {
     const [page,setPage]=useState(0);
     let raeCounter = 0;
@@ -31,44 +42,68 @@ const End = (props) => {
   return(
     <div >
         {sortResults()}
-        <button onClick={()=>nextSlide("neg")} > izq </button>
+        {/* <button onClick={()=>nextSlide("neg")} > izq </button>
         <button onClick={()=>nextSlide("pos")} > der </button>
-        {page === 0 && <p>Tus respuestas nos dieron información sobre cómo hablás: cuántas cosas te hicieron ruido y qué cambios elegiste.</p> }
-        {page === 1 && <div> <h3> Acá no hay respuestas buenas ni malas. </h3> <p> Al lenguaje lo construimos todos los días y siempre podemos seguir aprendiendo: se trata de hacerse preguntas.</p> </div> }
-        {page === 2 && <div> <p> ¿Cuántas expresiones excluyentes identificaste?</p> </div> }
-        {page === 3 && 
-          <div> 
-            <h1>{realize < 5 ? "amigue date cuenta" : realize < 9 ? "Es por ahí" : "Anteojos violetas activados mode on" }</h1> 
-            <p>{realize < 5 ? "Tenés que entrenar un poco más la mirada. Aunque no nos demos cuenta, el lenguaje que nos rodea todos los días puede ser una anteojera. Nos acostumbramos a leer y escuchar palabras que parecen correctas pero que a veces dejan afuera a mucha gente. Si llegaste hasta acá, ya es el primer paso." 
+        {page === 0 && <p>Estamos procesando tus respuestas para saber cómo hablás.</p> } */}
+        {page === 0 && 
+        <div>
+        <Swiper
+        loop={false}
+        spaceBetween={0}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination]}
+        className="mySwiper"
+      >
+      <SwiperSlide>
+        <div className='endSlide container'>
+          <div className='row justify-content-center'>
+            <h2 className='blanco text-center col-9 mt-45'>Estamos procesando tus respuestas para saber <span className='playfairItalic'>cómo hablás.</span></h2>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className='endSlide container'>
+          <div className='row justify-content-center'>
+            <h2 className='blanco col-6 mt-25 text-center'> Acá no hay respuestas buenas ni malas. </h2> 
+            <p className='playfair col-9 mt-25 text-center'> Al lenguaje lo construimos todos los días y siempre podemos seguir aprendiendo: <span className='playfairItalic'>se trata de hacerse preguntas.</span> </p>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className='endSlide'> 
+          <div className='row justify-content-center'>
+            <h2 className='blanco col-9 mt-75 text-center'>Veamos cuántas <span className='playfairItalic'>expresiones</span> te hicieron <span className='playfairItalic'>ruido</span> </h2> 
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className={realize < 5 ? "endSlide bg-azul" : realize < 9 ? "endSlide bg-lila" : "endSlide bg-rosa" } > 
+          <h3>{realize < 5 ? "amigue date cuenta" : realize < 9 ? "Es por ahí" : "Anteojos violetas activados mode on" }</h3> 
+          <p>{realize < 5 ? "Tenés que entrenar un poco más la mirada. Aunque no nos demos cuenta, el lenguaje que nos rodea todos los días puede ser una anteojera. Nos acostumbramos a leer y escuchar palabras que parecen correctas pero que a veces dejan afuera a mucha gente. Si llegaste hasta acá, ya es el primer paso." 
             : realize < 9 ? "Vas por el buen camino. Podés identificar muchas situaciones en las que las palabras excluyen, pero hay otras que todavía cuestan, como todo en la vida. Lo importante: hay cosas que te hacen ruido y querés cambiarlas." 
             : "Tu radar cuestionador de lenguaje ve un término excluyente a 100km a la redonda. El masculino genérico te hace más ruido que una bocina a las 3AM: necesitás eliminarlo a toda costa." }
-            </p>
-            <p>Te diste cuenta de {realize}/12 oportunidades</p>
-          </div> 
-        }
-        {page === 4 && 
-          <div> 
-            <p>Interactuaste con {realize} de 12 expresiones excluyentes</p>
-            <p>Texto de Resultado</p>
-          </div> 
-        }
-        {page === 5 && 
-          <div> 
-            <p>Según los cambios que hiciste, tus resultados pueden estar más cerca de las reglas del español o un poco más lejos de los diccionarios.</p>
-          </div> 
-        }
-        {page === 6 && 
-          <div> 
-            <h1>{morfemasCounter < 6 ? "Amamos el español" : morfemasCounter == 6 ? "Vamos viendo " : "Quiero romper todo" }</h1>
-            <p>{morfemasCounter < 6 ? "Te manejás dentro de terreno conocido con un diccionario bajo el brazo. La lengua “correcta” es tu lugar: buscás esos recovecos para encontrar la manera de no dejar a nadie afuera, pero usando esas reglas que ya existen. Vamos a romper el sistema, pero desde adentro." 
-            : morfemasCounter == 6 ? "Te movés dentro de lo que ya conocés, pero si hace falta no tenés miedo de tirar una “e”. Te gusta tener todas las opciones posibles a mano, para elegir la que más se ajusta a tu situación. ¿Lo más importante? Que nadie se quede afuera." 
-            : "Un grupo de señores llenos de naftalina no van a decirte a vos cómo se habla o cómo se escribe. La lengua la hacen quienes hablan, y quienes hablan quieren que todas las personas estén incluidas. Incluso si eso significa romper (bastante) las reglas. " }
-            </p>
-            <button onClick={()=>nextSlide("pos")} >Explora tus resultados</button>
-          </div> 
-        }
-        
-        {page === 7 && 
+          </p>
+          <p>Te diste cuenta de {realize}/12 oportunidades</p>
+        </div> 
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className='endSlide'>
+          <p>Miremos ahora tu herramienta favorita, la que usaste más veces </p> 
+          <button onClick={()=>nextSlide("pos")} > Ver mas </button>
+        </div>
+      </SwiperSlide>
+    </Swiper>
+    </div>
+    }
+        {page === 1 && 
           <div> 
             <div>
               <h1>Herramientas usadas</h1>

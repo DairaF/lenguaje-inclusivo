@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Herramienta from './Herramienta';
 function Situacion(props) {
+    const step = props.step;
     const situation = props.situation;
     const block1=props.block1;
     const block2=props.block2;
@@ -95,27 +96,40 @@ function Situacion(props) {
     handleAnswer3(oportunidadValor3);
 },);
   return (
-    <div>
-        <div>
-            <h3>{situation}</h3>
-          <p>
-            {block1}
-            <span className={isActive1 ? 'activo1': 'noactivo1'} onClick={()=>{toggleOnce(1);toggleOptions(1)}}><i>{oportunidad1}</i></span>
-            {block2}
-            <span className={isActive2 ? 'activo2': 'noactivo2'} onClick={()=>{toggleOnce(2);toggleOptions(2)}}><i>{oportunidad2}</i></span>
-            {block3}
-            <span className={isActive3 ? 'activo3': 'noactivo3'} onClick={()=>{toggleOnce(3);toggleOptions(3)}}><i>{oportunidad3}</i></span>
-          {block4}</p>
-           <button onClick={()=>{handleAnswers(); setActiveOptions1(false); setActiveOptions2(false); setActiveOptions3(false);}}>Continuar</button>
+    <div className=''>
+      <div className='container'>
+        <div className='row'>
+          <div className='mt-5 bg-white border-negro-redondeado col-11 mx-auto'>
+            <div className='row justify-content-between'>
+              <span className='col-1 f08 playfairItalic'>{situation}</span> 
+              <span className='col-1 f08 azul mx-3'>{step}/4</span> 
+            </div>
+            <div>
+              <p className='azul mt-5'>
+                {block1}
+                <span className={isActive1 ? 'activo1': 'noactivo1'} onClick={()=>{toggleOnce(1);toggleOptions(1)}}><i>{oportunidad1}</i></span>
+                {block2}
+                <span className={isActive2 ? 'activo2': 'noactivo2'} onClick={()=>{toggleOnce(2);toggleOptions(2)}}><i>{oportunidad2}</i></span>
+                {block3}
+                <span className={isActive3 ? 'activo3': 'noactivo3'} onClick={()=>{toggleOnce(3);toggleOptions(3)}}><i>{oportunidad3}</i></span>
+                {block4}
+              </p>
+            </div>
+          </div> 
+          <div className='mt-75 row justify-content-end '>
+              <a className='col-4 p-1 bg-azul negro f08 text-center' onClick={()=>{handleAnswers(); setActiveOptions1(false); setActiveOptions2(false); setActiveOptions3(false);}}>SIGUIENTE</a>
+              <a className='col-1' onClick={()=>{handleAnswers(); setActiveOptions1(false); setActiveOptions2(false); setActiveOptions3(false);}}><img alt="." className="logo" src={require("../assets/img/flecha.png")}/></a>
+          </div>
         </div>
+      </div>
         <div className={activeOptions1 ? 'activa options': 'noactiva'}  >
-          { opciones1.map(n => { return <span onClick={()=>elegirTexto(n.valor, n.texto, 1)} className='option' value={n.valor}>{n.valor}) {n.texto} - {n.categoria}<br/></span> } ) }
+          { opciones1.map(n => { return <p onClick={()=>{elegirTexto(n.valor, n.texto, 1);toggleOptions(1)}} className='option' value={n.valor}> <span className='blanco'>{n.texto}</span></p> } ) }
         </div>
         <div className={activeOptions2 ? 'activa options': 'noactiva'} >
-          { opciones2.map(n => { return <span onClick={()=>elegirTexto(n.valor, n.texto, 2)} className='option' value={n.valor}>{n.valor}) {n.texto} - {n.categoria}<br/></span> } ) }
+          { opciones2.map(n => { return <p onClick={()=>{elegirTexto(n.valor, n.texto, 2);toggleOptions(2)}} className='option' value={n.valor}> <span className='blanco'>{n.texto}</span></p> } ) }
         </div>
         <div className={activeOptions3 ? 'activa options': 'noactiva'} >
-          { opciones3.map(n => { return <span onClick={()=>elegirTexto(n.valor, n.texto, 3)} className='option' value={n.valor}>{n.valor}) {n.texto} - {n.categoria}<br/></span> } ) }
+          { opciones3.map(n => { return <p onClick={()=>{elegirTexto(n.valor, n.texto, 3);toggleOptions(3)}} className='option' value={n.valor}> <span className='blanco'>{n.texto}</span></p> } ) }
         </div>
     </div>
   );
