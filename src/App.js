@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <HashRouter>
+      <BrowserRouter>
         <Menu/>
         <Routes>
           <Route path="/" element={<Landing/>} />
@@ -28,7 +28,7 @@ function App() {
           <Route path="/caja-de-herramientas/disruptivas" element={<Disruptivas/>} />
           <Route path="/texto-expositivo" element={<Texto/>} />
         </Routes>
-    </HashRouter>
+    </BrowserRouter>
     </div>
   );
 }

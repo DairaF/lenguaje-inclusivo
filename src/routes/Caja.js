@@ -5,7 +5,7 @@ import '../App.css';
 function Caja() {
 
   return (
-    <div className='container bg-rosita' >
+    <div className='container bg-lila' >
       <div className=' fullHeight'>
         <h1>Caja de Herramientas</h1>
         <h3>Recursos gramaticales y no tan gramaticales para hacer que tus textos sean un poco más inclusivos</h3>

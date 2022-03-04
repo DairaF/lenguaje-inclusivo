@@ -102,10 +102,10 @@ function Situacion(props) {
           <div className='mt-5 bg-white border-negro-redondeado col-11 mx-auto'>
             <div className='row justify-content-between'>
               <span className='col-1 f08 playfairItalic'>{situation}</span> 
-              <span className='col-1 f08 azul mx-3'>{step}/4</span> 
+              <span className='col-1 f08 lila mx-3'><b>{step}/4</b></span> 
             </div>
             <div>
-              <p className='azul mt-5'>
+              <p className='lila mt-5'>
                 {block1}
                 <span className={isActive1 ? 'activo1': 'noactivo1'} onClick={()=>{toggleOnce(1);toggleOptions(1)}}><i>{oportunidad1}</i></span>
                 {block2}
@@ -116,8 +116,8 @@ function Situacion(props) {
               </p>
             </div>
           </div> 
-          <div className='mt-75 row justify-content-end '>
-              <a className='col-4 p-1 bg-azul negro f08 text-center' onClick={()=>{handleAnswers(); setActiveOptions1(false); setActiveOptions2(false); setActiveOptions3(false);}}>SIGUIENTE</a>
+          <div className='btnQuiz row justify-content-end '>
+              <a className='col-4 p-1 bg-lila negro f08 text-center' onClick={()=>{handleAnswers(); setActiveOptions1(false); setActiveOptions2(false); setActiveOptions3(false);}}><b>SIGUIENTE</b></a>
               <a className='col-1' onClick={()=>{handleAnswers(); setActiveOptions1(false); setActiveOptions2(false); setActiveOptions3(false);}}><img alt="." className="logo" src={require("../assets/img/flecha.png")}/></a>
           </div>
         </div>
