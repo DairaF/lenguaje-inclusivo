@@ -1,0 +1,17 @@
+[
+    {
+        "id":1,
+        "titulo":"Pronombres relativos",
+        "texto":"Son palabras que reemplazan a los sustantivos y permiten evitar el masculino genérico. 'Quien' y 'quienes' refieren siempre a personas y no requieren concordancia de género.",
+        "ejemplo1": "'hay quienes sostienen que' / 'quien lo desee puede...'",
+        "masInfo": "A veces el pronombre solo no alcanza: tené cuidado con las palabras que están alrededor y pueden modificar al pronombre con un masculino genérico.",
+        "ejemplo2": "❌quienes serán beneficiados ✅ quienes obtendrán el beneficio."
+    },{
+        "id":2,
+        "titulo":"Pronombres indefinidos",
+        "texto":"Son pronombres que no aportan una identificación clara, pero nos sirven para evitar el masculino genérico.",
+        "ejemplo1": "alguien, cualquiera, nadie.",
+        "masInfo": " A veces el pronombre solo no alcanza: tené cuidado con las palabras que están alrededor y pueden modificar al pronombre con un masculino genérico.",
+        "ejemplo2": "❌nadie va a ser obligado ✅ no se obligará a nadie."
+    }
+]

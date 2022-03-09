@@ -169,23 +169,24 @@ const End = (props) => {
     {page === 1 && 
         <div className={realize < 5 ? "container amigue" : realize < 9 ? "container xahi" : "container anteojos" } > 
             <div className='row'>
-              <h2 className='text-center'> <b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Anteojos violetas activados mode on" }</b></h2> 
+              <h2 className='text-center mt-5'> <b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Anteojos violetas activados mode on" }</b></h2> 
             </div>
-            <hr className='under-blanco'></hr>
+            <hr className='blanco'></hr>
             <div className='row'>
-              <p className='under-blanco text-center'>{realize < 5 ? "Tenés que entrenar un poco más la mirada. Aunque no nos demos cuenta, el lenguaje que nos rodea todos los días puede ser una anteojera. Nos acostumbramos a leer y escuchar palabras que parecen correctas pero que a veces dejan afuera a mucha gente. Si llegaste hasta acá, ya es el primer paso." 
+              <p className=' text-center'>{realize < 5 ? "Tenés que entrenar un poco más la mirada. Aunque no nos demos cuenta, el lenguaje que nos rodea todos los días puede ser una anteojera. Nos acostumbramos a leer y escuchar palabras que parecen correctas pero que a veces dejan afuera a mucha gente. Si llegaste hasta acá, ya es el primer paso." 
                 : realize < 9 ? "Vas por el buen camino. Podés identificar muchas situaciones en las que las palabras excluyen, pero hay otras que todavía cuestan, como todo en la vida. Lo importante: hay cosas que te hacen ruido y querés cambiarlas." 
                 : "Tu radar cuestionador de lenguaje ve un término excluyente a 100km a la redonda. El masculino genérico te hace más ruido que una bocina a las 3AM: necesitás eliminarlo a toda costa." }
               </p>
             </div>
-            <div className='col-12'>
-              <h1>Guía de autoevaluación</h1>
-              <p>Escribir requiere necesariamente revisar y reescribir. A continuación, presentamos una lista de preguntas que buscan guiar la revisión de textos con perspectiva de género. </p>
+            <div className='row bg-gris text-center mt-5 pb-5'>
+              <h2 className='col-8 mx-auto my-5'><b>Guía de <span className='playfairItalic'>autorevisión</span> a la hora de <span className='playfairItalic'>escribir</span></b></h2>
+              <p className='col-8 mx-auto'>Escribir requiere necesariamente revisar y reescribir. A continuación, presentamos una lista de preguntas que buscan guiar la revisión de textos con perspectiva de género. </p>
             {
               guias.map((guia, index)=>{
                 return (
                   <Guia
                     key = {index}
+                    number = {index+1}
                     titulo = {guia.titulo}
                     texto= {guia.texto}     
                   />
@@ -193,6 +194,17 @@ const End = (props) => {
               }
               )
             }
+            </div>
+            <div className='row bg-lila justify-content-center'>
+              <div className='blanco-borde-negro col-8 mt-5 p-3'>
+                <a href='/quiz'><b>Ahora que conocés tus resutlados, desafiate otra vez: hacé el experimento de nuevo</b></a>
+              </div>
+              <div className='blanco-borde-negro col-8 mt-5 p-3'>
+                <a href='/caja-de-herramientas'><b>Chequear texto q redirige a herramienta</b></a>
+              </div>
+              <div className='blanco-borde-negro col-8  my-5'>
+                <a href='/texto-expositivo'><b>¿Qué sentido tiene el lenguaje <span className='playfair'>inclusivo?</span></b></a>
+              </div>
             </div>
           </div> 
     }

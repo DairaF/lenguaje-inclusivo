@@ -1,15 +1,16 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import '../App.css';
 import Herramienta from '../components/Herramienta';
-import herramientas from '../data/disruptivas.json';
-
-function Disruptivas() {
+import expresiones from '../data/expresiones.json';
+import MenuCaja from '../components/MenuCaja';
+function Expresiones() {
 
   return (
     <div >
-      <h1>Disruptivas</h1>
+      <MenuCaja activo="Expresiones"/>
+      <h1>Expresiones</h1>
       {
-        herramientas.map((herramienta, index)=>{
+        expresiones.map((herramienta, index)=>{
           return (
             <Herramienta
               key = {index}
@@ -31,4 +32,4 @@ function Disruptivas() {
   );
 }
 
-export default Disruptivas;
+export default Expresiones;

@@ -97,9 +97,9 @@ function Situacion(props) {
 },);
   return (
     <div className=''>
-      <div className='container'>
-        <div className='row'>
-          <div className='mt-5 bg-white border-negro-redondeado col-11 mx-auto'>
+      <div className='container '>
+        <div className='row fullHeight justify-content-between'>
+          <div className='mt-5 bg-white border-negro-redondeado col-10 col-md-6 mx-auto situacion'>
             <div className='row justify-content-between'>
               <span className='col-1 f08 playfairItalic'>{situation}</span> 
               <span className='col-1 f08 lila mx-3'><b>{step}/4</b></span> 
@@ -115,22 +115,24 @@ function Situacion(props) {
                 {block4}
               </p>
             </div>
-          </div> 
-          <div className='btnQuiz row justify-content-end '>
+          </div>
+          <div className='opciones col-12 col-md-5'>
+            <div className={activeOptions1 ? 'activa options': 'noactiva'}  >
+              { opciones1.map(n => { return <p onClick={()=>{elegirTexto(n.valor, n.texto, 1);toggleOptions(1)}} className='option' value={n.valor}> <span className='blanco'>{n.texto}</span></p> } ) }
+            </div>
+            <div className={activeOptions2 ? 'activa options': 'noactiva'} >
+              { opciones2.map(n => { return <p onClick={()=>{elegirTexto(n.valor, n.texto, 2);toggleOptions(2)}} className='option' value={n.valor}> <span className='blanco'>{n.texto}</span></p> } ) }
+            </div>
+            <div className={activeOptions3 ? 'activa options bg-negro': 'noactiva'} >
+              { opciones3.map(n => { return <p onClick={()=>{elegirTexto(n.valor, n.texto, 3);toggleOptions(3)}} className='option' value={n.valor}> <span className='blanco'>{n.texto}</span></p> } ) }
+            </div>
+          </div>
+        </div> 
+        <div className='btnQuiz justify-content-end'>
               <a className='col-4 p-1 bg-lila negro f08 text-center' onClick={()=>{handleAnswers(); setActiveOptions1(false); setActiveOptions2(false); setActiveOptions3(false);}}><b>SIGUIENTE</b></a>
               <a className='col-1' onClick={()=>{handleAnswers(); setActiveOptions1(false); setActiveOptions2(false); setActiveOptions3(false);}}><img alt="." className="logo" src={require("../assets/img/flecha.png")}/></a>
-          </div>
         </div>
-      </div>
-        <div className={activeOptions1 ? 'activa options': 'noactiva'}  >
-          { opciones1.map(n => { return <p onClick={()=>{elegirTexto(n.valor, n.texto, 1);toggleOptions(1)}} className='option' value={n.valor}> <span className='blanco'>{n.texto}</span></p> } ) }
-        </div>
-        <div className={activeOptions2 ? 'activa options': 'noactiva'} >
-          { opciones2.map(n => { return <p onClick={()=>{elegirTexto(n.valor, n.texto, 2);toggleOptions(2)}} className='option' value={n.valor}> <span className='blanco'>{n.texto}</span></p> } ) }
-        </div>
-        <div className={activeOptions3 ? 'activa options': 'noactiva'} >
-          { opciones3.map(n => { return <p onClick={()=>{elegirTexto(n.valor, n.texto, 3);toggleOptions(3)}} className='option' value={n.valor}> <span className='blanco'>{n.texto}</span></p> } ) }
-        </div>
+      </div>  
     </div>
   );
 }

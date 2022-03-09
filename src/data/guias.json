@@ -11,12 +11,7 @@
     },
     { 
         "key":3,
-        "titulo":"¿Usaste el masculino genérico?",
-        "texto":"Prestá atención no solo a si lo usaste o no, sino cuántas veces aparece. Ese masculino genérico ¿se puede reemplazar? Podés usar algún recurso de los de la caja de herramientas para evitarlo. "
-    },
-    { 
-        "key":4,
-        "titulo":"Guía 4",
-        "texto":"¿Usaste el masculino relacionado con la sabiduría o el poder?"
+        "titulo":"¿Usaste el masculino relacionado con la sabiduría o el poder?",
+        "texto":"Muchas veces se asocia el masculino con el poder y el saber, ¡tené cuidado!"
     }
 ]
