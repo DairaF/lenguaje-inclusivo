@@ -1,0 +1,90 @@
+h1{
+  font-size: 3rem;
+}
+.herramientaImg{
+  width: -webkit-fill-available !important;
+}
+.ej img{
+  height: fit-content;
+  margin: 0.5em;
+}
+.herramientaImg:hover{
+  background-color: white;
+}
+.contenedorCaja{
+  width: 85%;
+  position: fixed;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.contenedorCaja a{
+  padding: 0.5em !important;
+}
+#btnGuia{
+  width: 70%;
+  border: solid 2px #000000;
+  border-radius: 5px;
+  padding: 0.5em 2em 0.5em 2em !important;
+  position: fixed;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#btnGuia img{
+  height: 1em;
+}
+.bottomText{
+  font-size: xx-large;
+  text-align: center;
+  font-weight: 900;
+  position: fixed;
+  top: 98%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#tituloCaja{
+  display: none;
+}
+.banner{
+  border: solid 2px black;
+}
+.banner img{
+  width: -webkit-fill-available !important;
+}
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+  position: fixed;
+  top: 0%;
+  left:0%;
+}
+.progress-bar {
+  height: 8px;
+  background: #9F8BEA !important;
+  width: 0%;
+}
+
+@media only screen and (min-width: 768px) {
+  
+  .banner img{
+    width: 15% !important;
+    margin-left: 40%;
+  }
+  .herramientaImg{
+    width: 60%;
+  }
+  #btnGuia{
+    background-color: white;
+  } 
+  .contenedorCaja{
+    top:55%;
+  }
+  #tituloCaja{
+    display: block;
+    padding-top: 10%;
+  }
+}

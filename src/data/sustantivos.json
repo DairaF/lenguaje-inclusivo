@@ -6,7 +6,7 @@
         "texto":"Son los que agrupan a personas, instituciones, empresas u otras entidades. Como no se refieren exclusivamente a personas, entendemos que el género gramatical no se refiere a un género social.",
         "ejemplo1": "agentes, actores",
         "masInfo": " ",
-        "ejemplo2": " "
+        "ejemplo2": {}
     },{
         "id":2,
         "titulo":"Sustantivos abstractos",
@@ -14,7 +14,7 @@
         "texto":"En este contexto, son palabras que hablan de condiciones, posiciones laborales o habilidades, en lugar de personas u objetos concretos.",
         "ejemplo1": "jefatura, presidencia,",
         "masInfo": " ",
-        "ejemplo2": " "
+        "ejemplo2": {}
     },{
         "id":3,
         "titulo":"Sustantivos con terminaciones especiales",
@@ -22,7 +22,9 @@
         "texto":"Son sustantivos que por sí mismos no marcan género, pero que adoptan el de las palabras que los rodean.",
         "ejemplo1": "cliente, intérprete, joven",
         "masInfo": " La marca de género aparece en las palabras que rodean al sustantivo, por lo que tenemos que tener cuidado a la hora de elegir artículos y adjetivos.",
-        "ejemplo2": "❌los economistas ✅ Las y los economistas | Las/os economistas | Les economistas. | Cada economista"
+        "ejemplo2": {
+            "no":"Los economistas ",
+            "si":"Las y los economistas | Las/os economistas | Les economistas. | Cada economista"}
     },{
         "id":4,
         "titulo":"Sustantivos epicenos",
@@ -30,6 +32,6 @@
         "texto":"Son los sustantivos que siempre mantienen el mismo género gramatical, aunque se refieran a personas de distintos géneros.",
         "ejemplo1": "persona, víctima, individuo, autoridades.",
         "masInfo": " ",
-        "ejemplo2": " "
+        "ejemplo2": {}
     }
 ]

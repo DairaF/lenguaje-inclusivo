@@ -1,10 +1,16 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import '../App.css';
+ 
 import Herramienta from '../components/Herramienta';
 import pronombres from '../data/pronombres.json';
 import MenuCaja from '../components/MenuCaja';
-function Pronombres() {
+import ReactGa from 'react-ga'
 
+function Pronombres() {
+    useEffect(()=>{
+      ReactGa.initialize('G-BQYF4G0HMV')
+      ReactGa.pageview(window.location.pathname + window.location.search)
+      },[])
+      
   return (
     <div className='container'>
       <MenuCaja activo="Pronombres"/>

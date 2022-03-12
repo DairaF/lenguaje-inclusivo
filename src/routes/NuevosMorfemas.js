@@ -1,14 +1,20 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import '../App.css';
+ 
 import Herramienta from '../components/Herramienta';
 import morfema from '../data/nuevos-morfemas.json';
 import MenuCaja from '../components/MenuCaja';
-function NuevosMorfemas() {
+import ReactGa from 'react-ga'
 
+function NuevosMorfemas() {
+    useEffect(()=>{
+      ReactGa.initialize('G-BQYF4G0HMV')
+      ReactGa.pageview(window.location.pathname + window.location.search)
+      },[])
+      
   return (
     <div >
       <MenuCaja activo="Nuevos Morfemas"/>
-      <h1>Nuevos Morfemas</h1>
+      <h1 className='lila text-center mt-45'>Nuevos Morfemas</h1>
       {
         morfema.map((herramienta, index)=>{
           return (

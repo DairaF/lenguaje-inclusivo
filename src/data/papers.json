@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "block1":" ",
+        "block1":"",
         "opciones1":[
             {
                 "texto":"Existe un consenso entre los expertos de que",
@@ -20,7 +20,7 @@
             },
             {
                 "texto":"Hay argumentos que afirman que",
-                "categoria":"metonimia",
+                "categoria":"prosopopeya",
                 "valor":14
             }
         ],
@@ -32,17 +32,17 @@
                 "valor":1
             },
             {
-                "texto":"Adultes mayores y niñes",
+                "texto":"adultes mayores y niñes",
                 "categoria":"nuevos morfemas",
                 "valor":3
             },
             {
                 "texto":"la vejez y la niñez", 
                 "categoria":"sustantivos abstractos",
-                "valor":6
+                "valor":4
             },
             {
-                "texto":"Adultos y adultas mayores y niños y niñas",
+                "texto":"adultos y adultas mayores y niños y niñas",
                 "categoria":"desdoblamiento",
                 "valor":2
             }
@@ -57,7 +57,7 @@
             {
                 "texto":"la niñez",
                 "categoria":"sustantivo abstracto", 
-                "valor":6
+                "valor":4
             },
             {
                 "texto":"les niñes",
@@ -92,7 +92,7 @@
                 "valor":7
             },
             {
-                "texto":"Omitir la referencia a persona",
+                "texto":" - ",
                 "categoria":"elipsis",
                 "valor":8
             }
@@ -128,12 +128,12 @@
                 "valor":1
             },
             {
-                "texto":"exponerles",
+                "texto":"exponerles a",
                 "categoria":"nuevos morfemas",
                 "valor":3
             },
             {
-                "texto":"exponerlos/as",
+                "texto":"exponerlos/as a",
                 "categoria":"desdoblamiento",
                 "valor":2
             }
@@ -142,22 +142,22 @@
     },
     {
         "id":3,
-        "block1":"La mayoría de las provincias cuenta con equipos de",
+        "block1":"La mayoría de las provincias cuenta con ",
         "opciones1":[
             {
-                "texto":"rastreadores",
+                "texto":"equipos de rastreadores",
                 "categoria":"rae", 
                 "valor":1
             },
             {
-                "texto":"rastreadores y rastreadoras",
+                "texto":"equipos de rastreadores y rastreadoras",
                 "categoria":"desdoblamiento",
                 "valor":2
             }, 
             {
-                "texto":"Equipos rastreadores",
-                "categoria":"no se",
-                "valor":4
+                "texto":"equipos rastreadores",
+                "categoria":"prosopopeya",
+                "valor":14
             }
         ],
         "block2":"que combinan varios perfiles. La opción más señalada la constituyen ",
@@ -168,17 +168,17 @@
                 "valor":1
             },
             {
-                "texto":"lxs trabajadorxs ",
+                "texto":"lxs trabajadorxs de los servicios de salud",
                 "categoria":"nuevos morfemas",
                 "valor":3
             },
             {
-                "texto":"el personal de salud", 
+                "texto":"el personal de los servicios de salud", 
                 "categoria":"sustantivos  asociados a grupos",
                 "valor":7
             },
             {
-                "texto":"trabajadores y trabajadoras",
+                "texto":"trabajadores y trabajadoras de los servicios de salud",
                 "categoria":"desdoblamiento",
                 "valor":2
             }
@@ -191,12 +191,12 @@
                 "valor":1
             },
             {
-                "texto":"médicxs y enfermerxs",
+                "texto":"médicxs o enfermerxs",
                 "categoria":"nuevos morfemas",
                 "valor":3
             },
             {
-                "texto":"médicos/as y enfermeros/a",
+                "texto":"médicos/as o enfermeros/a",
                 "categoria":"desdoblamiento",
                 "valor":2
             }

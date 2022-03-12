@@ -97,40 +97,53 @@ function Situacion(props) {
 },);
   return (
     <div className=''>
-      <div className='container '>
-        <div className='row fullHeight justify-content-between'>
-          <div className='mt-5 bg-white border-negro-redondeado col-10 col-md-6 mx-auto situacion'>
-            <div className='row justify-content-between'>
-              <span className='col-1 f08 playfairItalic'>{situation}</span> 
-              <span className='col-1 f08 lila mx-3'><b>{step}/4</b></span> 
+      <div className='full bg-crema '>
+        <div className='container'>
+          <div className='row'>
+            <span className='f08 lila mt-5 mx-5 mt-md-10'><b>{step}/4</b></span> 
+          </div>
+          <div className='row justify-content-center mt-md-15'>
+            <div className='bg-white border-negro-redondeado col-10 col-md-6 mx-auto m-md-1 situacion'>
+              <div>
+                <p className='lila mt-5'>
+                  {block1}
+                  <span className={isActive1 ? 'activo1': 'noactivo1'} onClick={()=>{toggleOnce(1);toggleOptions(1)}}><i>{oportunidad1}</i></span>
+                  {block2}
+                  <span className={isActive2 ? 'activo2': 'noactivo2'} onClick={()=>{toggleOnce(2);toggleOptions(2)}}><i>{oportunidad2}</i></span>
+                  {block3}
+                  <span className={isActive3 ? 'activo3': 'noactivo3'} onClick={()=>{toggleOnce(3);toggleOptions(3)}}><i>{oportunidad3}</i></span>
+                  {block4}
+                </p>
+              </div>
             </div>
-            <div>
-              <p className='lila mt-5'>
-                {block1}
-                <span className={isActive1 ? 'activo1': 'noactivo1'} onClick={()=>{toggleOnce(1);toggleOptions(1)}}><i>{oportunidad1}</i></span>
-                {block2}
-                <span className={isActive2 ? 'activo2': 'noactivo2'} onClick={()=>{toggleOnce(2);toggleOptions(2)}}><i>{oportunidad2}</i></span>
-                {block3}
-                <span className={isActive3 ? 'activo3': 'noactivo3'} onClick={()=>{toggleOnce(3);toggleOptions(3)}}><i>{oportunidad3}</i></span>
-                {block4}
-              </p>
+            <div className='col-10 col-md-3 m-5 quizImg'>
+              <img src={  situation=="tweets" ? require('../assets/img/illus/tweet.png'):  
+                          situation=="papers" ? require('../assets/img/illus/paper.png'): 
+                          situation=="hablados" ? require('../assets/img/illus/hablado.png'): 
+                          situation=="notas" ? require('../assets/img/illus/nota.png'): "" } />
+            </div>
+            <div className='fondoSituacion'>
+              <img src={  situation=="tweets" ? require('../assets/img/illus/tweetF.png'):  
+                          situation=="papers" ? require('../assets/img/illus/paperF.png'): 
+                          situation=="hablados" ? require('../assets/img/illus/habladoF.png'): 
+                          situation=="notas" ? require('../assets/img/illus/notaF.png'): "" } />
             </div>
           </div>
-          <div className='opciones col-12 col-md-5'>
-            <div className={activeOptions1 ? 'activa options': 'noactiva'}  >
+          <div>
+            <div className={activeOptions1 ? 'activa options': 'noactivas options'}  >
               { opciones1.map(n => { return <p onClick={()=>{elegirTexto(n.valor, n.texto, 1);toggleOptions(1)}} className='option' value={n.valor}> <span className='blanco'>{n.texto}</span></p> } ) }
             </div>
-            <div className={activeOptions2 ? 'activa options': 'noactiva'} >
+            <div className={activeOptions2 ? 'activa options': 'noactivas options'} >
               { opciones2.map(n => { return <p onClick={()=>{elegirTexto(n.valor, n.texto, 2);toggleOptions(2)}} className='option' value={n.valor}> <span className='blanco'>{n.texto}</span></p> } ) }
             </div>
-            <div className={activeOptions3 ? 'activa options bg-negro': 'noactiva'} >
+            <div className={activeOptions3 ? 'activa options bg-negro': 'noactivas options'} >
               { opciones3.map(n => { return <p onClick={()=>{elegirTexto(n.valor, n.texto, 3);toggleOptions(3)}} className='option' value={n.valor}> <span className='blanco'>{n.texto}</span></p> } ) }
             </div>
           </div>
         </div> 
-        <div className='btnQuiz justify-content-end'>
-              <a className='col-4 p-1 bg-lila negro f08 text-center' onClick={()=>{handleAnswers(); setActiveOptions1(false); setActiveOptions2(false); setActiveOptions3(false);}}><b>SIGUIENTE</b></a>
-              <a className='col-1' onClick={()=>{handleAnswers(); setActiveOptions1(false); setActiveOptions2(false); setActiveOptions3(false);}}><img alt="." className="logo" src={require("../assets/img/flecha.png")}/></a>
+        <div className='btnQuiz'>
+              <a id="siguenteBtn" onClick={()=>{handleAnswers(); setActiveOptions1(false); setActiveOptions2(false); setActiveOptions3(false);}}><b>SIGUIENTE</b></a>
+              <a id="flechaBtn" onClick={()=>{handleAnswers(); setActiveOptions1(false); setActiveOptions2(false); setActiveOptions3(false);}}><img alt="." src={require("../assets/img/flecha.png")}/></a>
         </div>
       </div>  
     </div>

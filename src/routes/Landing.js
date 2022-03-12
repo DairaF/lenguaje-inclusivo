@@ -1,30 +1,23 @@
-import React, { } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
+import '../assets/css/Landing.css';
+import ReactGa from 'react-ga'
 
 function Landing() {
+  useEffect(()=>{
+    ReactGa.initialize('G-BQYF4G0HMV')
+    ReactGa.pageview(window.location.pathname + window.location.search)
+    },[])
+    
   // var rellax = new Rellax('.rellax');
     return (
     <div className="App bg-crema">
-      <div className='fullHeight container'>
-        {/* <div className='row'>
-          <div className='col-1 bg-azul'>1</div>
-          <div className='col-2 bg-rosita'>2</div>
-          <div className='col-3 bg-azul'>3</div>
-          <div className='col-4 bg-rosita'>4</div>
-          <div className='col-5 bg-azul'>5</div>
-          <div className='col-6 bg-rosita'>6</div>
-          <div className='col-7 bg-azul'>7</div>
-          <div className='col-8 bg-rosita'>8</div>
-          <div className='col-9 bg-azul'>9</div>
-          <div className='col-10 bg-rosita'>10</div>
-          <div className='col-11 bg-azul'>11</div>
-          <div className='col-12 bg-rosita'>12</div>
-        </div> */}
+      <div className='full container'>
         <div className='row'>
-          <img alt="?" className="col-3 col-md-1 mx-auto" src={require("../assets/img/interrogacion.png")}/>
+          <img alt="?" className="col-3 col-md-1 mx-auto mt-15" src={require("../assets/img/interrogacion.png")}/>
         </div>
-        {/* <div className="row">
+        <div className="row">
           <img alt="e" className="misc col-2 md-col-1 offset-8 mt-3" src={require("../assets/img/misc-rombo.png")}/>
-        </div> */}
+        </div>
         <div className="row">
           {/* <img alt="e" className="misc col-2 mt-25" src={require("../assets/img/misc-circulo.png")}/> */}
           <div className="col-9 text-center mx-auto">
@@ -34,24 +27,31 @@ function Landing() {
           </div>
         </div>
       </div>
-      <b className='f10 blanco rellax' data-rellax-speed="-3">X</b>
-      <div className='fullHeight'>
+      
+      <div className='row'><img className='col-10' src={require("../assets/img/illus/home1.png")} /></div>
+      <div className='row'><span className='col-2 floatL blanco f5'>¿</span><img id="home2" className='col-10' src={require("../assets/img/illus/home2.png")} /></div>
+      <div className='row'><img className='col-10' id="home3" src={require("../assets/img/illus/home3.png")} /><span className='col-2 mt-25 blanco f5'>X</span></div>
+      
+      <div className='full'>
         <div className="row">
           <span className='mt-45 nota playfair offset-3 col-4 opacity-05 negro'><span className='bg-white'>El feminismo</span> es un movimiento político y social, una teoría política y una perspectiva filosófica .</span>
-          <p className="col-9 mt-5 mx-auto text-center playfair">El <span className="aktiv lila">feminismo</span> nos invita a cuestionar mucho de nuestro día a día: estereotipos, acciones cotidianas e incluso nos invita a <span className='playfairItalic' >preguntarnos por cómo hablamos</span>.</p>
+          <div className='offset-4 mt-2 col-4'><img className='linea' src={require('../assets/img/linea.png')} /></div>
+          <p className="col-9 mx-auto text-center playfair">El <span className="aktiv lila bg-white">feminismo</span> nos invita a <span className='under-lila'>cuestionar mucho</span> de nuestro día a día: estereotipos, acciones cotidianas e incluso nos invita a <span className='playfairItalic' >preguntarnos por <span className='under-lila'>cómo hablamos</span></span>.</p>
         </div>      
       </div>
-      <div className='fullHeight'>
+      <b className='f2 blanco text-center'>cómo hablamos</b>
+      <div className='full'>
         <div className="row">
           <br/>
           <span className='mt-25 nota playfair offset-3 col-4 opacity-05 negro'>Facultad del ser humano de expresarse y comunicarse con los demás.</span>
-          <p className="col-9 mt-5 mx-auto text-center playfair"> El <span className='lila bg-blanco aktiv'>lenguaje</span> no solo representa la realidad: la construye. </p>
+          <div className='offset-4 mt-2 col-4'><img className='linea' src={require('../assets/img/linea.png')} /></div>
+          <p className="col-9 mt-2 mx-auto text-center playfair"> El <span className='lila bg-blanco aktiv'>lenguaje</span> no solo representa la realidad: la construye. </p>
           <p className="col-9 mt-5 mx-auto text-center playfair"><span className='bg-white aktiv'>No es neutral</span> y no es ajeno a lo que nos pasa como sociedad.</p>
           <br/>
           <p className="col-10 mt-5 offset-1 border-lila lila">Si a veces <span className='under-lila'>cuestionás</span> un poco la lengua, pero no te sale escribir con la e, esto es para vos. </p>
         </div>
       </div>
-      <div className='fullHeight bg-negro blanco'>
+      <div className='full bg-negro blanco'>
         <div className="row">
           <span className="mt-25 mx-auto text-center py-1 bg-lila f06 col-4 negro">QUIZ INTERACTIVO</span>
           <h2 className="col-9 mt-5 mx-auto text-center ">Descubrí tu propio lenguaje <span className='playfairItalic under-lila pb-2'>inclusivo</span></h2>
@@ -62,7 +62,7 @@ function Landing() {
           <a className="col-2 mt-5 mx-auto text-center playfair" href="/quiz"><img alt="." className="logo" src={require("../assets/img/flechaBlanca.png")}/></a>
         </div>
       </div>
-      <div className='fullHeight bg-lila'>
+      <div className='full bg-lila'>
         <div className="row">
           <span className="mt-25 mx-auto text-center bg-negro py-1 f06 col-3 blanco">RECURSOS</span>
         </div>
@@ -74,7 +74,7 @@ function Landing() {
           <a className="col-2 mt-5 mx-auto text-center playfair" href="/caja-de-herramientas"><img alt="." className="logo" src={require("../assets/img/flechaBlanca.png")}/></a>
         </div>
       </div>
-      <div className='fullHeight bg-gris'>
+      <div className='full bg-gris'>
         <div className="row">
           <span className="mt-25 mx-auto text-center bg-negro py-1 f06 col-3 blanco">RECURSOS</span>
         </div>

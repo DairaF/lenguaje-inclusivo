@@ -1,5 +1,5 @@
 // import React, { useState, useCallback, useEffect } from 'react';
-// import '../App.css';
+//  
 // import Herramienta from '../components/Herramienta';
 // import herramientas from '../data/tradicionales.json';
 

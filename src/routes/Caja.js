@@ -1,25 +1,45 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import '../App.css';
-
+import '../assets/css/Herramientas.css';
+import ReactGa from 'react-ga'
 function Caja() {
-
-  return (
-    <div className='container bg-lila fullHeight' >
+    useEffect(()=>{
+      ReactGa.initialize('G-BQYF4G0HMV')
+      ReactGa.pageview(window.location.pathname + window.location.search)
+      },[])
       
-      {/* <div className='row bg-lila'>
-        <h1 className='balnco under-negro'><b>Caja de <span className='playfair'>herramientas</span></b></h1>
-        <p className='playfair'>Recursos gramaticales y no tan gramaticales para hacer que tus textos sean un poco más <span className='playfairItalic'>inclusivos</span></p>
-      </div> */}
+  return (
+    <div className=' bg-lila full' >
       <div className='container'>
-        <div className='row mt-75'>
-          <a className='col-6 border-negro-redondeado' href='caja-de-herramientas/sustantivos' >sustantivos</a>
-          <a className='col-6 border-negro-redondeado' href='caja-de-herramientas/pronombres' >pronombres</a>
+        <div id="tituloCaja" className='row justify-content-between'>
+          <h2 className='offset-1 col-5 blanco'>Caja de herramientas</h2>
+          <span className='col-5 playfair'>Elegí una de las opciones para empezar a ver las herramientas</span>
         </div>
-        <div className='row'>
-          <a className='col-6 border-negro-redondeado' href='caja-de-herramientas/nuevos-morfemas' >nuevos morfemas</a>
-          <a className='col-6 border-negro-redondeado' href='caja-de-herramientas/expresiones' >expresiones</a>
+        <div className='row justify-content-between contenedorCaja  playfair'>
+          <a className='col-5 col-md-3 col-lg-2 m-auto negro' href='caja-de-herramientas/sustantivos' >
+            <img className='herramientaImg' src={require('../assets/img/illus/sustantivo.png')} />
+            Sustantivos
+          </a>
+          <a className='col-5 col-md-3 col-lg-2 m-auto negro' href='caja-de-herramientas/pronombres' >
+            <img className='herramientaImg' src={require('../assets/img/illus/pronombre.png')} />
+            Pronombres
+          </a>
+          <a className='col-5 col-md-3 col-lg-2 m-auto negro' href='caja-de-herramientas/expresiones' >
+            <img className='herramientaImg' src={require('../assets/img/illus/expresion.png')} />
+            Expresiones
+          </a>
+          <a className='col-5 col-md-3 col-lg-2 m-auto negro' href='caja-de-herramientas/nuevos-morfemas' >
+            <img className='herramientaImg' src={require('../assets/img/illus/morfema.png')} />
+            Nuevos morfemas
+          </a>
         </div>
-        
+        <div className='text-center'>
+          <a id='btnGuia' className='negro' href='/guia-autocorrecion'>
+            <img className='floatL' src={require('../assets/img/sonrisaAbierta.png')} />
+            <span className='f08'>GUÍA AUTOREVISIÓN</span>
+            <img className='floatR' src={require('../assets/img/uwu.png')} />
+          </a>
+        </div>
+        {/* <span className='bottomText blanco opacity-05'>herramientas</span>        */}
       </div>
     </div>
   );

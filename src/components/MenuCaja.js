@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
-
+import ProgressBar from './ProgressBar';
 
 function MenuCaja(props) {
   const activo = props.activo;
@@ -9,29 +9,28 @@ function MenuCaja(props) {
   }
 console.log(activo);
   return (
-    <div className='container' >
-      <div className='menu row justify-content-between negro under-lila my-5'>
-        <a className="col-2" onClick={toggleBtn} >{activo}</a>
+    <div className='container' >        
+      <ProgressBar/>
+      <div className='row justify-content-between negro under-lila mt-5 p-5 '>
+        <a className="col-2 lila" onClick={toggleBtn} ><b>{activo}</b></a>
       </div>
-      <div className={active ? 'activa menu-content fullHeight bg-blanco container mt-25' : 'noactiva'}>
+      <div className={active ? 'activa menu-content bg-blanco container pt-5' : 'noactiva'}>
         <div className='row'>
-        <div className='container'>
           <div className='mt-5'>
-              <a className='col-6 ' href='caja-de-herramientas/sustantivos' >Sustantivos</a>
-              <a onClick={toggleBtn} href={activo == "Sustantivo" ? '#AsociadosAPersonasOEntidades' : 'caja-de-herramientas/sustantivos#AsociadosAPersonasOEntidades'}>Asociados a personas o entidades</a>
-              <a onClick={toggleBtn} href={activo == "Sustantivo" ? '#SustantivosAbstractos' : 'caja-de-herramientas/sustantivos#SustantivosAbstractos'}>Abstractos</a>
-              <a onClick={toggleBtn} href={activo == "Sustantivo" ? '#TerminacionesEspeciales' : 'caja-de-herramientas/sustantivos#TerminacionesEspeciales'}>Sustantivos con terminaciones especiales</a>
-              <a onClick={toggleBtn} href={activo == "Sustantivo" ? '#Epicenos' : 'caja-de-herramientas/sustantivos#Epicenos'}>Epicenos</a>
+              <a className='col-12 negro' href='caja-de-herramientas/sustantivos' ><b>Sustantivos</b></a>
+              <a className='col-12 negro' onClick={toggleBtn} href={activo == "Sustantivo" ? '#AsociadosAPersonasOEntidades' : '/sustantivos#AsociadosAPersonasOEntidades'}>Asociados a personas o entidades</a>
+              <a className='col-12 negro' onClick={toggleBtn} href={activo == "Sustantivo" ? '#SustantivosAbstractos' : '/sustantivos#SustantivosAbstractos'}>Abstractos</a>
+              <a className='col-12 negro' onClick={toggleBtn} href={activo == "Sustantivo" ? '#TerminacionesEspeciales' : '/sustantivos#TerminacionesEspeciales'}>Sustantivos con terminaciones especiales</a>
+              <a className='col-12 negro' onClick={toggleBtn} href={activo == "Sustantivo" ? '#Epicenos' : '/sustantivos#Epicenos'}>Epicenos</a>
             </div>
-            <div>
-              <a className='col-6 ' href='caja-de-herramientas/pronombres' >Pronombres</a>
-              <a>Relativos</a>
-              <a>Inbdefinidos</a>
+            <div className='mt-5'>
+              <a className='col-6 negro' href='caja-de-herramientas/pronombres' ><b>Pronombres</b></a>
+              <a className='col-12 negro'>Relativos</a>
+              <a className='col-12 negro'>Indefinidos</a>
             </div>
-            <a className='col-6 ' href='caja-de-herramientas/nuevos-morfemas' >nuevos morfemas</a>
-            <a className='col-6 ' href='caja-de-herramientas/expresiones' >expresiones</a>
+            <a className='col-12 negro mt-5' href='caja-de-herramientas/nuevos-morfemas' ><b>Nuevos morfemas</b></a>
+            <a className='col-12 negro mt-5' href='caja-de-herramientas/expresiones' ><b>Expresiones</b></a>
           </div>
-        </div>
       </div>
     </div>
   );

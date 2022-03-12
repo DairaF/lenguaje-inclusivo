@@ -19,20 +19,20 @@
                 "valor":3
             }
         ] ,
-        "block2":"de presentar a quienes quedaron",
+        "block2":"de presentar a ",
         "opciones2":[
             {
-                "texto":"seleccionados ",
+                "texto":"quienes quedaron seleccionados ",
                 "categoria":"rae",
                 "valor":1
             },
             {
                 "texto":"la selección",
-                "categoria":"no se", 
+                "categoria":"sustantivos abstractos", 
                 "valor":4
             },
             {
-                "texto":"seleccionades ",
+                "texto":"quienes quedaron seleccionades ",
                 "categoria":"nuevos morfemas",
                 "valor":3
             }
@@ -46,8 +46,8 @@
             },
             {
                 "texto":"las becas ",
-                "categoria":"no se", 
-                "valor":4
+                "categoria":"prosopopeya", 
+                "valor":14
             },
             {
                 "texto":"les beneficiaries ",
@@ -64,10 +64,10 @@
     },
     {      
         "id":2,
-        "block1":"@fundesarg Hubo ",
+        "block1":"@fundesarg ",
         "opciones1":[
             {
-                "texto":"un ganador ",
+                "texto":"Hubo un ganador ",
                 "categoria":"rae", 
                 "valor":1
             },
@@ -82,12 +82,12 @@
                 "valor":10
             }, 
             {
-                "texto":"quien ganó ",
+                "texto":"Hubo quien ganó ",
                 "categoria":"pronombres relativos",
                 "valor":5
             }, 
             {
-                "texto":"une ganadore ",
+                "texto":"Hubo une ganadore ",
                 "categoria":"morfemas nuevos",
                 "valor":3
             }
@@ -100,12 +100,12 @@
                 "valor":1
             },
             {
-                "texto":"Se perdió ",
+                "texto":"se perdió ",
                 "categoria":"formas impersonales", 
-                "valor":4
+                "valor":9
             },
             {
-                "texto":"Une perdedore ",
+                "texto":"une perdedore ",
                 "categoria":"nuevos morfemas",
                 "valor":3
             },
@@ -115,27 +115,27 @@
                 "valor":5
             },
             {
-                "texto":"Alguien perdió ",
+                "texto":"alguien perdió ",
                 "categoria":"pronombre indefnido",
-                "valor":5
+                "valor":10
             }
         ],
-        "block3":", pero eso no es lo importante aquí, sino mostrar que ese concurso anticipaba un cambio de época. El uso de datos se volvió un elemento fundamental en las decisiones de ",
+        "block3":", pero eso no es lo importante aquí, sino mostrar que ese concurso anticipaba un cambio de época. El uso de datos se volvió un elemento fundamental en las decisiones ",
         "opciones3":[
             {
-                "texto":"los empresarios ",
+                "texto":"de los empresarios ",
                 "categoria":"rae",
                 "valor":1
             },
             {
                 "texto":"corporativas ",
-                "categoria":"no se", 
+                "categoria":"sustantivos abstractos", 
                 "valor":4
             },
             {
                 "texto":"de las empresas ",
-                "categoria":"no se", 
-                "valor":4
+                "categoria":"sustantivos asociados a personas o entidades", 
+                "valor":12
             }
         ],
         "block4":"."
@@ -156,7 +156,7 @@
             }, 
             {
                 "texto":"la juventud, adultos y adultas ",
-                "categoria":"sustantivo colectivo",
+                "categoria":"sustantivos asociados a grupos",
                 "valor":7
             }, 
             {
@@ -191,21 +191,21 @@
         "block3":"¿Cómo puede ser? ¿",
         "opciones3":[
             {
-                "texto":"Los dos ",
+                "texto":"Los dos tienen",
                 "categoria":"rae",
                 "valor":1
             },
             {
-                "texto":"Les dos ",
+                "texto":"Les dos tienen",
                 "categoria":"nuevos morfemas", 
                 "valor":3
             },
             {
-                "texto":"Quien ",
+                "texto":"Quien tiene",
                 "categoria":"pronombre relativo", 
                 "valor":5
             }
         ],
-        "block4":"tienen razón?"
+        "block4":"razón?"
     }
 ]

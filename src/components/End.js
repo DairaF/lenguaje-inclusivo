@@ -102,32 +102,36 @@ const End = (props) => {
         className="mySwiper"
       >
       <SwiperSlide>
-        <div className='endSlide container'>
-          <div className='row justify-content-center'>
-            <span className='blanco opacity-05 text-center'>xxx</span>
-            <h2 className='blanco text-center col-9 mt-25 under-blanco pb-3'><b>Estamos procesando tus respuestas para saber </b><span className='playfairItalic'>cómo hablás.</span></h2>
-            <input className='col-8 mt-5' type="range" min={1} max={12} value={morfemasCounter} ></input>
+        <div className='endSlide '>
+          <div className='container'>
+            <div className='row justify-content-center'>
+              <span className='blanco opacity-05 text-center'>xxx</span>
+              <h2 className='blanco text-center col-9 mt-25 under-blanco pb-3'><b>Estamos procesando tus respuestas para saber </b><span className='playfairItalic'>cómo hablás.</span></h2>
+              <input className='col-8 mt-5' type="range" min={1} max={12} value={morfemasCounter} ></input>
+            </div>
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className='endSlide container'>
-          <div className='row justify-content-center'>
-            <h2 className='blanco col-9 mt-25 text-center under-blanco pb-5'> <b>Acá no hay respuestas buenas ni malas.</b> </h2> 
-            <p className='playfair col-9 mt-25 text-center'><b> Al lenguaje lo construimos todos los días y siempre podemos seguir aprendiendo: <span className='playfairItalic'>se trata de hacerse preguntas.</span> </b></p>
+        <div className='endSlide '>
+          <div className='container'>
+            <div className='row justify-content-center'>
+              <h2 className='blanco col-9 mt-25 text-center under-blanco pb-5'> <b>Acá no hay respuestas buenas ni malas.</b> </h2> 
+              <p className='playfair col-9 mt-25 mt-md-5 text-center'><b> Al lenguaje lo construimos todos los días y siempre podemos seguir aprendiendo: <span className='playfairItalic'>se trata de hacerse preguntas.</span> </b></p>
+            </div>
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className='endSlide'> 
           <div className='row justify-content-center'>
-            <h2 className='blanco col-9 mt-45 text-center'>Veamos cuántas <span className='playfairItalic'>expresiones</span> te hicieron <span className='playfairItalic'>ruido</span> </h2> 
+            <h2 className='blanco col-9 mt-25 text-center'>Veamos cuántas <span className='playfairItalic'>expresiones</span> te hicieron <span className='playfairItalic'>ruido</span> </h2> 
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className={realize < 5 ? "endSlide amigue" : realize < 9 ? "endSlide xahi" : "endSlide anteojos" } > 
-          <div className='row justify-content-center border-blanco'>
+          <div className='row justify-content-center'>
             <h2 className='text-center'> <b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Anteojos violetas activados mode on" }</b></h2> 
             <input className='col-8 mt-75' type="range" min={1} max={12} value={morfemasCounter} ></input>
             <p className='blanco mt-5 text-center f08 col-8'><b>Identificaste {realize} de 12 expresiones</b></p>
@@ -147,7 +151,7 @@ const End = (props) => {
       <SwiperSlide>
         <div className='endSlide'>
           <div className='row justify-content-center '>
-            <h2 className='blanco text-center col-9 mt-25'><b>Miremos ahora tu </b><span className='playfairItalic'>herramienta</span><b> favorita, la que usaste más veces</b> </h2> 
+            <h2 className='blanco text-center col-9 mt-25 mt-md-5'><b>Miremos ahora tu </b><span className='playfairItalic'>herramienta</span><b> favorita, la que usaste más veces</b> </h2> 
           </div>
           {/* <div className='row justify-content-center '>
             <a className="col-1 mt-5"><img alt="." className="logo" src={require("../assets/img/flechita.png")}/></a>
@@ -159,7 +163,7 @@ const End = (props) => {
           <div className='row justify-content-center '>
             <p className='col-8 text-center blanco'>Usaste {faveToolName} <br/> <b>{faveToolNumber} veces</b></p>
             <div className='mt-45'>Ilustracion</div>
-            <a className='col-6 bg-crema f08 text-center mt-75 negro py-2' onClick={()=>nextSlide("pos")} > <b>EXPLORÁ TU PERFIL </b></a>
+            <a className='col-10 bg-crema f08 text-center mt-75 negro py-2' onClick={()=>nextSlide("pos")} > <b>EXPLORÁ TU PERFIL </b></a>
           </div>
         </div>
       </SwiperSlide>
@@ -168,17 +172,28 @@ const End = (props) => {
     }
     {page === 1 && 
         <div className={realize < 5 ? "container amigue" : realize < 9 ? "container xahi" : "container anteojos" } > 
-            <div className='row'>
-              <h2 className='text-center mt-5'> <b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Anteojos violetas activados mode on" }</b></h2> 
+            <div className='row justify-content-center'>
+              <h2 className='text-center mt-15 col-10 m-center'> <b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Anteojos violetas activados mode on" }</b></h2> 
             </div>
             <hr className='blanco'></hr>
-            <div className='row'>
-              <p className=' text-center'>{realize < 5 ? "Tenés que entrenar un poco más la mirada. Aunque no nos demos cuenta, el lenguaje que nos rodea todos los días puede ser una anteojera. Nos acostumbramos a leer y escuchar palabras que parecen correctas pero que a veces dejan afuera a mucha gente. Si llegaste hasta acá, ya es el primer paso." 
+            <div className='row justify-content-center'>
+              <p className=' text-center mt-15 col-10 m-center'>{realize < 5 ? "Tenés que entrenar un poco más la mirada. Aunque no nos demos cuenta, el lenguaje que nos rodea todos los días puede ser una anteojera. Nos acostumbramos a leer y escuchar palabras que parecen correctas pero que a veces dejan afuera a mucha gente. Si llegaste hasta acá, ya es el primer paso." 
                 : realize < 9 ? "Vas por el buen camino. Podés identificar muchas situaciones en las que las palabras excluyen, pero hay otras que todavía cuestan, como todo en la vida. Lo importante: hay cosas que te hacen ruido y querés cambiarlas." 
                 : "Tu radar cuestionador de lenguaje ve un término excluyente a 100km a la redonda. El masculino genérico te hace más ruido que una bocina a las 3AM: necesitás eliminarlo a toda costa." }
               </p>
             </div>
-            <div className='row bg-gris text-center mt-5 pb-5'>
+            <div className='row text-center mt-5 pb-5 justify-content-center'>
+              <h2 className='col-8 mx-auto my-5'><b>Tus <span className='playfairItalic'>herramientas</span> favoritas fueron</b></h2>
+              <div >
+                  <h1 className='playfair blanco f15 guiaN text-center'>1</h1>
+                  <div className='bg-lila col-9 mx-auto p-5 text-center'>
+                    <h3 className='playfair py-5 under-negro'>{faveToolName}</h3>
+                    <p className='mt-5'>Descripcion de Rae</p>
+                  </div>
+              </div>
+            </div>
+
+            <div className='row bg-crema text-center mt-5 pb-5'>
               <h2 className='col-8 mx-auto my-5'><b>Guía de <span className='playfairItalic'>autorevisión</span> a la hora de <span className='playfairItalic'>escribir</span></b></h2>
               <p className='col-8 mx-auto'>Escribir requiere necesariamente revisar y reescribir. A continuación, presentamos una lista de preguntas que buscan guiar la revisión de textos con perspectiva de género. </p>
             {
@@ -197,13 +212,14 @@ const End = (props) => {
             </div>
             <div className='row bg-lila justify-content-center'>
               <div className='blanco-borde-negro col-8 mt-5 p-3'>
-                <a href='/quiz'><b>Ahora que conocés tus resutlados, desafiate otra vez: hacé el experimento de nuevo</b></a>
+                <a className='negro' href='/quiz'><b>Ahora que conocés tus resutlados, desafiate otra vez: hacé el experimento de nuevo</b></a>
+                <a  href='/quiz' className='col-1 mx-auto flechaEnBorde'><img alt="." className="logo" src={require("../assets/img/flechaBgLila.png")}/></a>
               </div>
               <div className='blanco-borde-negro col-8 mt-5 p-3'>
-                <a href='/caja-de-herramientas'><b>Chequear texto q redirige a herramienta</b></a>
+                <a className='negro' href='/caja-de-herramientas'><b>Chequear texto q redirige a herramienta</b></a>
               </div>
               <div className='blanco-borde-negro col-8  my-5'>
-                <a href='/texto-expositivo'><b>¿Qué sentido tiene el lenguaje <span className='playfair'>inclusivo?</span></b></a>
+                <a className='negro' href='/texto-expositivo'><b>¿Qué sentido tiene el lenguaje <span className='playfair'>inclusivo?</span></b></a>
               </div>
             </div>
           </div> 

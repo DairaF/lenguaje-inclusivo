@@ -1,0 +1,199 @@
+.activo1{
+    font-weight: bold;
+}
+.activo2{
+font-weight: bold;
+}
+.activo3{
+font-weight: bold;
+}
+.activa{
+    display: block;
+}
+.noactivas{
+display: none;
+}
+.title{
+    display: block;
+}
+.situacion{
+  margin-top: 25%;
+}
+.swiper-pagination-bullets{
+    margin-top: -2%;
+}
+.swiper-pagination-bullet{
+    width: 2em !important;
+    background-color: #D1D3D4 !important;
+    border-radius: 2px !important;
+}
+.swiper-pagination-bullet-active{
+    width: 2em !important;
+    background-color: #F1F2F2 !important;
+    border-radius: 2px !important;
+}
+.swiper-pagination{
+    top:2% !important;
+}
+.swiper-button-next{
+    display: none !important;
+}
+.swiper-button-prev{
+    display: none !important;
+}
+.swiper-slide-active{
+    width: 100vw !important;
+}
+.endSlide{
+    padding: 10%;
+    padding-top: 25%;
+    height: 100vh;
+    width: 100vw;
+    background-color: #9F8BEA; /* For browsers that do not support gradients */
+    /* background-image: linear-gradient(to top right, #ECA9FC, #9F8BEA, #9F8BEA); */
+}
+.btnQuiz{
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    z-index: 1;
+    padding: 1em;
+    cursor: pointer;
+}
+#siguenteBtn  {
+    font-size: small;
+    background-color: white;
+    border: solid 2px #9F8BEA ;
+    color: #9F8BEA;
+    border-radius: 10px;
+    padding: 0.5em 2em;
+    margin-right: 2em;
+}
+#siguenteBtn:hover  {
+    background-color: #9F8BEA;
+    color: white;
+}
+
+#flechaBtn img{
+    height: 2em;
+}
+.amigue{
+    background-image: url('../img/illus/end1.png'), linear-gradient(to top right,  #9F8BEA, #6484E8, #6484E8, #6484E8);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size:contain;
+}
+.xahi{
+    background-image: url('../img/illus/end2.png'), linear-gradient(to top right, #9F8BEA, #9F8BEA, #6484E8,#6484E8 );
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size:contain;
+}
+.anteojos{
+    background-image: url('../img/illus/end3.png'), linear-gradient(to top right,  #9F8BEA, #9F8BEA, #9F8BEA, #6484E8);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size:contain;
+}
+  
+input[type="range"] {
+    -webkit-appearance: none;
+    height: 2em;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5em;
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+  }
+  
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height:  2em;
+    width:  2em;
+    border-radius: 50%;
+    background-color: #1b3c9e65;
+  }
+.quizImg img{
+    width: -webkit-fill-available !important;
+}
+.options{
+    position: fixed;
+    bottom: 0%;
+    height: 30%;
+    overflow-y: scroll;
+    width: 100%;
+    z-index: 400;
+    background-color: #C5B9F2;
+}
+.option{
+    background-color:#9F8BEA;
+    margin-bottom: 1em;
+    padding: 1.5em;
+    width: 100%;
+}
+.option:hover{
+    background-color:black;
+}
+.fondoSituacion{
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    .amigue{
+        background-position: left;
+        background-size: auto;
+    }
+    .endSlide{
+        padding: 0%;
+    }
+    .fondoSituacion{
+        display: block;
+    }
+    .fondoSituacion img{
+        max-height: 40%;
+        position: fixed;
+        top: 70%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        padding: 2em;
+        z-index: 0;
+    }
+    #siguenteBtn  {
+        font-size: 1em;
+    }
+    #flechaBtn img{
+        height: 2.5em;
+    }
+    .title{
+        display: none;
+    }   
+    .quizImg{
+        height: 40%;
+        position: fixed;
+        top: 40%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        padding: 2em;
+    }    
+    .situacion{
+        height: 40%;
+        position: fixed;
+        top: 45%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        padding: 2em;
+        cursor: pointer;
+    }
+    .options{
+        position: fixed;
+        top: 45%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        height: 40%;
+        overflow-y: scroll;
+        width: 35%;
+        border: solid 2px black;
+        padding: 2em;
+        cursor: pointer;
+        background-color:#F1F2F2 !important
+    }
+
+}

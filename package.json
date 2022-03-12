@@ -11,13 +11,14 @@
     "popper.js": "^1.16.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-ga": "^3.3.0",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "rellax": "^1.12.1",
     "swiper": "^8.0.6",
     "web-vitals": "^2.1.4"
   },
-  "homepage" : "https://lenguajeinclusivo.fund.ar/",
+  "homepage": "https://lenguajeinclusivo.fund.ar/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

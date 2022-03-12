@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import '../App.css';
+ 
 import Situacion from '../components/Situacion';
 import Start from '../components/Start';
 import End from '../components/End';
@@ -7,9 +7,13 @@ import tweets from '../data/tweets.json';
 import notas from '../data/notas.json';
 import papers from '../data/papers.json';
 import hablados from '../data/hablados.json';
-
+import ReactGa from 'react-ga'
 function Quiz() {
-
+    useEffect(()=>{
+      ReactGa.initialize('G-BQYF4G0HMV')
+      ReactGa.pageview(window.location.pathname + window.location.search)
+      },[])
+      
   const [randomTweet, setRandomTweet] = useState(0);
   const [randomNota, setRandomNota] = useState(0);
   const [randomPaper, setRandomPaper] = useState(0);
@@ -59,7 +63,7 @@ const nextSituatcion = () =>{
                       handleAnswer1={handleAnswer1}
                       handleAnswer2={handleAnswer2}
                       handleAnswer3={handleAnswer3}
-                      situation="tweet"
+                      situation="tweets"
                       block1={tweets[randomTweet].block1} 
                       opciones1={tweets[randomTweet].opciones1} 
                       block2={tweets[randomTweet].block2}

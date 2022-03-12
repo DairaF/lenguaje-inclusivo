@@ -1,10 +1,16 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import '../App.css';
+ 
 import Herramienta from '../components/Herramienta';
 import expresiones from '../data/expresiones.json';
 import MenuCaja from '../components/MenuCaja';
-function Expresiones() {
+import ReactGa from 'react-ga'
 
+function Expresiones() {
+    useEffect(()=>{
+      ReactGa.initialize('G-BQYF4G0HMV')
+      ReactGa.pageview(window.location.pathname + window.location.search)
+      },[])
+      
   return (
     <div >
       <MenuCaja activo="Expresiones"/>

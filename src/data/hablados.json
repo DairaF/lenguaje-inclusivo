@@ -14,7 +14,7 @@
                 "valor":2
             }, 
             {
-                "texto":"vecines",
+                "texto":"vecinxs",
                 "categoria":"nuevos morfemas",
                 "valor":3
             },
@@ -55,7 +55,7 @@
                 "valor":1
             },
             {
-                "texto":"Población rural",
+                "texto":"población rural",
                 "categoria":"sustantivos referidos a grupos", 
                 "valor":7
             },

@@ -1,27 +1,27 @@
 [
     {
         "id":1,
-        "block1":"El factor más importante según las investigaciones sobre educación es la familia y las circunstancias del " ,
+        "block1":"El factor más importante según las investigaciones sobre educación es la familia y las circunstancias " ,
         "opciones1":[
             {
-                "texto":"niño",
+                "texto":"del niño",
                 "categoria":"rae", 
                 "valor":1
             },
             {
-                "texto":"los niños y niñas ",
+                "texto":"de los niños y niñas ",
                 "categoria":"desdoblamiento",
                 "valor":2
             }, 
             {
-                "texto":"les niñes",
+                "texto":"de les niñes",
                 "categoria":"nuevos morfemas",
                 "valor":3
             },
             {
-                "texto":"las infancias",
+                "texto":"de las infancias",
                 "categoria":"sustantivos abstractos",
-                "valor":6
+                "valor":4
             }
         ],
         "block2":"El segundo es",
@@ -32,7 +32,7 @@
                 "valor":1
             },
             {
-                "texto":"profesor/a ",
+                "texto":"el profesor/a ",
                 "categoria":"desdoblamiento",
                 "valor":2
             },
@@ -47,25 +47,25 @@
                 "valor":5
             }
         ],
-        "block3":". Entonces, hay que pensar cómo mejorar la formación de ",
+        "block3":". Entonces, hay que pensar cómo mejorar la formación ",
         "opciones3":[
             {
-                "texto":"los docentes",
+                "texto":"de los docentes",
                 "categoria":"rae",
                 "valor":1
             },
             {
                 "texto":"del cuerpo docente",
-                "categoria":"sustantivos referidos a grupos", 
+                "categoria":"sustantivos asociados a grupos", 
                 "valor":7
             },
             {
-                "texto":"les docentes",
+                "texto":"de les docentes",
                 "categoria":"nuevos morfemas",
                 "valor":3
             },
             {
-                "texto":"los/as docentes",
+                "texto":"de los/as docentes",
                 "categoria":"desdoblamiento",
                 "valor":2
             }
@@ -84,10 +84,10 @@
             {
                 "texto":"la juventud y la infancia ",
                 "categoria":"sustantivo abstracto",
-                "valor":6
+                "valor":4
             }, 
             {
-                "texto":"jóvenes y niñes",
+                "texto":"les jóvenes y niñes",
                 "categoria":"nuevos morfemas",
                 "valor":3
             },
@@ -106,7 +106,7 @@
             },
             {
                 "texto":"Hay argumentos que afirman",
-                "categoria":"metonimia",
+                "categoria":"prosopopeya",
                 "valor":14
             },
             {
@@ -140,7 +140,7 @@
             {
                 "texto":"la ciudadanía",
                 "categoria":"sustantivo abstracto",
-                "valor":6
+                "valor":4
             }
         ],
         "block4":"."

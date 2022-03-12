@@ -1,5 +1,5 @@
 import React, { } from 'react';
-import './App.css';
+import './assets/css/App.css';
 import {
   HashRouter,
   BrowserRouter,
@@ -10,6 +10,7 @@ import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import Quiz from "./routes/Quiz";
 import Caja from "./routes/Caja";
+import GuiaAuto from "./routes/GuiaAuto";
 import NuevosMorfemas from "./routes/NuevosMorfemas";
 import Pronombres from "./routes/Pronombres";
 import Sustantivos from "./routes/Sustantivos";
@@ -21,11 +22,15 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Menu/>
+        {
+          window.location.pathname!=='/quiz' ? <Menu/>:null
+        }
+        {/* <Menu/> */}
         <Routes>
           <Route path="/" element={<Landing/>} />
           <Route path="/quiz" element={<Quiz/>} />
           <Route path="/caja-de-herramientas" element={<Caja/>} />
+          <Route path="/guia-autocorrecion" element={<GuiaAuto/>} />
           <Route path="/caja-de-herramientas/sustantivos" element={<Sustantivos/>} />
           <Route path="/caja-de-herramientas/pronombres" element={<Pronombres/>} />
           <Route path="/caja-de-herramientas/expresiones" element={<Expresiones/>} />
