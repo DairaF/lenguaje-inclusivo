@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import guias from '../data/guias.json';
 import Guia from './Guia';
+import Fave from './Fave';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -24,8 +25,12 @@ const End = (props) => {
     let sColectivoCounter = 0;
     let results=props.fullArray;
     let realize = props.realize;
-    let faveToolNumber = 0;
-    let faveToolName = "";
+    let faveN1 = 0;
+    let faveName1 = "";
+    let faveN2 = 0;
+    let faveName2 = "";
+    let faveN3 = 0;
+    let faveName3 = "";
     let sortResults = () => {
       results.forEach(result => { 
         if (result === 1) { raeCounter = raeCounter + 1 }
@@ -40,30 +45,65 @@ const End = (props) => {
       findMostUsedTool(recount);
   }
   const findMostUsedTool = (recount) =>{
-      let largest = 0;
-      let largestIndex = 0;
-      for(let i = 0; i<recount.length; i++){
-        if(largest < recount[i]) {
-          largest = recount[i];
-          largestIndex = i;
+      let largest1 = 0;
+      let largestIndex1 = 0;
+      let largest2 = 0;
+      let largestIndex2 = 0;
+      let largest3 = 0;
+      let largestIndex3 = 0;
+      for(let i = 0; i< recount.length; i++){
+        if(largest1 < recount[i]) {
+          largest1 = recount[i];
+          largestIndex1 = i;
+        }else if(largest2 < recount[i]) {
+          largest2 = recount[i];
+          largestIndex2 = i;
+        }else if(largest3 < recount[i]) {
+          largest3 = recount[i];
+          largestIndex3 = i;
         }
       }
-      console.log("largest"+largest+"largest index"+largestIndex);
-      faveToolNumber = largest;
-      locateFaveToolName(largestIndex);
+      faveN1 = largest1;
+      faveN2 = largest2;
+      faveN3 = largest3;
+      locatefaveName(largestIndex1, "faveName1");
+      locatefaveName(largestIndex2, "faveName2");
+      locatefaveName(largestIndex3, "faveName3");
+      console.log("faveName1"+faveName1+" faveName2"+faveName2+ " faveName3"+faveName3)
   }
   
-  const locateFaveToolName = (toolIndex) =>{
+  const locatefaveName = (toolIndex, toolN) =>{
+    if(toolN=="faveName1"){
     switch (toolIndex){
-    case 0: faveToolName =  "Rae"; break;
-    case 1: faveToolName =  "Desdoblamiento"; break;
-    case 2: faveToolName =  "Nuevos morfemas"; break;
-    case 3: faveToolName =  "No se"; break;
-    case 4: faveToolName =  "Pronombres relativos"; break;
-    case 5: faveToolName =  "Sustantivos abstractos"; break;
-    case 6: faveToolName =  "Sustantivos Colectivos"; break;
-    default:faveToolName =  "Unkown";
-  }
+      case 0: faveName1 =  "Rae"; break;
+      case 1: faveName1 =  "Desdoblamiento"; break;
+      case 2: faveName1 =  "Nuevos morfemas"; break;
+      case 3: faveName1 =  "No se"; break;
+      case 4: faveName1 =  "Pronombres relativos"; break;
+      case 5: faveName1 =  "Sustantivos abstractos"; break;
+      case 6: faveName1 =  "Sustantivos Colectivos"; break;
+      default:faveName1 =  "Unkown";
+    }}else if(toolN=="faveName2"){
+    switch (toolIndex){
+      case 0: faveName2 =  "Rae"; break;
+      case 1: faveName2 =  "Desdoblamiento"; break;
+      case 2: faveName2 =  "Nuevos morfemas"; break;
+      case 3: faveName2 =  "No se"; break;
+      case 4: faveName2 =  "Pronombres relativos"; break;
+      case 5: faveName2 =  "Sustantivos abstractos"; break;
+      case 6: faveName2 =  "Sustantivos Colectivos"; break;
+      default:faveName2 =  "Unkown";
+    }}else if(toolN=="faveName3"){
+    switch (toolIndex){
+      case 0: faveName3 =  "Rae"; break;
+      case 1: faveName3 =  "Desdoblamiento"; break;
+      case 2: faveName3 =  "Nuevos morfemas"; break;
+      case 3: faveName3 =  "No se"; break;
+      case 4: faveName3 =  "Pronombres relativos"; break;
+      case 5: faveName3 =  "Sustantivos abstractos"; break;
+      case 6: faveName3 =  "Sustantivos Colectivos"; break;
+      default:faveName3 =  "Unkown";
+    }}
   }
 
   const nextSlide = (direction) =>{
@@ -73,9 +113,6 @@ const End = (props) => {
   return(
     <div >
         {sortResults()}
-        {/* <button onClick={()=>nextSlide("neg")} > izq </button>
-        <button onClick={()=>nextSlide("pos")} > der </button>
-        {page === 0 && <p>Estamos procesando tus respuestas para saber cómo hablás.</p> } */}
         {page === 0 && 
         <div>
         {/* <Swiper
@@ -108,6 +145,7 @@ const End = (props) => {
               <span className='blanco opacity-05 text-center'>xxx</span>
               <h2 className='blanco text-center col-9 mt-25 under-blanco pb-3'><b>Estamos procesando tus respuestas para saber </b><span className='playfairItalic'>cómo hablás.</span></h2>
               <input className='col-8 mt-5' type="range" min={1} max={12} value={morfemasCounter} ></input>
+              <img src={require('../assets/img/bub.png')} />
             </div>
           </div>
         </div>
@@ -130,8 +168,8 @@ const End = (props) => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className={realize < 5 ? "endSlide amigue" : realize < 9 ? "endSlide xahi" : "endSlide anteojos" } > 
-          <div className='row justify-content-center'>
+        <div className={realize < 5 ? "endSlide amigueF" : realize < 9 ? "endSlide xahiF" : "endSlide anteojosF" } > 
+          <div className='row justify-content-center border-blanco'>
             <h2 className='text-center'> <b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Anteojos violetas activados mode on" }</b></h2> 
             <input className='col-8 mt-75' type="range" min={1} max={12} value={morfemasCounter} ></input>
             <p className='blanco mt-5 text-center f08 col-8'><b>Identificaste {realize} de 12 expresiones</b></p>
@@ -151,19 +189,16 @@ const End = (props) => {
       <SwiperSlide>
         <div className='endSlide'>
           <div className='row justify-content-center '>
-            <h2 className='blanco text-center col-9 mt-25 mt-md-5'><b>Miremos ahora tu </b><span className='playfairItalic'>herramienta</span><b> favorita, la que usaste más veces</b> </h2> 
+            <h2 className='blanco text-center col-9 mt-25'><b>Miremos ahora tu </b><span className='playfairItalic'>herramienta</span><b> favorita, la que usaste más veces</b> </h2> 
           </div>
-          {/* <div className='row justify-content-center '>
-            <a className="col-1 mt-5"><img alt="." className="logo" src={require("../assets/img/flechita.png")}/></a>
-          </div> */}
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className='endSlide'>
           <div className='row justify-content-center '>
-            <p className='col-8 text-center blanco'>Usaste {faveToolName} <br/> <b>{faveToolNumber} veces</b></p>
-            <div className='mt-45'>Ilustracion</div>
-            <a className='col-10 bg-crema f08 text-center mt-75 negro py-2' onClick={()=>nextSlide("pos")} > <b>EXPLORÁ TU PERFIL </b></a>
+            <p className='col-8 text-center blanco'>Usaste {faveName1=="Rae"? faveName2 :faveName2=="Rae"? faveName3 : faveName3=="Rae"? "no" : "no" } <br/> <b>{faveN1} veces</b></p>
+            <div className='mt-45 mt-md-5'>Ilustracion</div>
+            <a className='col-10 bg-crema f08 text-center mt-75 mt-md-15 negro py-2' onClick={()=>nextSlide("pos")} > <b>EXPLORÁ TU PERFIL </b></a>
           </div>
         </div>
       </SwiperSlide>
@@ -184,13 +219,9 @@ const End = (props) => {
             </div>
             <div className='row text-center mt-5 pb-5 justify-content-center'>
               <h2 className='col-8 mx-auto my-5'><b>Tus <span className='playfairItalic'>herramientas</span> favoritas fueron</b></h2>
-              <div >
-                  <h1 className='playfair blanco f15 guiaN text-center'>1</h1>
-                  <div className='bg-lila col-9 mx-auto p-5 text-center'>
-                    <h3 className='playfair py-5 under-negro'>{faveToolName}</h3>
-                    <p className='mt-5'>Descripcion de Rae</p>
-                  </div>
-              </div>
+                  <Fave key = {1} number = {1} name = {faveName1} />
+                  {faveN2 !=0 ? <Fave key = {2} number = {2} name = {faveName2} />: "" }
+                  {faveN3 !=0 ? <Fave key = {3} number = {3} name = {faveName3} />: "" }
             </div>
 
             <div className='row bg-crema text-center mt-5 pb-5'>

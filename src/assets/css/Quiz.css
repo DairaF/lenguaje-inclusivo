@@ -77,19 +77,30 @@ display: none;
 #flechaBtn img{
     height: 2em;
 }
+
 .amigue{
+    background-image: linear-gradient(to top right,  #9F8BEA, #6484E8, #6484E8, #6484E8);
+}
+.xahi{
+    background-image:linear-gradient(to top right, #9F8BEA, #9F8BEA, #6484E8,#6484E8 );
+}
+.anteojos{
+    background-image:  linear-gradient(to top right,  #9F8BEA, #9F8BEA, #9F8BEA, #6484E8);
+}
+
+.amigueF{
     background-image: url('../img/illus/end1.png'), linear-gradient(to top right,  #9F8BEA, #6484E8, #6484E8, #6484E8);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size:contain;
 }
-.xahi{
+.xahiF{
     background-image: url('../img/illus/end2.png'), linear-gradient(to top right, #9F8BEA, #9F8BEA, #6484E8,#6484E8 );
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size:contain;
 }
-.anteojos{
+.anteojosF{
     background-image: url('../img/illus/end3.png'), linear-gradient(to top right,  #9F8BEA, #9F8BEA, #9F8BEA, #6484E8);
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -137,7 +148,7 @@ input[type="range"]::-webkit-slider-thumb {
     display: none;
 }
 @media only screen and (min-width: 768px) {
-    .amigue{
+    .amigueF{
         background-position: left;
         background-size: auto;
     }

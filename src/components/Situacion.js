@@ -100,8 +100,14 @@ function Situacion(props) {
       <div className='full bg-crema '>
         <div className='container'>
           <div className='row'>
-            <span className='f08 lila mt-5 mx-5 mt-md-10'><b>{step}/4</b></span> 
+            <span className='f08 lila mx-5 mt-md-10'><b>{step}/4</b></span> 
           </div>
+          <div className='fondoSituacion'>
+              <img src={  situation=="tweets" ? require('../assets/img/illus/tweetF.png'):  
+                          situation=="papers" ? require('../assets/img/illus/paperF.png'): 
+                          situation=="hablados" ? require('../assets/img/illus/habladoF.png'): 
+                          situation=="notas" ? require('../assets/img/illus/notaF.png'): "" } />
+            </div>
           <div className='row justify-content-center mt-md-15'>
             <div className='bg-white border-negro-redondeado col-10 col-md-6 mx-auto m-md-1 situacion'>
               <div>
@@ -121,12 +127,6 @@ function Situacion(props) {
                           situation=="papers" ? require('../assets/img/illus/paper.png'): 
                           situation=="hablados" ? require('../assets/img/illus/hablado.png'): 
                           situation=="notas" ? require('../assets/img/illus/nota.png'): "" } />
-            </div>
-            <div className='fondoSituacion'>
-              <img src={  situation=="tweets" ? require('../assets/img/illus/tweetF.png'):  
-                          situation=="papers" ? require('../assets/img/illus/paperF.png'): 
-                          situation=="hablados" ? require('../assets/img/illus/habladoF.png'): 
-                          situation=="notas" ? require('../assets/img/illus/notaF.png'): "" } />
             </div>
           </div>
           <div>

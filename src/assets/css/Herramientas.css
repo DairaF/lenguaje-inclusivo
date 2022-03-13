@@ -1,3 +1,9 @@
+table tr{
+  border: solid 2px;
+  border-collapse: collapse;
+  color: #9F8BEA;
+  border-width: 2px;
+}
 h1{
   font-size: 3rem;
 }

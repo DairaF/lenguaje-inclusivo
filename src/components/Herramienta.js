@@ -6,18 +6,31 @@ function Herramienta(props) {
       <h3 id={props.id} className='col-10 col-md-5 mx-auto lila playfair mt-5'>{props.titulo}</h3>
       <p className='col-10 col-md-5 mx-auto'>{props.texto}</p>
       <p className='col-10 col-md-5 playfair mx-auto'><b>Ejemplo:{props.ejemplo1}</b></p>
-      { props.masInfo !== " " ? <div className='border-lila mx-auto col-10 col-md-5 mb-5 lila'>
-        <h3>MasInfo</h3>
-        <p className="under-lila col-10 mx-auto py-2">{props.masInfo}</p>
-        <div className='under-lila row text-left ej'>
-            <b className='negro playfair col-8 col-md-9'>{props.ejemplo2.no}</b>
-            <img className='col-3 col-md-2' alt="no" src={require('../assets/img/no.png')} />      
-        </div>
-        <div className='row text-left ej'>
-            <b className='negro playfair col-8 col-md-9'>{props.ejemplo2.si}</b>
-            <img className='col-3 col-md-2' alt="si" src={require('../assets/img/si.png')} />      
-        </div>
-      </div> : "" }
+      { props.masInfo !== " " ? <table className='col-10 col-md-5 mx-auto lila'>
+        <tr className=''>
+            <h3 className='py-2 ml-10'>MasInfo</h3>
+            <p className="py-2 ml-15">{props.masInfo}</p>
+        </tr>
+        <tr className=''>
+          <td className='col-10  text-left p-3'>
+            <b className='negro playfair'>{props.ejemplo2.no}</b>
+          </td>
+          <td className='col-2 p-3'>
+            <img className='' alt="no" src={require('../assets/img/no.png')} />
+          </td>      
+        </tr>
+        <tr className=''>
+          <td className='col-10  text-left p-3'>
+            <b className='negro playfair text-left'>{props.ejemplo2.si}</b>
+          </td>
+          <td className='col-2 p-3'>
+            <img className='' alt="si" src={require('../assets/img/si.png')} />
+          </td>      
+        </tr>
+      </table> : "" }
+
+
+
     </div>
   );
 }
