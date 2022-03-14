@@ -14,10 +14,10 @@ const Start = (props) => {
         </div>
         </div>
         <div className='row'>
-          <div className='col-9 col-md-4 mt-25'>
-            <span className=' mt-5 mx-auto text-center lila'>¡Ponete a prueba! </span>
-            <span className='playfair blanco text-center mx-auto'>Intervení en situaciones cotidianas y poné en práctica lo que sabés y lo que aprendiste en la Caja de Herramientas.</span>
-            <p className='mt-1 mx-auto text-center lila under-lila py-2'>Encontrá las expresiones excluyentes y reemplazalas con una opción más inclusiva.</p>
+          <div className='col-9 col-md-4 mt-15 mt-md-25 text-center mx-auto'>
+            <span className='lila'>¡Ponete a prueba! </span>
+            <span className='playfair blanco'>Intervení en situaciones cotidianas y poné en práctica lo que sabés y lo que aprendiste en la Caja de Herramientas.</span>
+            <p className='mt-1 lila under-lila py-2'>Encontrá las expresiones excluyentes y reemplazalas con una opción más inclusiva.</p>
           </div>
         </div>
         <div className='row '>

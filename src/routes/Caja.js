@@ -11,23 +11,23 @@ function Caja() {
     <div className=' bg-lila full' >
       <div className='container'>
         <div id="tituloCaja" className='row justify-content-between'>
-          <h2 className='offset-1 col-5 blanco'>Caja de herramientas</h2>
-          <span className='col-5 playfair'>Elegí una de las opciones para empezar a ver las herramientas</span>
+          <h2 className='offset-1 col-5 blanco pl-3'>Caja de <span className='playfairItalic'>herramientas</span></h2>
+          <p className='col-4 playfair'>Elegí una de las opciones para empezar a ver las herramientas</p>
         </div>
         <div className='row justify-content-between contenedorCaja  playfair'>
-          <a className='col-5 col-md-3 col-lg-2 m-auto negro' href='caja-de-herramientas/sustantivos' >
+          <a className='col-5 col-sm-3 col-lg-2 m-auto negro' href='caja-de-herramientas/sustantivos' >
             <img className='herramientaImg' src={require('../assets/img/illus/sustantivo.png')} />
             Sustantivos
           </a>
-          <a className='col-5 col-md-3 col-lg-2 m-auto negro' href='caja-de-herramientas/pronombres' >
+          <a className='col-5 col-sm-3 col-lg-2 m-auto negro' href='caja-de-herramientas/pronombres' >
             <img className='herramientaImg' src={require('../assets/img/illus/pronombre.png')} />
             Pronombres
           </a>
-          <a className='col-5 col-md-3 col-lg-2 m-auto negro' href='caja-de-herramientas/expresiones' >
+          <a className='col-5 col-sm-3 col-lg-2 m-auto negro' href='caja-de-herramientas/expresiones' >
             <img className='herramientaImg' src={require('../assets/img/illus/expresion.png')} />
             Expresiones
           </a>
-          <a className='col-5 col-md-3 col-lg-2 m-auto negro' href='caja-de-herramientas/nuevos-morfemas' >
+          <a className='col-5 col-sm-3 col-lg-2 m-auto negro' href='caja-de-herramientas/nuevos-morfemas' >
             <img className='herramientaImg' src={require('../assets/img/illus/morfema.png')} />
             Nuevos morfemas
           </a>

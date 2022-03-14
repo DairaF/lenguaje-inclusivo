@@ -16,16 +16,14 @@ import Pronombres from "./routes/Pronombres";
 import Sustantivos from "./routes/Sustantivos";
 import Expresiones from "./routes/Expresiones";
 import Landing from "./routes/Landing";
+import Acerca from "./routes/Acerca";
 import Texto from "./routes/Texto";
 function App() {
 
   return (
     <div className="App">
       <BrowserRouter>
-        {
-          window.location.pathname!=='/quiz' ? <Menu/>:null
-        }
-        {/* <Menu/> */}
+        { window.location.pathname!=='/quiz' ? <Menu/>: null }
         <Routes>
           <Route path="/" element={<Landing/>} />
           <Route path="/quiz" element={<Quiz/>} />
@@ -36,7 +34,16 @@ function App() {
           <Route path="/caja-de-herramientas/expresiones" element={<Expresiones/>} />
           <Route path="/caja-de-herramientas/nuevos-morfemas" element={<NuevosMorfemas/>} />
           <Route path="/texto-expositivo" element={<Texto/>} />
+          <Route path="/acerca" element={<Acerca/>} />
         </Routes>
+        { window.location.pathname =='/' ? <Footer/>
+        :window.location.pathname =='/caja-de-herramientas/sustantivos' ? <Footer/>
+        :window.location.pathname =='/caja-de-herramientas/pronombres' ? <Footer/>
+        :window.location.pathname =='/caja-de-herramientas/expresiones' ? <Footer/>
+        :window.location.pathname =='/caja-de-herramientas/nuevos-morfemas' ? <Footer/>
+        :window.location.pathname =='/caja-de-herramientas/texto-expositivo' ? <Footer/>
+        : null }
+        
     </BrowserRouter>
     </div>
   );

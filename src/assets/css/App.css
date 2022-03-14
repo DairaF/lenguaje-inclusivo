@@ -53,6 +53,10 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Playfair+Display&display=swap');
 
+hr{
+  height: 2px;
+  border: solid 1px;
+}
 body{
   font-family: "aktiv-grotesk",sans-serif !important;
   font-weight:normal;
@@ -80,8 +84,8 @@ a{
   float: left;
 }
 .full{
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 .playfair{
   font-family: 'Playfair Display', serif;
@@ -162,7 +166,6 @@ a{
 .border-negro-redondeado{
   border: solid 2px #000000;
   border-radius: 20px;
-  padding:1.5em;
 }
 .text-center{
   text-align: center !important;
@@ -186,11 +189,32 @@ a{
 .footer a{
   display: block;
 }
+.-ml-5{
+  margin-left: 5% !important;
+}
+.-ml-10{
+  margin-left: 10% !important;
+}
+.-ml-15{
+  margin-left: 15% !important;
+}
 .ml-15{
   margin-left: 15% !important;
 }
 .ml-10{
   margin-left: 10% !important;
+}
+.-mt-1{
+  margin-top: -1.1em !important;
+}
+.-mt-10{
+  margin-top: -10% !important;
+}
+.-mt-15{
+  margin-left: -15% !important;
+}
+.mb-10{
+  margin-bottom: 10% !important;
 }
 .mt-10{
   margin-top: 10% !important;
@@ -207,16 +231,11 @@ a{
 .mt-75{
   margin-top: 75% !important;
 }
+
 .opacity-05{
   opacity: 0.5;
 }
-.nota{
-  font-size: x-small !important;
-  z-index: 0;
-}
-.linea{
-  width: auto !important;
-}
+
 .f05{
   font-size: 0.5em !important;
 }
@@ -265,7 +284,19 @@ a{
   margin-bottom: -3.5em;
   margin-left: 43%;
 }
+.hide-sm{
+  display: none;
+}
 @media only screen and (min-width: 768px) {
+  .hide-sm{
+  display: block;
+  }
+  .hide-md{
+    display: none;
+  }
+  .faveTool{
+    text-align: left;
+  }
   .md-align-left{
     text-align: left !important;
   }

@@ -100,7 +100,7 @@ function Situacion(props) {
       <div className='full bg-crema '>
         <div className='container'>
           <div className='row'>
-            <span className='f08 lila mx-5 mt-md-10'><b>{step}/4</b></span> 
+            <span className='f08 col-10 lila mx-5 mt-md-10'><b>{step}/4</b></span> 
           </div>
           <div className='fondoSituacion'>
               <img src={  situation=="tweets" ? require('../assets/img/illus/tweetF.png'):  
@@ -110,19 +110,19 @@ function Situacion(props) {
             </div>
           <div className='row justify-content-center mt-md-15'>
             <div className='bg-white border-negro-redondeado col-10 col-md-6 mx-auto m-md-1 situacion'>
-              <div>
-                <p className='lila mt-5'>
-                  {block1}
-                  <span className={isActive1 ? 'activo1': 'noactivo1'} onClick={()=>{toggleOnce(1);toggleOptions(1)}}><i>{oportunidad1}</i></span>
-                  {block2}
-                  <span className={isActive2 ? 'activo2': 'noactivo2'} onClick={()=>{toggleOnce(2);toggleOptions(2)}}><i>{oportunidad2}</i></span>
+              <div className={situation=="tweets"?"twitter": situation=="papers"?"playfair":situation=="hablados"?"comilla":""}>
+                <p className='mt-5'>
+                  <span>{block1}</span>
+                  <span className={isActive1 ? 'activo1': 'noactivo1'} onClick={()=>{toggleOnce(1);toggleOptions(1)}}>{oportunidad1}</span>
+                  <span>{block2}</span>
+                  <span className={isActive2 ? 'activo2': 'noactivo2'} onClick={()=>{toggleOnce(2);toggleOptions(2)}}>{oportunidad2}</span>
                   {block3}
-                  <span className={isActive3 ? 'activo3': 'noactivo3'} onClick={()=>{toggleOnce(3);toggleOptions(3)}}><i>{oportunidad3}</i></span>
-                  {block4}
+                  <span className={isActive3 ? 'activo3': 'noactivo3'} onClick={()=>{toggleOnce(3);toggleOptions(3)}}>{oportunidad3}</span>
+                  <span>{block4}</span>
                 </p>
               </div>
             </div>
-            <div className='col-10 col-md-3 m-5 quizImg'>
+            <div className='col-5 col-md-3 m-5 quizImg'>
               <img src={  situation=="tweets" ? require('../assets/img/illus/tweet.png'):  
                           situation=="papers" ? require('../assets/img/illus/paper.png'): 
                           situation=="hablados" ? require('../assets/img/illus/hablado.png'): 

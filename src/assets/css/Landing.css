@@ -1,7 +1,127 @@
+h1{
+    z-index: 50;
+}
+.nota{
+    font-size: x-small !important;
+    z-index: 0;
+  }
+.linea{
+    width: auto !important;
+}
 #home2{
     margin: -8em 0em -8em 0em;
     /* z-index: 100; */
 }
 #experimento{
     background-image: url("https://via.placeholder.com/500");
+}
+.homemisc img{
+    height: 40px !important;
+}
+.landing2{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+@media only screen and (min-width: 768px) {
+    .landing2{
+        height: auto;
+        min-width: 100vw;
+    }
+    #cuestionas{
+        width: 40%;
+        margin: auto;
+    }
+    .nota{
+        display: none;
+    }
+    .linea{
+        display: none;
+    }
+    #home1{
+        position: absolute;
+        top:20%;
+        left: 3%;
+        width: 400px;
+        z-index: 0;
+    }
+    #home2{
+        position: absolute;
+        top:55%;
+        left: 70%;
+        width: 350px;
+        z-index: 0;
+    }
+    #home3{
+        position: absolute;
+        top:100%;
+        left: 35%;
+        width: 400px;
+        margin: 0em;
+        z-index: 0;
+    }
+    #bajada{
+        position: absolute;
+        width: 350px;
+        padding: 3em;
+        padding-right: 5em;
+        height: 300px;
+        top: 70%;
+        left: 40%;
+        font-size: 1em;
+        background-image: url('../img/bajada.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #feminismo{
+        position: absolute;
+        width: 350px;
+        padding: 3em;
+        padding-left: 5em;
+        height: 300px;
+        top: 130%;
+        left: 20%;
+        font-size: 1em;
+        background-image: url('../img/fembub.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #lenguaje{
+        position: absolute;
+        width: 350px;
+        padding: 3em;
+        padding-top: 5em;
+        padding-right: 5em;
+        height: 300px;
+        top: 155%;
+        right: 15%;
+        font-size: 1em;
+        background-image: url('../img/lenbub.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #lineaLengua{
+        position: absolute;
+        top:160%;
+        left:45%
+    }
+    #bocaRosa{
+        position: absolute;
+        top:200%;
+        left:90%
+    }
+    #bocaGris{
+        position: absolute;
+        top:170%;
+        left:15%
+    }
+    #bubWiggle{
+        position: absolute;
+        top:100%;
+        left:15%
+    }
+    #filledStar{
+        position: absolute;
+        top:270%;
+        left:45%
+    }
 }

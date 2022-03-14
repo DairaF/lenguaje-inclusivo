@@ -31,24 +31,25 @@ function Fave(props) {
     <div >
       {texto()}
       {toolImg()}
-      <div className='col-9 mx-auto p-5 text-center'>
-        <h1 className='playfair blanco f3 text-center'>{props.number}</h1>
-        
-
-        {   props.name == "Rae"? imgSrc = <img src={ require('../assets/img/illus/end1.png') } />:
-            props.name == "Desdoblamiento" ? imgSrc = <img src={ require('../assets/img/illus/expresion.png') } />:
-            props.name == "Nuevos morfemas"? imgSrc = <img src={ require('../assets/img/illus/morfema.png') } />:
+      <div className='mx-auto text-center'>
+        <hr className='blanco'></hr>
+        <h1 className='playfair blanco f3 text-center -mt-1'>{props.number}</h1>
+        <div className='row justify-content-center'>
+        {   props.name == "Rae"? imgSrc = <img className='col-6 col-md-3' src={ require('../assets/img/illus/end1.png') } />:
+            props.name == "Desdoblamiento" ? imgSrc = <img className='col-6 col-md-4' src={ require('../assets/img/illus/expresion.png') } />:
+            props.name == "Nuevos morfemas"? imgSrc = <img className='col-6 col-md-4' src={ require('../assets/img/illus/morfema.png') } />:
             props.name == "No se"? imgSrc = <img src={ require('../assets/img/illus/end1.png') } />:
-            props.name == "Pronombres relativos"? imgSrc = <img src={ require('../assets/img/illus/pronombre.png') } />:
-            props.name == "Sustantivos abstractos"? imgSrc = <img src={ require('../assets/img/illus/sustantivo.png') } />:
-            props.name == "Sustantivos Colectivos"? imgSrc = <img src={ require('../assets/img/illus/sustantivo.png') } />
-            :<img src={ require('../assets/img/illus/end1.png') } />
-            }
-
-
-        
-        <h3 className='playfair py-5 under-negro'>{props.name}</h3>
-        <p className='mt-5'>{descripcion}</p>
+            props.name == "Pronombres relativos"? imgSrc = <img className='col-6 col-md-4' src={ require('../assets/img/illus/pronombre.png') } />:
+            props.name == "Sustantivos abstractos"? imgSrc = <img className='col-6 col-md-4' src={ require('../assets/img/illus/sustantivo.png') } />:
+            props.name == "Sustantivos Colectivos"? imgSrc = <img className='col-6 col-md-4' src={ require('../assets/img/illus/sustantivo.png') } />
+            :<img className='col-6 col-md-4' src={ require('../assets/img/illus/end1.png') } />
+            }        
+        <div className='col-10 col-md-3 offset-md-2 faveTool mt-3'>
+          <h3 className='playfair mt-5'><b>{props.name}</b></h3>
+          <p className='mt-3 blanco'>{descripcion}</p>
+          <p className='mt-2 playfair'><b>Ejemplo</b></p>
+        </div>
+        </div>
       </div>
     </div>
   );
