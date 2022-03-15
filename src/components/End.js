@@ -227,28 +227,28 @@ const End = (props) => {
       <SwiperSlide>
         <div className='endSlide'>
           <div className='container'>
-          <div className='row justify-content-center text-center pt-5'>
+          <div className='row justify-content-center text-center pt-md-5'>
             <h3>Tu herramienta favorita</h3>
           </div> 
           <div className='row justify-content-center text-center'>
             <p className='col-8 text-center blanco'>Usaste {faveName1=="Rae"? faveN2 :faveName2=="Rae"? faveN3 : faveName3 =="Rae"? "no" : "no" } <br/> <b> veces</b></p>
           </div>          
           <div className='row justify-content-center '>
-              {faveName1 == "Rae"? <img className='col-2' src={ require('../assets/img/illus/end1.png') } />:
-              faveName1 == "Desdoblamiento" ?<img className='col-2' src={ require('../assets/img/illus/expresion.png') } />:
-              faveName1 == "Nuevos morfemas"?<img className='col-2' src={ require('../assets/img/illus/morfema.png') } />:
-              faveName1 == "No se"? <img className='col-2' src={ require('../assets/img/illus/end1.png') } />:
-              faveName1 == "Pronombres relativos"? <img className='col-2' src={ require('../assets/img/illus/pronombre.png') } />:
-              faveName1 == "Sustantivos abstractos"? <img className='col-2' src={ require('../assets/img/illus/sustantivo.png') } />:
-              faveName1 == "Sustantivos Colectivos"? <img className='col-2' src={ require('../assets/img/illus/sustantivo.png') } />
-              :<img className='col-2' src={ require('../assets/img/illus/end1.png') } />
+              {faveName1 == "Rae"? <img className='col-6 col-md-2 ' src={ require('../assets/img/illus/end1.png') } />:
+              faveName1 == "Desdoblamiento" ?<img className='col-6 col-md-2 ' src={ require('../assets/img/illus/expresion.png') } />:
+              faveName1 == "Nuevos morfemas"?<img className='col-6 col-md-2 ' src={ require('../assets/img/illus/morfema.png') } />:
+              faveName1 == "No se"? <img className='col-6 col-md-2 ' src={ require('../assets/img/illus/end1.png') } />:
+              faveName1 == "Pronombres relativos"? <img className='col-6 col-md-2 ' src={ require('../assets/img/illus/pronombre.png') } />:
+              faveName1 == "Sustantivos abstractos"? <img className='col-6 col-md-2 ' src={ require('../assets/img/illus/sustantivo.png') } />:
+              faveName1 == "Sustantivos Colectivos"? <img className='col-6 col-md-2 ' src={ require('../assets/img/illus/sustantivo.png') } />
+              :<img className='col-6 col-md-2 ' src={ require('../assets/img/illus/end1.png') } />
               }
           </div>
           <div className='row justify-content-center '>
               {faveName1}
           </div>
           <div className='row justify-content-center '>
-            <a className='col-10 col-md-2 bg-crema f08 text-center mt-75 mt-md-5 mt-md-15 negro py-2' onClick={()=>nextSlide("pos")} > <b>EXPLORÁ TU PERFIL </b></a>
+            <a className='col-10 col-md-2 bg-crema f08 text-center mt-5 mt-md-15 negro py-2' onClick={()=>nextSlide("pos")} > <b>EXPLORÁ TU PERFIL </b></a>
           </div>
           </div>
         </div>

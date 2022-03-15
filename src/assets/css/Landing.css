@@ -1,3 +1,6 @@
+.container{
+    margin: 0% !important;
+}
 h1{
     z-index: 50;
 }
@@ -12,23 +15,87 @@ h1{
     margin: -8em 0em -8em 0em;
     /* z-index: 100; */
 }
-#experimento{
-    background-image: url("https://via.placeholder.com/500");
-}
 .homemisc img{
     height: 40px !important;
 }
+.landing1{
+    min-height: 100vh;
+    width: 100vw;
+}
 .landing2{
     min-height: 100vh;
-    min-width: 100vw;
+    width: 100vw;
 }
+.landing3{
+    min-height: 100vh;
+    width: 100vw;
+}
+#filledStar{
+    margin-left: 20%;
+    margin-bottom: -25%;
+}
+#star{
+    margin-left: 70%;
+    margin-top: -15%;
+}
+#bocaRosa{
+    margin-top: 5%;
+    margin-left: 35%;
+}
+#noNeutral{
+    margin-top: 5%;
+    margin-bottom: -3%;
+}
+#quiz{
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url('../img/curlySpeechW.png'), url('../img/xgris.png');
+    background-repeat: no-repeat;
+    background-size: 40%,10%;
+    background-position: 35% 90%,80% 15%;
+}
+#caja{
+    min-height: 100vh;
+    width: 100vw;
+}
+#texto{
+    min-height: 100vh;
+    width: 100vw;
+}
+#caja{
+    background-image: url('../img/diccionario.png'), url('../img/bocaLila.png'),url('../img/bocaLineaRosa.png'),url('../img/blackWiggle.png');
+    background-repeat: no-repeat;
+    background-size: 15%,15%,15%,6%;
+    background-position: 15% 90%,20%25%,65%50%,95%85%;
+}
+#texto{
+    background-image: url('../img/Xserif.png'), url('../img/interrogacion2.png'),url('../img/A.png');
+    background-repeat: no-repeat;
+    background-size: 15%,15%,25%;
+    background-position: 5% 40%,90%15%,95%98%;
+}
+
 @media only screen and (min-width: 768px) {
+    .landing1{
+        height: auto;
+        width: 100vw;
+        height: 30vh;
+    }
     .landing2{
         height: auto;
-        min-width: 100vw;
+        width: 100vw;
+        height: 30vh;
+    }
+    .landing3{
+        height: auto;
+        width: 100vw;
+        height: 30vh;
     }
     #cuestionas{
-        width: 40%;
+        position: absolute;
+        top: 200%;
+        left: 30%;
+        width: 35%;
         margin: auto;
     }
     .nota{
@@ -47,7 +114,7 @@ h1{
     #home2{
         position: absolute;
         top:55%;
-        left: 70%;
+        left: 60%;
         width: 350px;
         z-index: 0;
     }
@@ -106,8 +173,8 @@ h1{
     }
     #bocaRosa{
         position: absolute;
-        top:200%;
-        left:90%
+        top:190%;
+        left:50%
     }
     #bocaGris{
         position: absolute;
@@ -121,7 +188,31 @@ h1{
     }
     #filledStar{
         position: absolute;
-        top:270%;
-        left:45%
+        top:245%;
+        left:25%
+    }
+    #noNeutral{
+        position: absolute;
+        top:215%;
+        left:28%;
+        width:40%
+    }
+    #quiz{
+        background-image: url('../img/curlySpeechW.png'), url('../img/at.png'),url('../img/xgris.png');
+        background-repeat: no-repeat;
+        background-size: 20%,5%,5%;
+        background-position: 20% 80%,80%40%,20%20%;
+    }
+    #caja{
+        background-image: url('../img/diccionario.png'), url('../img/bocaLila.png'),url('../img/bocaLineaRosa.png'),url('../img/blackWiggle.png');
+        background-repeat: no-repeat;
+        background-size: 8%,7%,7%,7%;
+        background-position: 20% 80%,50%43%,80%80%,95%15%;
+    }
+    #texto{
+        background-image: url('../img/Xserif.png'), url('../img/interrogacion2.png'),url('../img/A.png');
+        background-repeat: no-repeat;
+        background-size: 5%,5%,15%;
+        background-position: 5% 40%,90%15%,95%98%;
     }
 }

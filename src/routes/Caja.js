@@ -10,9 +10,9 @@ function Caja() {
   return (
     <div className=' bg-lila full' >
       <div className='container'>
-        <div id="tituloCaja" className='row justify-content-between'>
-          <h2 className='offset-1 col-5 blanco pl-3'>Caja de <span className='playfairItalic'>herramientas</span></h2>
-          <p className='col-4 playfair'>Elegí una de las opciones para empezar a ver las herramientas</p>
+        <div id="tituloCaja" className='row justify-content-between offset-md-2'>
+          <h2 className=' col-5 blanco pl-3'>Caja de <span className='playfairItalic'>herramientas</span></h2>
+          <p className='col-5 playfair'>Elegí una de las opciones para empezar a ver las herramientas</p>
         </div>
         <div className='row justify-content-between contenedorCaja  playfair'>
           <a className='col-5 col-sm-3 col-lg-2 m-auto negro' href='caja-de-herramientas/sustantivos' >

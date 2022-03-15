@@ -1,3 +1,23 @@
+.visible {
+  /* display: flex; */
+  top: 0;
+  transition: top 0.4s ease-out;
+}
+.redirect{
+  min-height: 8em;
+  padding: 1.2em;
+  margin: 1em;
+}
+/* .flechaEnBorde{
+  position: relative;
+  bottom: -26%;
+  left: 45%;
+} */
+.hidden {
+  /* display: none; */
+  top: -20%;
+  transition: top 0.4s ease-out;
+}
 table tr{
   border: solid 2px;
   border-collapse: collapse;
@@ -74,10 +94,49 @@ h1{
   background: #9F8BEA !important;
   width: 0%;
 }
-
+.menu-tool-content{
+  background-color: white;
+  overflow-wrap: normal;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 50;
+  padding-left: 2em
+}
+.activa{
+  display: block;
+}
+.noactiva{
+  display: none;
+}  
+.tituloMenu{
+  margin-top: 40% !important;
+  margin-bottom: solid 1px #9F8BEA!important;
+  text-transform: uppercase !important;
+}
 @media only screen and (min-width: 768px) {
+  /* .flechaEnBorde{
+    position: relative;
+    bottom: -60%;
+    left: 45%;
+  } */
+  .noactiva{
+    display: block;
+  }
+  .menu-tool-content{
+    position: fixed;
+    margin-top: 8%;
+    height: 80%;
+    width: 25%;
+    padding-left: 1em;
+    background-color:transparent;
+    z-index: 110;
+  }
   .menuHerramienta{
     position: fixed;
+    z-index: 500;
   }
   .banner{
     background-image: url('../img/Sbg1.png'),url('../img/Sbg2.png');

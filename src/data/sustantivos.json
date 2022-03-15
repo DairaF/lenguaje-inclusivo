@@ -5,16 +5,16 @@
         "camelCase":"AsociadosAPersonasOEntidades",
         "texto":"Son los que agrupan a personas, instituciones, empresas u otras entidades. Como no se refieren exclusivamente a personas, entendemos que el género gramatical no se refiere a un género social.",
         "ejemplo1": "agentes, actores",
-        "masInfo": " ",
-        "ejemplo2": {}
+        "masInfo": "",
+        "ejemplo2": ""
     },{
         "id":2,
         "titulo":"Sustantivos abstractos",
         "camelCase":"SustantivosAbstractos",
         "texto":"En este contexto, son palabras que hablan de condiciones, posiciones laborales o habilidades, en lugar de personas u objetos concretos.",
         "ejemplo1": "jefatura, presidencia,",
-        "masInfo": " ",
-        "ejemplo2": {}
+        "masInfo": "",
+        "ejemplo2": ""
     },{
         "id":3,
         "titulo":"Sustantivos con terminaciones especiales",
@@ -31,7 +31,7 @@
         "camelCase":"Epicenos",
         "texto":"Son los sustantivos que siempre mantienen el mismo género gramatical, aunque se refieran a personas de distintos géneros.",
         "ejemplo1": "persona, víctima, individuo, autoridades.",
-        "masInfo": " ",
-        "ejemplo2": {}
+        "masInfo": "",
+        "ejemplo2": ""
     }
 ]

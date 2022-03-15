@@ -15,8 +15,8 @@ function ProgressBar() {
 
   return (
     <div className='' >
-      <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
+      <div className="progress-container">
+        <div className="progress-bar" id="myBar"></div>
       </div>
     </div>
   );
