@@ -1,7 +1,7 @@
 [
     {      
         "id":1,
-        "block1":"@fundesarg Estamos muy ",
+        "block1":"Estamos muy ",
         "opciones1":[
             {
                 "texto":"orgullosos ",
@@ -64,7 +64,7 @@
     },
     {      
         "id":2,
-        "block1":"@fundesarg ",
+        "block1":"",
         "opciones1":[
             {
                 "texto":"Hubo un ganador ",
@@ -142,7 +142,7 @@
     },
     {      
         "id":3,
-        "block1":"@fundesarg En nuestra encuesta imaginaria, el tío insiste que el candidato A es el más votado por ",
+        "block1":"En nuestra encuesta imaginaria, el tío insiste que el candidato A es el más votado por ",
         "opciones1":[
             {
                 "texto":"jóvenes y adultos ",

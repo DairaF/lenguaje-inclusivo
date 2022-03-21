@@ -1,0 +1,12 @@
+.guias{
+    width: 100vw;
+    min-height: 100vh ;
+    background-color: #BFC9C9;
+    background-image: url('../img/mail.png'),url('../img/I.png'),url('../img/hash.png'),url('../img/enter.png');
+    background-repeat: no-repeat;
+    background-size: 10%,3%,3%,10%;
+    background-position:10% 10%,10% 80%, 85% 40%, 90% 90%;
+}
+.guia{
+    background-color:#C5B9F2 ;
+}

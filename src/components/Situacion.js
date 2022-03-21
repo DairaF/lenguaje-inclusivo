@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Herramienta from './Herramienta';
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 function Situacion(props) {
     const step = props.step;
     const situation = props.situation;
@@ -97,21 +99,21 @@ function Situacion(props) {
 },);
   return (
     <div className=''>
-      <div className='full bg-crema '>
+      <div id='situacionFull' className=' bg-crema '>
         <div className='container'>
-          <div className='row'>
-            <span className='f08 col-10 lila mx-5 mt-md-10'><b>{step}/4</b></span> 
-          </div>
+          <img id="ayuda" className='logo' src={require("../assets/img/ayuda.png")} />
+            <span id="stepGuia" className='f08 col-2 lila'><b>{step}/4</b></span> 
           <div className='fondoSituacion'>
               <img src={  situation=="tweets" ? require('../assets/img/illus/tweetF.png'):  
                           situation=="papers" ? require('../assets/img/illus/paperF.png'): 
                           situation=="hablados" ? require('../assets/img/illus/habladoF.png'): 
                           situation=="notas" ? require('../assets/img/illus/notaF.png'): "" } />
-            </div>
-          <div className='row justify-content-center mt-md-15'>
-            <div className='bg-white border-negro-redondeado col-10 col-md-6 mx-auto m-md-1 situacion'>
+          </div>
+          <div className='row justify-content-center'>  
+            <div className='mt-25 mt-md-1 bg-white border-negro-redondeado col-10 col-md-6 mx-auto m-md-1 situacion'>
               <div className={situation=="tweets"?"twitter": situation=="papers"?"playfair":situation=="hablados"?"comilla":""}>
-                <p className='mt-5'>
+                <AnimationOnScroll animateIn='animate__fadeIn'>
+                <p className='m-3 m-md-5'>
                   <span>{block1}</span>
                   <span className={isActive1 ? 'activo1': 'noactivo1'} onClick={()=>{toggleOnce(1);toggleOptions(1)}}>{oportunidad1}</span>
                   <span>{block2}</span>
@@ -120,9 +122,10 @@ function Situacion(props) {
                   <span className={isActive3 ? 'activo3': 'noactivo3'} onClick={()=>{toggleOnce(3);toggleOptions(3)}}>{oportunidad3}</span>
                   <span>{block4}</span>
                 </p>
+                </AnimationOnScroll>
               </div>
             </div>
-            <div className='col-5 col-md-3 m-5 quizImg'>
+            <div className='col-7 col-md-3 m-2 m-md-5 quizImg'>
               <img src={  situation=="tweets" ? require('../assets/img/illus/tweet.png'):  
                           situation=="papers" ? require('../assets/img/illus/paper.png'): 
                           situation=="hablados" ? require('../assets/img/illus/hablado.png'): 

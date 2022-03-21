@@ -1,0 +1,16 @@
+.texto{
+    background-color: #F1F2F2;
+    width: 100vw;
+}
+.destacado{
+    font-weight: 600;
+    color: #9F8BEA;
+}
+#portada{
+    background-color: #BFC9C9;
+    width: 100vw;
+    height: 100vh;
+}
+p{
+    font-weight: 300;
+}

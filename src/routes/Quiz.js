@@ -8,6 +8,9 @@ import notas from '../data/notas.json';
 import papers from '../data/papers.json';
 import hablados from '../data/hablados.json';
 import ReactGa from 'react-ga'
+import "animate.css/animate.min.css";
+
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 function Quiz() {
     useEffect(()=>{
       ReactGa.initialize('G-BQYF4G0HMV')
@@ -55,8 +58,8 @@ const nextSituatcion = () =>{
 }
   return (
     <div className="App">
-      {page === 0 && <Start handleStart={nextSituatcion} />}
-      {page === 1 && <Situacion 
+      {page === 0 && <AnimationOnScroll animateIn="animate__slideInLeft" animateOut="animate__slideOutDown"><Start handleStart={nextSituatcion} /></AnimationOnScroll>}
+      {page === 1 && <AnimationOnScroll animateIn="animate__slideInUp" animateOut="animate__slideOutRight" ><Situacion 
                       key = {1}
                       handleRealize={handleRealize}
                       handleAnswers={handleAnswers}
@@ -72,9 +75,9 @@ const nextSituatcion = () =>{
                       opciones3={tweets[randomTweet].opciones3}
                       block4={tweets[randomTweet].block4}
                       step="1"
-                      />
+                      /></AnimationOnScroll>
       }
-      {page === 2 && <Situacion 
+      {page === 2 && <AnimationOnScroll animateIn="animate__slideInRight" ><Situacion 
                       key = {2}
                       handleRealize={handleRealize}
                       handleAnswers={handleAnswers}
@@ -90,8 +93,8 @@ const nextSituatcion = () =>{
                       opciones3={notas[randomNota].opciones3}
                       block4={notas[randomNota].block4}
                       step="2"
-                      />}
-      {page === 3 && <Situacion 
+                      /></AnimationOnScroll>}
+      {page === 3 && <AnimationOnScroll animateIn="animate__slideInRight" ><Situacion  
                       key = {3}
                       handleRealize={handleRealize}
                       handleAnswers={handleAnswers}
@@ -107,9 +110,9 @@ const nextSituatcion = () =>{
                       opciones3={papers[randomPaper].opciones3}
                       block4={papers[randomPaper].block4}
                       step="3"
-                      />
+                      /></AnimationOnScroll>
       }
-      {page === 4 && <Situacion 
+      {page === 4 && <AnimationOnScroll animateIn="animate__slideInRight" ><Situacion  
                       key = {4}
                       handleRealize={handleRealize}
                       handleAnswers={handleAnswers}
@@ -125,7 +128,7 @@ const nextSituatcion = () =>{
                       opciones3={hablados[randomSpeak].opciones3}
                       block4={hablados[randomSpeak].block4}
                       step="4"
-                      />
+                      /></AnimationOnScroll>
         }
       
       {/* {

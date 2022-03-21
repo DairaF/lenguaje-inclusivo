@@ -1,3 +1,6 @@
+.root { 
+  overflow:hidden !important;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 5px !important;
@@ -12,7 +15,7 @@
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #6484E8 !important; 
+  background: #9F8BEA !important; 
   border-radius: 10px !important;
 }
 
@@ -54,8 +57,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Playfair+Display&display=swap');
 
 hr{
-  height: 2px;
-  border: solid 1px;
+  border-top: 2px solid #9F8BEA !important;
 }
 body{
   font-family: "aktiv-grotesk",sans-serif !important;
@@ -69,13 +71,17 @@ h1{
 }
 h2{
   font-size: 2em !important;
+  font-weight: 800 !important;
 }
 p{
-  width: auto;
-  display: block;
+  font-size: 1.2em !important;
 }
 a{
+  color: white !important;
   text-decoration: none !important;
+}
+a:hover{
+  color:#9F8BEA !important;
 }
 .floatR{
   float: right;
@@ -99,25 +105,25 @@ a{
 }
 .container{
   padding: 0% !important;
-  width: 100vw;
+  max-width: 100% !important;
 }
 .rosita{
   color:#ECA9FC}
 .crema{
-  color:#F1F2F2}
+  color:#F1F2F2 !important}
 .gris{
-  color:#BFC9C9}
+  color:#d1d3d4 !important}
 .negro{
-  color: #000000;}
+  color: #000000 !important;}
 .azul{
-  color:#6484E8}
+  color:#6484E8 !important}
 .lila{
-  color:#9F8BEA}
+  color:#9F8BEA !important}
 .blanco{
-  color: #fff;
+  color: #fff !important;
 }
 .celeste{
-  color:#90B7CE}
+  color:#90B7CE !important}
 .bg-rosita{
   background-color:#ECA9FC !important}
 .bg-crema{
@@ -165,7 +171,7 @@ a{
 }
 .border-negro-redondeado{
   border: solid 2px #000000;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .text-center{
   text-align: center !important;
@@ -240,6 +246,9 @@ a{
 .mt-25{
   margin-top: 25% !important;
 }
+.mt-35{
+  margin-top: 35% !important;
+}
 .mt-45{
   margin-top: 45% !important;
 }
@@ -294,16 +303,21 @@ a{
 .guiaN{
   margin-bottom: -0.5em;
 }
-
-
 .hide-sm{
   display: none;
 }
 #logoFooter{
   width: -webkit-fill-available !important;
+  padding-right: 0.5em !important;
+}
+#acerca{
+  background-color: #171617;
+}
+
+#acerca p{
+  font-weight: 300;
 }
 @media only screen and (min-width: 768px) {
-
   .hide-sm{
   display: block;
   }

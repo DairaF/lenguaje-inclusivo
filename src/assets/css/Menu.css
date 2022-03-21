@@ -13,6 +13,8 @@
 }
 .menu-content a{
   display: block;
+  color: white;
+
 }
 .menu-content a:active{
   color: #000000;
@@ -30,12 +32,12 @@
   display: block;
   padding: 1em;
   width: 5%;
-  z-index: 500 !important;
+  z-index: 2000 !important;
 }
 #flag{
   padding: 1em;
   width: 5%;
-  z-index: 500 !important;
+  z-index: 1000 !important;
 }
 .progress-container {
   width: 100%;
@@ -63,8 +65,19 @@ header {
   /* display: flex; */
   top: 0;
   transition: top 0.4s ease-out;
+  z-index: 1100;
+  background-color: #F1F2F2;
 }
 
+.menu-content a{
+  font-weight: bold !important;
+}
+.menu-content a:active{
+  color: #9F8BEA !important;
+}
+.menu-content a:hover{
+  color: #9F8BEA !important;
+}
 .hidden {
   /* display: none; */
   top: -20%;
@@ -75,12 +88,7 @@ header {
   #burger{
     display: none;
   }  
-  .menu-content a:active{
-    color: #9F8BEA;
-  }
-  .menu-content a:hover{
-    color: #9F8BEA;
-  }
+
   .menu-content{
     position: absolute;
     display: block !important;
@@ -101,6 +109,7 @@ header {
     float: right;
     height: 100vh;
     padding-top: 1em;
+    background-color: transparent !important;
   }
 
 }

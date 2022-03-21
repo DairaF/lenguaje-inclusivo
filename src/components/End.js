@@ -3,6 +3,16 @@ import guias from '../data/guias.json';
 import Guia from './Guia';
 import Fave from './Fave';
 
+
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  TelegramShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
+} from "react-share";
+import { FacebookIcon, TwitterIcon, LinkedinIcon, TelegramIcon, WhatsappIcon } from "react-share";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -113,6 +123,7 @@ const End = (props) => {
   // const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
   return(
     <div >
+
         {sortResults()}
         {page === 0 && 
         <div>
@@ -154,10 +165,10 @@ const End = (props) => {
         <div className='endSlide aca'>
           <div className='container'>
               <div className='row justify-content-center'>
-                <h2 className='blanco col-9 col-md-5 mt-15 mt-md-20 text-center under-blanco pb-5'> <b>Acá no hay respuestas buenas ni malas.</b> </h2> 
+                <h2 className='blanco col-9 col-md-7 mt-15 mt-md-20 text-center under-blanco pb-5'> <b>Acá no hay respuestas buenas ni malas.</b> </h2> 
               </div>
               <div className='row justify-content-center'>
-                <p className='playfair col-9 mt-25 col-md-5 mt-md-5 text-center'><b> Al lenguaje lo construimos todos los días y siempre podemos seguir aprendiendo: <span className='playfairItalic'>se trata de hacerse preguntas.</span> </b></p>
+                <p className='playfair col-10 mt-25 col-md-7 mt-md-5 text-center'><b> Al lenguaje lo construimos todos los días y siempre podemos seguir aprendiendo: <span className='playfairItalic'>se trata de hacerse preguntas.</span> </b></p>
               </div>
           </div>
         </div>
@@ -170,9 +181,10 @@ const End = (props) => {
         </div>
       </SwiperSlide>
       {vw<768?<div><SwiperSlide>
-        <div className={realize < 5 ? "endSlide amigueF" : realize < 9 ? "endSlide xahiF" : "endSlide anteojosF" } > 
-          <div className='row justify-content-center border-blanco'>
-            <h2 className='text-center'><b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Anteojos violetas activados mode on" }</b></h2> 
+
+        <div className={realize < 5 ? "endSlide amigue" : realize < 9 ? "endSlide xahi" : "endSlide anteojos" } > 
+          <div className={realize < 5 ? "row justify-content-center border-blanco  amigueF" : realize < 9 ? "row justify-content-center border-blanco  xahiF" : "row justify-content-center border-blanco  anteojosF" }>
+            <h2 className='text-center'><b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Tenés los anteojos violetas activados" }</b></h2> 
             <input className='col-8 mt-75' type="range" min={1} max={12} value={morfemasCounter} ></input>
             <p className='blanco mt-5 text-center f08 col-8'><b>Identificaste {realize} de 12 expresiones</b></p>
           </div>
@@ -181,7 +193,7 @@ const End = (props) => {
       <SwiperSlide>
         <div className={realize < 5 ? "endSlide amigue" : realize < 9 ? "endSlide xahi" : "endSlide anteojos" } > 
           <div className='row justify-content-center border-blanco'>
-              <p className='under-blanco text-center'>{realize < 5 ? "Tenés que entrenar un poco más la mirada. Aunque no nos demos cuenta, el lenguaje que nos rodea todos los días puede ser una anteojera. " 
+              <p className='under-blanco text-center playfair'>{realize < 5 ? "Tenés que entrenar un poco más la mirada. Aunque no nos demos cuenta, el lenguaje que nos rodea todos los días puede ser una anteojera. " 
                 : realize < 9 ? "Vas por el buen camino. Podés identificar muchas situaciones pero hay otras que todavía cuestan." 
                 : "Tu radar cuestionador de lenguaje ve un término excluyente a 100km a la redonda." }
               </p>
@@ -196,13 +208,13 @@ const End = (props) => {
       :<SwiperSlide>
         <div className={realize < 5 ? "endSlide" : realize < 9 ? "endSlide " : "endSlide " } > 
           <div className='row justify-content-between'>
-            <div className='col-5 offset-1 mt-5'>
+            <div className='col-5  mt-5'>
               { realize < 5 ? <img className=' border-blanco p-0 floatR' src={require('../assets/img/illus/end1.png')}/> : 
                 realize < 9 ? <img className=' border-blanco p-0 floatR' src={require('../assets/img/illus/end2.png')}/> : 
                 <img className=' border-blanco p-0 floatR' src={require('../assets/img/illus/end3.png')}/> } 
             </div>
             <div className='col-6'>
-              <h2 className='text-center col-8 mt-25'><b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Anteojos violetas activados mode on" }</b></h2> 
+              <h2 className='text-center col-8 mt-15'><b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Tenés los anteojos violetas activados" }</b></h2> 
               <input className='col-8 mx-auto mt-5' type="range" min={1} max={12} value={morfemasCounter} ></input>
               <p className='blanco mt-5 col-8 text-center f08 '><b>Identificaste {realize} de 12 expresiones</b></p>
                 <p className='col-8 text-left playfair'>{realize < 5 ? "Tenés que entrenar un poco más la mirada. Aunque no nos demos cuenta, el lenguaje que nos rodea todos los días puede ser una anteojera. Nos acostumbramos a leer y escuchar palabras que parecen correctas pero que a veces dejan afuera a mucha gente. Si llegaste hasta acá, ya es el primer paso." 
@@ -227,11 +239,8 @@ const End = (props) => {
       <SwiperSlide>
         <div className='endSlide'>
           <div className='container'>
-          <div className='row justify-content-center text-center pt-md-5'>
-            <h3>Tu herramienta favorita</h3>
-          </div> 
           <div className='row justify-content-center text-center'>
-            <p className='col-8 text-center blanco'>Usaste {faveName1=="Rae"? faveN2 :faveName2=="Rae"? faveN3 : faveName3 =="Rae"? "no" : "no" } <br/> <b> veces</b></p>
+            <p className='col-8 text-center blanco mt-10'>Usaste <br/><b>{faveName1=="Rae"? faveN2 :faveName2=="Rae"? faveN3 : faveName3 =="Rae"? "no" : "no" } veces</b></p>
           </div>          
           <div className='row justify-content-center '>
               {faveName1 == "Rae"? <img className='col-6 col-md-2 ' src={ require('../assets/img/illus/end1.png') } />:
@@ -244,11 +253,11 @@ const End = (props) => {
               :<img className='col-6 col-md-2 ' src={ require('../assets/img/illus/end1.png') } />
               }
           </div>
-          <div className='row justify-content-center '>
-              {faveName1}
+          <div className='row justify-content-center playfair'>
+            <p>{faveName1}</p>
           </div>
           <div className='row justify-content-center '>
-            <a className='col-10 col-md-2 bg-crema f08 text-center mt-5 mt-md-15 negro py-2' onClick={()=>nextSlide("pos")} > <b>EXPLORÁ TU PERFIL </b></a>
+            <a id="verResultados" className='col-10 col-md-2 f08 text-center mt-5 mt-md-15 negro py-2' onClick={()=>nextSlide("pos")} > <b>EXPLORÁ TU PERFIL </b></a>
           </div>
           </div>
         </div>
@@ -260,8 +269,9 @@ const End = (props) => {
         <div className={realize < 5 ? " amiguePf" : realize < 9 ? " xahiPf" : " anteojosPf" } > 
         <div className='container'>
             <div className='row justify-content-center'>
-              <h2 className='text-center mt-15 col-10 col-md-5 m-center'> <b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Anteojos violetas activados mode on" }</b></h2> 
+              <h2 className='text-center mt-15 col-10 col-md-5 m-center negro'> <b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Tenés los anteojos violetas activados" }</b></h2> 
             </div>
+            <hr className='blanco hide-md' />
             <div className='row justify-content-center'>
               <p className=' text-center mt-15 mt-md-10 col-10 col-md-5 m-center playfair'>{realize < 5 ? "Tenés que entrenar un poco más la mirada. Aunque no nos demos cuenta, el lenguaje que nos rodea todos los días puede ser una anteojera. Nos acostumbramos a leer y escuchar palabras que parecen correctas pero que a veces dejan afuera a mucha gente. Si llegaste hasta acá, ya es el primer paso." 
                 : realize < 9 ? "Vas por el buen camino. Podés identificar muchas situaciones en las que las palabras excluyen, pero hay otras que todavía cuestan, como todo en la vida. Lo importante: hay cosas que te hacen ruido y querés cambiarlas." 
@@ -270,43 +280,94 @@ const End = (props) => {
             </div>
             <hr className='blanco mt-15'/>
             <div className='row text-center mt-5 pb-5 justify-content-center'>
-              <h2 className='col-8 col-md-5 mx-auto my-5'><b>Tus <span className='playfairItalic'>herramientas</span> favoritas fueron</b></h2>
+              <h2 className='col-10 col-md-5 mx-auto my-5'><b>Tus <span className='playfairItalic'>herramientas</span> favoritas fueron</b></h2>
                   <Fave key = {1} number = {1} name = {faveName1} />
                   {faveN2 !==0 ? <Fave key = {2} number = {2} name = {faveName2} />: "" }
                   {faveN3 !==0 ? <Fave key = {3} number = {3} name = {faveName3} />: "" }
             </div>
-            <div className='bg-crema'>
-              <div className='row text-center mt-5 pb-5'>
-                <h2 className='col-8 col-md-5 mx-auto my-5'><b>Guía de <span className='playfairItalic'>autorevisión</span> a la hora de <span className='playfairItalic'>escribir</span></b></h2>
-                <p className='col-8 col-md-5 mx-auto my-md-5'>Escribir requiere necesariamente revisar y reescribir. A continuación, presentamos una lista de preguntas que buscan guiar la revisión de textos con perspectiva de género. </p>
-                {
-                  guias.map((guia, index)=>{
-                    return (
-                      <Guia
-                        key = {index}
-                        number = {index+1}
-                        titulo = {guia.titulo}
-                        texto= {guia.texto}     
-                      />
-                    )
-                  }
-                  )
-                }
+            <div>
+              <h3 className='text-center'>Compartí tus resultados</h3>
+              <div className='row justify-content-center'>
+                <FacebookShareButton
+                  url={"https://lenguajeinclusivo.fund.ar/quiz"}
+                  quote={"mi herramienta favorita fue:"+faveName1}
+                  hashtag={"#fundar"}
+                  description={"descubri tu propio perfil gramatico"}
+                  className="col-2 col-md-1 Demo__some-network__share-button"
+                >
+                  <FacebookIcon size={32} round />
+                </FacebookShareButton>
+                <LinkedinShareButton
+                  url={"https://lenguajeinclusivo.fund.ar/quiz"}
+                  quote={"mi herramienta favorita fue:"+faveName1}
+                  hashtag={"#fundar"}
+                  description={"descubri tu propio perfil gramatico"}
+                  className="col-2 col-md-1 Demo__some-network__share-button"
+                >
+                  <LinkedinIcon size={32} round /> 
+                </LinkedinShareButton>
+                <TwitterShareButton
+                  url={"https://lenguajeinclusivo.fund.ar/quiz"}
+                  quote={"mi herramienta favorita fue:"+faveName1}
+                  hashtag={"#fundar"}
+                  description={"descubri tu propio perfil gramatico"}
+                  className="col-2 col-md-1 Demo__some-network__share-button"
+                >
+                  <TwitterIcon size={32} round /> 
+                </TwitterShareButton>
+                <WhatsappShareButton
+                  url={"https://lenguajeinclusivo.fund.ar/quiz"}
+                  quote={"mi herramienta favorita fue:"+faveName1}
+                  hashtag={"#fundar"}
+                  description={"descubri tu propio perfil gramatico"}
+                  className="col-2 col-md-1 Demo__some-network__share-button"
+                >
+                  <WhatsappIcon size={32} round /> 
+                </WhatsappShareButton>
+              </div>
+            </div>
+            <hr className='blanco'/>
+
+
+
+            <div className='redirects'>     
+              <div className='row justify-content-center p-5'>
+                <div className=' blanco-borde-negro col-12 col-md-3 redirect negro'>
+                  <a  href='/quiz'>
+                    <div className='row redirect-texto negro'>
+                      <b>Ahora que conocés tus resultados, desafiate otra vez: hacé el experimento de nuevo</b>
+                    </div>
+                    <div className='flechaEnBorde'>
+                      <img alt="." className="logo" src={require("../assets/img/flechaBgLila.png")}/>
+                    </div>   
+                  </a>       
+                </div>
+
+                <div className=' blanco-borde-negro col-12 col-md-3 redirect negro'>
+                  <a  href='/caja-de-herramientas'>
+                    <div className='row redirect-texto negro'>
+                      <b>Explorá más recursos y descubrí más herramientas para no hablar solo de los varones.</b>
+                    </div>
+                    <div className='flechaEnBorde'>
+                      <img alt="." className="logo" src={require("../assets/img/flechaBgLila.png")}/>
+                    </div>   
+                  </a>       
+                </div>
+
+                <div className=' blanco-borde-negro col-12 col-md-3 redirect negro'>
+                  <a  href='/texto-expositivo'>
+                    <div className='row redirect-texto negro '>
+                      <b>¿Qué sentido tiene el lenguaje <span className='playfair'>inclusivo?</span></b>
+                    </div>
+                    <div className='flechaEnBorde'>
+                      <img alt="." className="logo" src={require("../assets/img/flechaBgLila.png")}/>
+                    </div>   
+                  </a>       
+                </div>                
               </div>
             </div>
 
-            <div className='row justify-content-center  justify-content-md-between pb-5'>
-              <div className='blanco-borde-negro col-8 col-md-3 mt-5 p-3'>
-                <a className='negro' href='/quiz'><b>Ahora que conocés tus resutlados, desafiate otra vez: hacé el experimento de nuevo</b></a>
-                <a  href='/quiz' className='col-1 mx-auto flechaEnBorde'><img alt="." className="logo" src={require("../assets/img/flechaBgLila.png")}/></a>
-              </div>
-              <div className='blanco-borde-negro col-8 col-md-3 mt-5 p-3'>
-                <a className='negro' href='/caja-de-herramientas'><b>Chequear texto q redirige a herramienta</b></a>
-              </div>
-              <div className='blanco-borde-negro col-8 col-md-3 my-5'>
-                <a className='negro' href='/texto-expositivo'><b>¿Qué sentido tiene el lenguaje <span className='playfair'>inclusivo?</span></b></a>
-              </div>
-            </div>
+
           </div> 
           </div> 
     }

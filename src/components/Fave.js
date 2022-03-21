@@ -46,7 +46,7 @@ function Fave(props) {
             }        
         <div className='col-10 col-md-3 offset-md-2 faveTool mt-3'>
           <h3 className='playfair mt-5'><b>{props.name}</b></h3>
-          <p className='mt-3 blanco'>{descripcion}</p>
+          <p id="descripcionFave" className='mt-3 blanco'>{descripcion}</p>
           <p className='mt-2 playfair'><b>Ejemplo</b></p>
         </div>
         </div>

@@ -5,14 +5,20 @@
 }
 .redirect{
   min-height: 8em;
-  padding: 1.2em;
   margin: 1em;
 }
-/* .flechaEnBorde{
+.redirect-texto{
+  min-height: 7em;
+  padding: 1.2em;
+}
+.redirect img{  
+  height: 1.5em;
   position: relative;
-  bottom: -26%;
-  left: 45%;
-} */
+  bottom: 0%;
+  margin-left: 45%;
+  margin-bottom: -1em !important;
+}
+
 .hidden {
   /* display: none; */
   top: -20%;
@@ -39,10 +45,10 @@ h1{
   background-color: white;
 }
 .contenedorCaja{
-  width: 85%;
+  width: 80%;
   position: fixed;
   top: 50%;
-  left: 53%;
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -50,13 +56,13 @@ h1{
   padding: 0.5em !important;
 }
 #btnGuia{
-  width: 70%;
+  width: 73%;
   border: solid 2px #000000;
   border-radius: 5px;
   padding: 0.5em 2em 0.5em 2em !important;
   position: fixed;
-  top: 85%;
-  left: 50%;
+  top: 80%;
+  left: 49%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -95,7 +101,7 @@ h1{
   width: 0%;
 }
 .menu-tool-content{
-  background-color: white;
+  background-color:#C5B9F2;
   overflow-wrap: normal;
   position: fixed;
   top: 0%;
@@ -104,6 +110,10 @@ h1{
   height: 100vh;
   z-index: 50;
   padding-left: 2em
+}
+.toolBody{
+  width: 100% !important;
+  overflow: hidden;
 }
 .activa{
   display: block;
@@ -116,12 +126,13 @@ h1{
   margin-bottom: solid 1px #9F8BEA!important;
   text-transform: uppercase !important;
 }
+.redirects{
+  background-color: #9F8BEA;
+}
 @media only screen and (min-width: 768px) {
-  /* .flechaEnBorde{
-    position: relative;
-    bottom: -60%;
-    left: 45%;
-  } */
+  .redirects{
+    background-color: transparent;
+  }
   .noactiva{
     display: block;
   }
@@ -158,7 +169,11 @@ h1{
     top:55%;
   }
   #tituloCaja{
-    padding-top: 15%;
-    display: flex;
+    display: block;
+    width: 75%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }

@@ -10,11 +10,11 @@ function Caja() {
   return (
     <div className=' bg-lila full' >
       <div className='container'>
-        <div id="tituloCaja" className='row justify-content-between offset-md-2'>
-          <h2 className=' col-5 blanco pl-3'>Caja de <span className='playfairItalic'>herramientas</span></h2>
-          <p className='col-5 playfair'>Elegí una de las opciones para empezar a ver las herramientas</p>
+        <div id="tituloCaja" className=''>
+          <h2 className='col-5 blanco floatL'>Caja de <span className='playfairItalic'>herramientas</span></h2>
+          <p className='col-5 playfair floatR'><b>Elegí una de las opciones para empezar a ver las herramientas</b></p>
         </div>
-        <div className='row justify-content-between contenedorCaja  playfair'>
+        <div className='row justify-content-between contenedorCaja playfair'>
           <a className='col-5 col-sm-3 col-lg-2 m-auto negro' href='caja-de-herramientas/sustantivos' >
             <img className='herramientaImg' src={require('../assets/img/illus/sustantivo.png')} />
             Sustantivos
@@ -35,7 +35,7 @@ function Caja() {
         <div className='text-center'>
           <a id='btnGuia' className='negro' href='/guia-autocorrecion'>
             <img className='floatL' src={require('../assets/img/sonrisaAbierta.png')} />
-            <span className='f08'>GUÍA AUTOREVISIÓN</span>
+            <b className='f08 negro text-center'>GUÍA AUTOREVISIÓN</b>
             <img className='floatR' src={require('../assets/img/uwu.png')} />
           </a>
         </div>
