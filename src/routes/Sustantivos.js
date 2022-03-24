@@ -46,11 +46,11 @@ function Sustantivos() {
           </div>
         </div>
       </div>   
-      <div className='redirects'>     
+      <div className='redirects '>     
         <div className='row justify-content-center p-5'>
           <div className=' mx-5 blanco-borde-negro col-12 col-md-3 redirect negro'>
             <a  href='/quiz'>
-              <div className='row redirect-texto'>
+              <div className='row redirect-texto negro'>
                 <b>Ahora que viste todas las herramientas, ponete a prueba y descubrí tu propio lenguaje inclusivo</b>
               </div>
               <div className='flechaEnBorde'>
@@ -61,7 +61,7 @@ function Sustantivos() {
 
           <div className=' mx-5 blanco-borde-negro col-12 col-md-3 redirect negro'>
             <a href='/texto-expositivo'>
-              <div className='row redirect-texto'>
+              <div className='row redirect-texto negro'>
                 <b>¿Qué sentido tiene el lenguaje <span className='playfair'>inclusivo?</span></b>
               </div>
               <div className='flechaEnBorde'>

@@ -28,17 +28,20 @@ const cls = visible ? "visible" : "hidden";
   return (
     <div className='menuHerramienta' >
       <div className='container' >
-        <header  className={cls}>
+      <header >
           <div className='row justify-content-center negro '>
             <a className="col-12 text-center lila hide-md tituloMenu" onClick={toggleBtn} ><b>Menu</b></a><br/>
           </div>
         </header>
         <div className={menuState ? 'activa menu-tool-content pt-5' : 'noactiva menu-tool-content'}>
-          <a className="col-11 hide-md" onClick={toggleBtn} ><img alt="." className=" logo" src={require("../assets/img/x.png")}/></a>
-          <div className='row'>
-            <a className='col-12 negro mt-3' href='/texto-expositivo#espacioPublico' ><b>Lenguaje y género en el espacio público</b></a><br/>
-            <a className='col-12 negro mt-3' href='/texto-expositivo#debates' ><b>Debates en la lingüística</b></a><br/>
-            <a className='col-12 negro mt-3' href='/texto-expositivo#inclusion' ><b>Lenguaje e inclusión social</b></a><br/>
+          <a className="col-11 hide-md" onClick={toggleBtn} ><img alt="." className=" logo floatR mr-5" src={require("../assets/img/x.png")}/></a>
+          <div className='row f08 mt-15 mr-10 mt-md-0 mx-md-0'>
+            <a className='col-12 negro py-2 mx-3 under-negro over-negro' href='/texto-expositivo#espacioPublico' ><b>Lenguaje y género en el espacio público</b></a><br/>
+            <a className='col-12 negro py-2 mx-3 -mt-1 under-negro' href='/texto-expositivo#debates' ><b>Debates en la lingüística</b></a><br/>
+            <a className='col-12 negro py-2 mx-3 -mt-1 under-negro ' href='/texto-expositivo#inclusion' ><b>Lenguaje e inclusión social</b></a><br/>
+            <a className='col-12 negro py-2 mx-3 -mt-1  under-negro ' href='/texto-expositivo#biblio' ><b>Bibliografía</b></a><br/>
+            <a className='col-12 negro py-2 mx-3 -mt-1  under-negro ' href='/texto-expositivo#autora' ><b>Acerca la autora</b></a><br/>
+            <a className='col-12 negro py-2 mx-3 -mt-1  under-negro ' href='/texto-expositivo#cita' ><b>Modo de citar citar</b></a><br/>
             
             </div>
         </div>

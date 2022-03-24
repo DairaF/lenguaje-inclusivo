@@ -11,10 +11,20 @@
   width: 100vw;
   height: 100vh;
 }
-.menu-content a{
-  display: block;
-  color: white;
-
+.menu-bg-negro{
+  background-color:#171617 !important;
+  height: 285%;
+  margin: -4%;
+  padding: 3em;
+}
+.menu-bg-lila{
+  background-color:#9F8BEA !important;
+  height: 285%;
+  margin: -4%;
+  padding: 3em;
+}
+.a-blanco a{
+  color: white !important;
 }
 .menu-content a:active{
   color: #000000;
@@ -30,37 +40,37 @@
 }
 #burger{
   display: block;
-  padding: 1em;
   width: 5%;
   z-index: 2000 !important;
 }
 #flag{
-  padding: 1em;
   width: 5%;
   z-index: 1000 !important;
 }
 .progress-container {
   width: 100%;
-  height: 8px;
+  height: 5px;
   background: #ccc;
   position: fixed;
-  top: 10%;
+  top: 0%;
+  left:0%;
 }
 .progress-bar {
-  height: 8px;
+  height: 5px;
   background: #9F8BEA !important;
-  width: 0%;
-}
+  width: 0%;}
 
 header {
-  padding: 30px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   top: 0;
   position: fixed;
   width: 100%;
 }
-
+#cruz img{
+  height: 1em;
+}
 .visible {
   /* display: flex; */
   top: 0;
@@ -70,14 +80,12 @@ header {
 }
 
 .menu-content a{
+  display: block;
+  color: white;
   font-weight: bold !important;
+  font-size: 1.3em
 }
-.menu-content a:active{
-  color: #9F8BEA !important;
-}
-.menu-content a:hover{
-  color: #9F8BEA !important;
-}
+
 .hidden {
   /* display: none; */
   top: -20%;
@@ -85,21 +93,34 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
+.visible{
+  height: 15%;}
   #burger{
     display: none;
   }  
-
+  #cruz{
+    display: none;
+  }
+  header{
+    padding: 30px !important;
+  }
   .menu-content{
     position: absolute;
     display: block !important;
-    width: 80%;
+    width: 78%;
     height: 3vh;
-    margin-left: 15%;
+    margin-left: 22%;
   }  
   .menu-content a{
     color: black !important;
-    text-align:right;
-    font-size: small;
+    text-align:left;
+    font-size: 0.8em;
+  }
+  .menu-content a:active{
+    color: #9F8BEA !important;
+  }
+  .menu-content a:hover{
+    color: #9F8BEA !important;
   }
   .noactiva{
     display: block !important;
@@ -111,5 +132,4 @@ header {
     padding-top: 1em;
     background-color: transparent !important;
   }
-
 }

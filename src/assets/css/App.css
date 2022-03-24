@@ -1,32 +1,45 @@
+bg-none{
+  background-color: transparent !important;
+}
+.h-content{
+  height: fit-content !important;
+}
 .root { 
   overflow:hidden !important;
+}
+.App{
+  overflow: hidden;
 }
 /* width */
 ::-webkit-scrollbar {
   width: 5px !important;
   height: 5px !important;
 }
-
+b{
+  font-weight: bold !important;
+}
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey !important; 
   border-radius: 10px !important;
 }
- 
+ul li{
+  list-style: none;
+}
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #9F8BEA !important; 
+  background: black !important; 
   border-radius: 10px !important;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #4b93a5 !important; 
+  background: #9F8BEA !important; 
 }
 
 @import url("https://p.typekit.net/p.css?s=1&k=ryc8beu&ht=tk&f=14032.14034.14036.21512&a=2153897&app=typekit&e=css");
 
-@font-face {
+  @font-face {
   font-family:"aktiv-grotesk";
   src:url("https://use.typekit.net/af/28158e/00000000000000003b9b4066/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/28158e/00000000000000003b9b4066/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/28158e/00000000000000003b9b4066/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
   font-display:auto;font-style:normal;font-weight:400;
@@ -56,8 +69,96 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Playfair+Display&display=swap');
 
+
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw0aXpsog.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw9aXpsog.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw2aXpsog.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw3aXpsog.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v28/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFunDTbtPY_Q.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v28/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFunDYbtPY_Q.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v28/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFunDZbtPY_Q.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v28/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFunDXbtM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+
+
 hr{
   border-top: 2px solid #9F8BEA !important;
+  opacity: 1;
 }
 body{
   font-family: "aktiv-grotesk",sans-serif !important;
@@ -67,14 +168,18 @@ body{
   padding: 0%;
 }
 h1{
-  font-size: 3em !important;
+  font-size: 3.5em !important;
+  line-height: 85% !important;
+  font-weight: 600 !important;
 }
 h2{
   font-size: 2em !important;
   font-weight: 800 !important;
+  line-height: 85%;
 }
 p{
   font-size: 1.2em !important;
+  line-height: initial;
 }
 a{
   color: white !important;
@@ -129,7 +234,7 @@ a:hover{
 .bg-crema{
   background-color:#F1F2F2 !important}
 .bg-gris{
-  background-color:#BFC9C9 !important}
+  background-color:#d1d3d4 !important}
 .bg-negro{
   background-color: #000000 !important;}
 .bg-blanco{
@@ -156,6 +261,10 @@ a:hover{
   border-bottom: 1px solid #000000;
   padding-bottom: 1px;
 }
+.over-negro{
+  border-top: 1px solid #000000;
+  padding-top: 1px;
+}
 .blanco-borde-negro{
   border: 2px solid #000000;
   background-color: white;
@@ -167,7 +276,7 @@ a:hover{
 .border-blanco{
   border: solid 1px #fff;
   padding:1.5em;
-  height: 80vh !important;
+  height: 90vh !important;
 }
 .border-negro-redondeado{
   border: solid 2px #000000;
@@ -183,7 +292,7 @@ a:hover{
   text-align: right !important;
 }
 .logo{
-  height: 25px;
+  height: 20px;
   width: auto;
 }
 .footer{
@@ -237,11 +346,17 @@ a:hover{
 .mb-10{
   margin-bottom: 10% !important;
 }
+.mt-8{
+  margin-top: 8% !important;
+}
 .mt-10{
   margin-top: 10% !important;
 }
 .mt-15{
   margin-top: 15% !important;
+}
+.mt-20{
+  margin-top: 20% !important;
 }
 .mt-25{
   margin-top: 25% !important;
@@ -252,10 +367,15 @@ a:hover{
 .mt-45{
   margin-top: 45% !important;
 }
+.mt-55{
+  margin-top: 55% !important;
+}
 .mt-75{
   margin-top: 75% !important;
 }
-
+.pt-15{
+  padding-top: 15%;
+}
 .opacity-05{
   opacity: 0.5;
 }
@@ -290,7 +410,9 @@ a:hover{
 .f5{
   font-size: 5em !important;
 }
-
+.f6{
+  font-size: 6em !important;
+}
 .f10{
   font-size: 10em !important;
 }
@@ -300,9 +422,7 @@ a:hover{
 .misc{
    height: fit-content !important;
 }
-.guiaN{
-  margin-bottom: -0.5em;
-}
+
 .hide-sm{
   display: none;
 }
@@ -317,7 +437,49 @@ a:hover{
 #acerca p{
   font-weight: 300;
 }
+
+.fw-100{
+  font-weight:100 !important ;
+}
+.lh1-5{
+  line-height: 1.5 !important;
+}
+.pl-8{
+  padding-left: 8% !important;
+}
+.mr-5{
+  margin-right: 5% !important;
+}
+.mr-10{
+  margin-right: 10% !important;
+}
+
 @media only screen and (min-width: 768px) {
+  .mx-md-0{
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+  }
+  .ml-md-25{
+    margin-left: 25% !important;
+  }
+  .mr-md-0{
+    margin-right: 0% !important;
+  }
+  .f-md-3{
+    font-size: 3em !important;
+  }
+  .p-md-10{
+    padding: 10% !important;
+  }
+  .pl-md-0{
+    padding-left: 0% !important;
+  }
+  .pl-md-1{
+    padding-left: 1% !important;
+  }
+  .pl-md-10{
+    padding-left: 10% !important;
+  }
   .hide-sm{
   display: block;
   }
@@ -334,17 +496,28 @@ a:hover{
     text-align: right !important;
   }
   h1{
-    font-size: 5em !important;  
+    font-size: 6em !important;  
   }
-
+  .pt-md-15{
+    padding-top: 15%;
+  }
+  .mt-md-8{
+    margin-top: 8% !important;
+  }
   .mt-md-10{
     margin-top: 10% !important;
   }
   .mt-md-15{
     margin-top: 15% !important;
   }
+  .mt-md-20{
+    margin-top: 20% !important;
+  }
   .mt-md-25{
     margin-top: 25% !important;
+  }
+  .mt-md-35{
+    margin-top: 35% !important;
   }
   .mt-md-45{
     margin-top: 45% !important;

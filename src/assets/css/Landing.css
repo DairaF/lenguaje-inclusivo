@@ -1,3 +1,6 @@
+p{
+    font-size: 1.5em;
+}
 .container{
     margin: 0% !important;
 }
@@ -7,6 +10,8 @@ h1{
 .nota{
     font-size: x-small !important;
     z-index: 0;
+    line-height: 80%;
+    background-color: white;
   }
 .linea{
     width: auto !important;
@@ -83,7 +88,10 @@ h1{
     font-size: 1.5em !important;
     font-weight: 600 !important;
     border:solid 2px;
-    line-height: 95%;
+    line-height: 1.2 !important;
+}
+.flechaRedir{
+    height: 3.5em;
 }
 @media only screen and (min-width: 768px) {
     .landing1{
@@ -223,7 +231,7 @@ h1{
         background-image: url('../img/diccionario.png'), url('../img/bocaLila.png'),url('../img/bocaLineaRosa.png'),url('../img/blackWiggle.png');
         background-repeat: no-repeat;
         background-size: 8%,7%,7%,7%;
-        background-position: 20% 80%,50%43%,80%80%,95%15%;
+        background-position: 20% 80%,20%25%,80%80%,95%15%;
     }
     #texto{
         background-image: url('../img/Xserif.png'), url('../img/interrogacion2.png'),url('../img/A.png');

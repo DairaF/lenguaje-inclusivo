@@ -1,25 +1,25 @@
 [
     {
         "id":1,
-        "block1":"Hay una alta diversidad en quienes forman parte de las movilizaciones lo que explica la alta incidencia en los resultados. Participaron organizaciones locales," ,
+        "block1":"Hay una alta diversidad en quienes forman parte de las movilizaciones lo que explica la alta incidencia en los resultados. Participaron organizaciones locales, " ,
         "opciones1":[
             {
-                "texto":"vecinos",
+                "texto":"vecinos ",
                 "categoria":"rae", 
                 "valor":1
             },
             {
-                "texto":"vecinos y vecinas",
+                "texto":"vecinos y vecinas ",
                 "categoria":"desdoblamiento",
                 "valor":2
             }, 
             {
-                "texto":"vecinxs",
+                "texto":"vecinxs ",
                 "categoria":"nuevos morfemas",
                 "valor":3
             },
             {
-                "texto":"la población",
+                "texto":"la población ",
                 "categoria":"sustantivo asociado a grupos",
                 "valor":7
             }
@@ -27,27 +27,27 @@
         "block2":"partidos políticos, grupos religiosos, ",
         "opciones2":[
             {
-                "texto":"funcionarios del gobierno,",
+                "texto":"funcionarios del gobierno, ",
                 "categoria":"rae",
                 "valor":1
             },
             {
-                "texto":"Funcionaries",
+                "texto":"funcionaries ",
                 "categoria":"nuevos morfemas",
                 "valor":3
             },
             {
-                "texto":"actores gubernamentales", 
+                "texto":"actores gubernamentales ", 
                 "categoria":"sustantivos asociados a grupos",
                 "valor":7
             },
             {
-                "texto":"autoridades",
+                "texto":"autoridades ",
                 "categoria":"sustantivo epiceno",
                 "valor":11
             }
         ],
-        "block3":"sindicatos, comunidades indígenas y",
+        "block3":"sindicatos, comunidades indígenas y ",
         "opciones3":[
             {
                 "texto":"campesinos",

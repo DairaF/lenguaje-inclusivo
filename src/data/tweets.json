@@ -27,7 +27,7 @@
                 "valor":1
             },
             {
-                "texto":"la selección",
+                "texto":"la selección ",
                 "categoria":"sustantivos abstractos", 
                 "valor":4
             },
@@ -64,10 +64,10 @@
     },
     {      
         "id":2,
-        "block1":"",
+        "block1":" ",
         "opciones1":[
             {
-                "texto":"Hubo un ganador ",
+                "texto":"Hubo un ganador y un perdedor ",
                 "categoria":"rae", 
                 "valor":1
             },
@@ -87,37 +87,32 @@
                 "valor":5
             }, 
             {
-                "texto":"Hubo une ganadore ",
+                "texto":"Hubo une ganadore y une perdedore  ",
                 "categoria":"morfemas nuevos",
                 "valor":3
             }
-        ] ,
-        "block2":"y ",
+        ],
+        "block2":", pero para ",
         "opciones2":[
             {
-                "texto":"un perdedor ",
+                "texto":"Los expertos ",
                 "categoria":"rae",
                 "valor":1
             },
             {
-                "texto":"se perdió ",
-                "categoria":"formas impersonales", 
-                "valor":9
-            },
-            {
-                "texto":"une perdedore ",
-                "categoria":"nuevos morfemas",
+                "texto":"lxs expertxs ",
+                "categoria":"morfemas nuevos", 
                 "valor":3
             },
             {
-                "texto":"quien perdió ",
-                "categoria":"pronombre relativo",
+                "texto":"quienes saben ",
+                "categoria":"pronombre relativo", 
                 "valor":5
             },
             {
-                "texto":"alguien perdió ",
-                "categoria":"pronombre indefnido",
-                "valor":10
+                "texto":"especialistas ",
+                "categoria":"sustantivos con terminaciones especiales", 
+                "valor":13
             }
         ],
         "block3":", pero eso no es lo importante aquí, sino mostrar que ese concurso anticipaba un cambio de época. El uso de datos se volvió un elemento fundamental en las decisiones ",
@@ -142,48 +137,48 @@
     },
     {      
         "id":3,
-        "block1":"En nuestra encuesta imaginaria, el tío insiste que el candidato A es el más votado por ",
+        "block1":" En nuestra encuesta imaginaria, el tío insiste que el candidato A es el más votado por ",
         "opciones1":[
             {
-                "texto":"jóvenes y adultos ",
+                "texto":"jóvenes y adultos. ",
                 "categoria":"rae", 
                 "valor":1
             },
             {
-                "texto":"les jóvenes y les adultes ",
+                "texto":"les jóvenes y les adultes. ",
                 "categoria":"nuevos morfemas",
                 "valor":3
             }, 
             {
-                "texto":"la juventud, adultos y adultas ",
+                "texto":"la juventud, adultos y adultas. ",
                 "categoria":"sustantivos asociados a grupos",
                 "valor":7
             }, 
             {
-                "texto":"la ciudadanía ",
+                "texto":"la ciudadanía. ",
                 "categoria":"sustantivo abstracto",
-                "valor":6
+                "valor":4
             }
         ] ,
         "block2":"La sobrina contraataca diciendo que ese mismo estudio muestra que Bárbara es la candidata favorita si tenemos en cuenta a  ",
         "opciones2":[
             {
-                "texto":"Todos ",
+                "texto":"todos. ",
                 "categoria":"rae",
                 "valor":1
             },
             {
-                "texto":"cada sector ",
+                "texto":"cada sector. ",
                 "categoria":"sustantivo asociado a personas o entidades", 
                 "valor":12
             },
             {
-                "texto":"toda la población ",
+                "texto":"toda la población. ",
                 "categoria":"sustantivo asociado a grupos",
                 "valor":7
             },
             {
-                "texto":"todes ",
+                "texto":"todes. ",
                 "categoria":"nuevos morfemas",
                 "valor":3
             }
@@ -191,17 +186,17 @@
         "block3":"¿Cómo puede ser? ¿",
         "opciones3":[
             {
-                "texto":"Los dos tienen",
+                "texto":"Los dos tienen ",
                 "categoria":"rae",
                 "valor":1
             },
             {
-                "texto":"Les dos tienen",
+                "texto":"Les dos tienen ",
                 "categoria":"nuevos morfemas", 
                 "valor":3
             },
             {
-                "texto":"Quien tiene",
+                "texto":"Quien tiene ",
                 "categoria":"pronombre relativo", 
                 "valor":5
             }

@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 function Herramienta(props) {
   return (
     <div className='container justify-content-center text-center mb-10'>
-      <h3 id={props.id} className='col-10 col-md-8 mx-auto lila playfair mt-5 mb-3'><b>{props.titulo}</b></h3>
-      <p className='col-10 col-md-8 mx-auto'>{props.texto}</p>
-      <p className='col-10 col-md-8 playfair mx-auto'><b>Ejemplo: {props.ejemplo1}</b></p>
-      { props.masInfo !== "" ? <table className='col-10 col-md-8 mx-auto lila'>
+      <h3 id={props.id} className='col-10 col-md-7 mx-auto lila playfair mt-5 mb-3'><b>{props.titulo}</b></h3>
+      <p className='col-10 col-md-7 mx-auto'>{props.texto}</p>
+      <p className='col-10 col-md-7 playfair mx-auto'><b>Ejemplo: {props.ejemplo1}</b></p>
+      { props.masInfo !== "" ? <table className='col-10 col-md-7 mx-auto lila'>
         <tbody className=' my-4'>
         <tr>
           <td className="p-4 p-md-5">

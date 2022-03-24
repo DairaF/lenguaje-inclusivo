@@ -4,27 +4,27 @@
         "block1":"El factor más importante según las investigaciones sobre educación es la familia y las circunstancias " ,
         "opciones1":[
             {
-                "texto":"del niño",
+                "texto":"del niño. ",
                 "categoria":"rae", 
                 "valor":1
             },
             {
-                "texto":"de los niños y niñas ",
+                "texto":"de los niños y niñas. ",
                 "categoria":"desdoblamiento",
                 "valor":2
             }, 
             {
-                "texto":"de les niñes",
+                "texto":"de les niñes. ",
                 "categoria":"nuevos morfemas",
                 "valor":3
             },
             {
-                "texto":"de las infancias",
+                "texto":"de las infancias. ",
                 "categoria":"sustantivos abstractos",
                 "valor":4
             }
         ],
-        "block2":"El segundo es",
+        "block2":"El segundo es ",
         "opciones2":[
             {
                 "texto":"el profesor",
@@ -77,7 +77,7 @@
         "block1":"No es menos cierto que el cortísimo plazo de Argentina involucra a más del 50% de " ,
         "opciones1":[
             {
-                "texto":"los jóvenes y niños",
+                "texto":"los jóvenes y niños ",
                 "categoria":"rae", 
                 "valor":1
             },
@@ -87,17 +87,17 @@
                 "valor":4
             }, 
             {
-                "texto":"les jóvenes y niñes",
+                "texto":"les jóvenes y niñes ",
                 "categoria":"nuevos morfemas",
                 "valor":3
             },
             {
-                "texto":"jóvenes y niños/as",
+                "texto":"jóvenes y niños/as ",
                 "categoria":"desdoblamiento",
                 "valor":2
             }
         ],
-        "block2":"en situación de pobreza.",
+        "block2":"en situación de pobreza. ",
         "opciones2":[
             {
                 "texto":"Los expertos afirman",
@@ -120,7 +120,7 @@
                 "valor":5
             }
         ],
-        "block3":"que los continuos fracasos para lograr un proceso de desarrollo sostenido han hipotecado el futuro de buena parte de ",
+        "block3":" que los continuos fracasos para lograr un proceso de desarrollo sostenido han hipotecado el futuro de buena parte de ",
         "opciones3":[
             {
                 "texto":"los ciudadanos",

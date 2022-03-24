@@ -16,10 +16,10 @@
         "ejemplo2": ""
     },{
         "id":3,
-        "titulo":"Metonimia",
-        "camelCase":"Metonimia",
+        "titulo":"Prosopopeya",
+        "camelCase":"Prosopopeya",
         "texto":"En este contexto, podemos usar este recurso para mencionar el efecto en vez de la causa, o viceversa. Es decir, ponemos el peso en el resultado en lugar de las personas que lo crearon.",
-        "ejemplo1": " los estudios indican | hay argumentos a favor | existen cuestionamientos",
+        "ejemplo1": "los estudios indican | hay argumentos a favor | existen cuestionamientos",
         "masInfo": "",
         "ejemplo2": ""
     },{
@@ -29,6 +29,14 @@
         "texto":"Este recurso duplica la terminación de género. Incluye el femenino y el masculino con un nexo adversativo o copulativo.",
         "ejemplo1": "un/a investigador/a | Autoras y autor.",
         "masInfo": "Este recurso refleja una concepción binaria de los géneros, por lo que no representa a quienes no entran en esa dicotomía. Está dentro de lo gramaticalmente adecuado, aunque atenta contra la economía del lenguaje.",
+        "ejemplo2": ""
+    },{
+        "id":5,
+        "titulo":"Impersonales",
+        "camelCase":"Impersonales",
+        "texto":"Una manera de evitar el masculino genérico es usar oraciones impersonales, que no tienen sujetos concretos. Para construirlas podemos usar el verbo 'haber' o expresiones con 'se' conjugadas con verbos en tercera persona.",
+        "ejemplo1": "se busca, hubo acuerdo",
+        "masInfo": "",
         "ejemplo2": ""
     }
 ]

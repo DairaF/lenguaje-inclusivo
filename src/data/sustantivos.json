@@ -12,7 +12,7 @@
         "titulo":"Sustantivos abstractos",
         "camelCase":"SustantivosAbstractos",
         "texto":"En este contexto, son palabras que hablan de condiciones, posiciones laborales o habilidades, en lugar de personas u objetos concretos.",
-        "ejemplo1": "jefatura, presidencia,",
+        "ejemplo1": "jefatura, presidencia",
         "masInfo": "",
         "ejemplo2": ""
     },{
@@ -31,6 +31,14 @@
         "camelCase":"Epicenos",
         "texto":"Son los sustantivos que siempre mantienen el mismo género gramatical, aunque se refieran a personas de distintos géneros.",
         "ejemplo1": "persona, víctima, individuo, autoridades.",
+        "masInfo": "",
+        "ejemplo2": ""
+    },{
+        "id":5,
+        "titulo":"Sustantivos asociados a grupos",
+        "camelCase":"SustantivosColectivos",
+        "texto":"Son aquellos que se refieren a un conjunto de personas a las que no se les asigna un género particular. También acá podemos incluir sustantivos colectivos o algunos que designan a una porción de la sociedad.",
+        "ejemplo1": "sectores, población, audiencia",
         "masInfo": "",
         "ejemplo2": ""
     }

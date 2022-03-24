@@ -29,6 +29,16 @@ function Situacion(props) {
     const [activeOptions1, setActiveOptions1] = useState(false);
     const [activeOptions2, setActiveOptions2] = useState(false);
     const [activeOptions3, setActiveOptions3] = useState(false);
+
+    const [info, setInfo] = useState(true);
+    const toggleInfo = () => {
+      setInfo(!info);
+    }
+    const [segure, setSegure] = useState(true);
+    const toggleSegure = () => {
+      setSegure(!segure);
+    }
+
     //forzar estado xq no capta 3er mount +
     useEffect( () => {
       setOportunidad1(opciones1[0].texto);
@@ -97,12 +107,28 @@ function Situacion(props) {
     handleAnswer2(oportunidadValor2);
     handleAnswer3(oportunidadValor3);
 },);
+
   return (
     <div className=''>
+      <div id="segure" className={segure? "hidden": "block"}>
+        <p className='col-10 col-md-5 mt-15 mx-auto'>¿Estás segure que querés finalizar y volver?</p>
+        <div className='row justify-content-center '>
+          <a href='/#quiz' className='col-2 text-center'>Si</a>
+          <a onClick={toggleSegure} className='col-2 text-center'><b>No</b></a>
+        </div>
+      </div>
+      <div id="modalInfo" className={info? "hidden": "block container"}>
+        <a onClick={toggleInfo} className='f2 floatR m-2 mr-5'>x</a>
+        <div className='row justify-content-center'>
+          <p className='col-10 col-md-5 mt-15'>Encontrá las 3 expresiones excluyentes en cada situación, clickealas y reemplazalas con una opción más inclusiva.</p>
+          <div className='col-10 col-md-5 bg-azul mt-15'>aca va gif</div>
+        </div>
+      </div>
       <div id='situacionFull' className=' bg-crema '>
         <div className='container'>
-          <img id="ayuda" className='logo' src={require("../assets/img/ayuda.png")} />
-            <span id="stepGuia" className='f08 col-2 lila'><b>{step}/4</b></span> 
+          <img onClick={toggleInfo} id="ayuda" src={require("../assets/img/ayuda.png")} />
+          <a onClick={toggleSegure} id="volver"><img src={require("../assets/img/volver.png")} /></a>
+          <span id="stepGuia" className='f08 col-2 lila'><b>{step}/4</b></span> 
           <div className='fondoSituacion'>
               <img src={  situation=="tweets" ? require('../assets/img/illus/tweetF.png'):  
                           situation=="papers" ? require('../assets/img/illus/paperF.png'): 
@@ -113,7 +139,8 @@ function Situacion(props) {
             <div className='mt-25 mt-md-1 bg-white border-negro-redondeado col-10 col-md-6 mx-auto m-md-1 situacion'>
               <div className={situation=="tweets"?"twitter": situation=="papers"?"playfair":situation=="hablados"?"comilla":""}>
                 <AnimationOnScroll animateIn='animate__fadeIn'>
-                <p className='m-3 m-md-5'>
+                  {situation == "tweets" ?  <img id="twtacc" className='m-3 ' src={require('../assets/img/twtacc.jpg')}/>:""}
+                <p className='ml-3 p-3 ml-md-5'>
                   <span>{block1}</span>
                   <span className={isActive1 ? 'activo1': 'noactivo1'} onClick={()=>{toggleOnce(1);toggleOptions(1)}}>{oportunidad1}</span>
                   <span>{block2}</span>
@@ -122,6 +149,7 @@ function Situacion(props) {
                   <span className={isActive3 ? 'activo3': 'noactivo3'} onClick={()=>{toggleOnce(3);toggleOptions(3)}}>{oportunidad3}</span>
                   <span>{block4}</span>
                 </p>
+                {situation == "tweets" ?  <img id="twtdate" className='ml-3 mt-1 ' src={require('../assets/img/twtbrdr.png')}/>:""}
                 </AnimationOnScroll>
               </div>
             </div>
@@ -139,7 +167,7 @@ function Situacion(props) {
             <div className={activeOptions2 ? 'activa options': 'noactivas options'} >
               { opciones2.map(n => { return <p onClick={()=>{elegirTexto(n.valor, n.texto, 2);toggleOptions(2)}} className='option' value={n.valor}> <span className='blanco'>{n.texto}</span></p> } ) }
             </div>
-            <div className={activeOptions3 ? 'activa options bg-negro': 'noactivas options'} >
+            <div className={activeOptions3 ? 'activa options': 'noactivas options'} >
               { opciones3.map(n => { return <p onClick={()=>{elegirTexto(n.valor, n.texto, 3);toggleOptions(3)}} className='option' value={n.valor}> <span className='blanco'>{n.texto}</span></p> } ) }
             </div>
           </div>

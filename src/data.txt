@@ -11,7 +11,7 @@
   11 sustantivo epiceno
   12 sustantivo asociado a personas o entiudades
   13 sustantivos con terminaciones especiales
-  14 metonimia
+  14 prosopopeya
 Tweet
 
 •	@fundesarg Estamos muy 
@@ -92,7 +92,7 @@ Paper/académico
 •	Existe un consenso entre los expertos de que 
 Existe un consenso de que (Elipsis)
 Existe un consenso entre especialistas de que (sustantivos con terminaciones especiales)
-Hay argumentos que afirman que (metonimia)
+Hay argumentos que afirman que (prosopopeya)
 •	las pensiones no contributivas son un pilar necesario. Como veremos en las conclusiones, la solución para rebalancear el gasto público destinado a 
 •	adultos mayores y niños 
 la vejez y la niñez (sustantivos abstractos)
@@ -167,7 +167,7 @@ la juventud y la infancia (sustantivos abstractos)
 jóvenes y niños/as (elipsis de pronombre  + desdoblamiento)
 •	en situación de pobreza. 
 •	Los expertos afirman 
-Hay argumentos que afirman (metonimia)
+Hay argumentos que afirman (prosopopeya)
 Especialistas afirman (sustantivos con terminaciones especiales)
 Hay quienes afirman (pronombre relativo)
 •	que los continuos fracasos para lograr un proceso de desarrollo sostenido han hipotecado el futuro de buena parte de 

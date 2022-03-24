@@ -16,20 +16,20 @@ function Caja() {
         </div>
         <div className='row justify-content-between contenedorCaja playfair'>
           <a className='col-5 col-sm-3 col-lg-2 m-auto negro' href='caja-de-herramientas/sustantivos' >
-            <img className='herramientaImg' src={require('../assets/img/illus/sustantivo.png')} />
-            Sustantivos
+            <img className='herramientaImg mb-3' src={require('../assets/img/illus/sustantivo.png')} />
+            <b>Sustantivos</b>
           </a>
           <a className='col-5 col-sm-3 col-lg-2 m-auto negro' href='caja-de-herramientas/pronombres' >
-            <img className='herramientaImg' src={require('../assets/img/illus/pronombre.png')} />
-            Pronombres
+            <img className='herramientaImg mb-3' src={require('../assets/img/illus/pronombre.png')} />
+            <b>Pronombres</b>
           </a>
           <a className='col-5 col-sm-3 col-lg-2 m-auto negro' href='caja-de-herramientas/expresiones' >
-            <img className='herramientaImg' src={require('../assets/img/illus/expresion.png')} />
-            Expresiones
+            <img className='herramientaImg mb-3' src={require('../assets/img/illus/expresion.png')} />
+            <b>Expresiones</b>
           </a>
           <a className='col-5 col-sm-3 col-lg-2 m-auto negro' href='caja-de-herramientas/nuevos-morfemas' >
-            <img className='herramientaImg' src={require('../assets/img/illus/morfema.png')} />
-            Nuevos morfemas
+            <img className='herramientaImg mb-3' src={require('../assets/img/illus/morfema.png')} />
+            <b>Nuevos morfemas</b>
           </a>
         </div>
         <div className='text-center'>

@@ -1,7 +1,14 @@
 #situacionFull{
-    max-height: 100vh;
-    max-width: 100vw;
+    height: 100vh;
+    width: 100vw;
     overflow: hidden;
+}
+.gif{
+    height: 200px;
+    background-image: url('../img/ejMobile.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 .activo1{
     font-weight: bold;
@@ -11,6 +18,12 @@ font-weight: bold;
 }
 .activo3{
 font-weight: bold;
+}
+.block{
+    display: block;
+}
+.hidden{
+    display: none;
 }
 .activa{
     display: block;
@@ -53,15 +66,18 @@ font-weight: bold;
 .noactivas{
      display: none;
 }
-
+#start-quiz{
+    cursor: pointer;
+}
 .title{
     display: block;
 }
 .situacion{
   margin-top: 25%;
+  padding: 1em;
 }
 .swiper-pagination-bullets{
-    margin-top: -2%;
+    margin-top: 0%;
 }
 .swiper-pagination-bullet{
     width: 2em !important;
@@ -76,6 +92,9 @@ font-weight: bold;
 .swiper-pagination{
     top:2% !important;
 }
+.swiper-pagination-horizontal{
+    height: 2em !important;
+}
 .swiper-button-next{
     display: none !important;
 }
@@ -87,16 +106,24 @@ font-weight: bold;
 }
 .endSlide{
     padding: 10%;
-    padding-top: 25%;
     height: 100vh;
     width: 100vw;
-    background-color: #9F8BEA; /* For browsers that do not support gradients */
-    /* background-image: linear-gradient(to right, #ECA9FC, #9F8BEA, #9F8BEA); */
+    background-image:linear-gradient(to bottom left,  #9F8BEA, #BBA1FC);
 }
+
+.btnRedo{
+    background-color: white;
+    border: solid 2px #9F8BEA ;
+    color: #9F8BEA !important;
+    border-radius: 10px;
+    padding: 0.5em 2em;
+    cursor: pointer;
+}
+
 .btnQuiz{
     position: fixed;
-    bottom: 10%;
-    right: 5%;
+    bottom: 5%;
+    right: 4%;
     z-index: 1;
     padding: 1em;
     cursor: pointer;
@@ -121,10 +148,12 @@ font-weight: bold;
 #descripcionFave{
     font-weight: 300;
 }
+
 .amiguePf{
     background-image: url('../img/whiteWiggle.png'), linear-gradient(to top right,  #9F8BEA, #6484E8, #6484E8, #6484E8);
     background-repeat: no-repeat;
-    background-position: 0% 3%;
+    background-position: 0% 10%;
+    
 }
 .xahiPf{
     background-image:linear-gradient(to top right, #9F8BEA, #9F8BEA, #6484E8,#6484E8 );
@@ -135,13 +164,34 @@ font-weight: bold;
 
 
 .amigue{
-    background-image: linear-gradient(to top right,  #9F8BEA, #6484E8, #6484E8, #6484E8);
+    background: linear-gradient(302deg, #9f8bea, #6484e8, #9f8bea, #6484e8);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 .xahi{
-    background-image:linear-gradient(to top right, #9F8BEA, #9F8BEA, #6484E8,#6484E8 );
+    background-image:linear-gradient(to top right, #9F8BEA, #9F8BEA, #6484E8,#6484E8 ) !important;
 }
 .anteojos{
-    background-image:  linear-gradient(to top right,  #9F8BEA, #9F8BEA, #9F8BEA, #6484E8);
+    background-image:  linear-gradient(to top right,  #9F8BEA, #9F8BEA, #9F8BEA, #6484E8) !important;
 }
 
 .amigueF{
@@ -183,14 +233,13 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 50%;
     background-color: #1b3c9e65;
   }
-.twitter{
-    padding-top: 3em;
-    padding-bottom: 3em;
-    height: 100%;
-    background-image: url('../img/twtacc.jpg'), url('../img/twtbrdr.png');
-    background-repeat: no-repeat;
-    background-position:3% 0%, 2% 100%;
-    background-size: 40%, 100%;
+#twtacc{
+    width:8em;
+    margin-left: 3%;
+}
+#twtdate{
+    width:18em;
+    margin-left: 3%;
 }
 .comilla{
     color: #9F8BEA !important;
@@ -206,16 +255,16 @@ input[type="range"]::-webkit-slider-thumb {
     background-size:50%;
 }
 .aca{
-    background-image: url('../img/smile.png');
+    background-image: url('../img/smile.png'),linear-gradient(to bottom left,  #9F8BEA, #BBA1FC);
     background-repeat: no-repeat;
-    background-position: center 60%;
-    background-size:10%;
+    background-position: center 50%;
+    background-size:10%, 100%;
 }
 .ruido{
-    background-image: url('../img/curly1.png'),url('../img/curly2.png');
+    background-image: url('../img/curly1.png'),url('../img/curly2.png'), linear-gradient(to bottom left,  #9F8BEA, #BBA1FC);
     background-repeat: no-repeat;
     background-position: 70% 15%, 45% 80%;
-    background-size:20%, 15%;
+    background-size:20%, 15%, 100%;
 }
 .quizImg img{
     width: -webkit-fill-available !important;
@@ -247,18 +296,121 @@ input[type="range"]::-webkit-slider-thumb {
 }
 #ayuda{
     position: absolute;
-    top: 5%;
+    top: 87%;
     left: 5%;
+    width: 2.5em;
 }
 #stepGuia{
     position: absolute;
     top: 5%;
     right:5%;
+    text-align: end;
+}
+
+#startIntro{
+    text-align: center;
+}
+
+h1{
+    font-size: 3em !important;
+}
+#faveIndex{
+    background-color: black;
+    border-radius: 100px;
+    height: 3em;
+    width: 3em;
+    margin-left: 45%;
+}
+
+#modalInfo{
+    background-color: #d1d3d4;
+    border-radius: 15px;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top:10%;
+    left:10%;
+    z-index: 500;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+#segure{
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    width: 70%;
+    height: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+#segure a{
+    cursor: pointer;
+}
+#volver{
+    position: absolute;
+    top: 3%;
+    left:5%;
+}
+#volver a{
+    cursor: pointer;
+}
+#ayuda:hover{
+    background-color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#ayuda img{
+    height: 2em !important;
+}
+#resultTitle{
+    font-size: 2em !important;
 }
 @media only screen and (min-width: 768px) {
+    .gif{
+        height: 400px;
+        background-image: url('../img/ejDesktop.gif');
+    }
+    #segure{
+        text-align: center;
+        background-color: white;
+        border-radius: 15px;
+        position: absolute;
+        width: 30%;
+        height: 30%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 500;
+        box-shadow: 10px 10px 5px #aaaaaa;
+    }
+    #resultTitle{
+        font-size: 3em !important;
+    }
+    #volver{
+        position: absolute;
+        top: 3%;
+        left:5%;
+    }
+    h1{
+        font-size: 5em !important;
+    }
+    #faveIndex{
+        background-color: black;
+        border-radius: 100px;
+        height: 3em;
+        width: 3em;
+    }
     #stepGuia{
         top: 5%;
-        left:5%;
+        right:5%;
+    }
+    #startIntro{
+        text-align: left;
+        font-size: 1.4em;
     }
     #ayuda{
         position: absolute;
@@ -267,8 +419,8 @@ input[type="range"]::-webkit-slider-thumb {
     }
     .twitter{
         padding-top: 0.5em;
-        background-position:3% 0%, 2% 100%;
-        background-size: 20%, 50%;
+        background-position:10% 8%, 12% 100%;
+        background-size: 20%, 55%;
     }
     #input1
     {
@@ -279,17 +431,17 @@ input[type="range"]::-webkit-slider-thumb {
     }
     .ruido{
         background-position: 20% 25%, 75% 80%;
-        background-size:10%, 5%;
+        background-size:10%, 5%, 100%;
     }
     .procesando{
         background-position: 90% 90%;
         background-size: 20%;
     }
     .aca{
-        background-image: url('../img/smile.png'), url('../img/D.png');
+        background-image: url('../img/smile.png'), url('../img/D.png'),linear-gradient(to bottom left,  #9F8BEA, #BBA1FC);;
         background-repeat: no-repeat;
         background-position: 15% 80%, 85% 15%;
-        background-size:5%;
+        background-size:5%,5%,100%;
     }
     .amigueF{
         background-position: left;
@@ -328,12 +480,12 @@ input[type="range"]::-webkit-slider-thumb {
         padding: 2em;
     }    
     .situacion{
-        height: 40%;
         position: fixed;
         top: 45%;
         left: 30%;
         transform: translate(-50%, -50%);
         cursor: pointer;
+        font-size: 1.2em !important;
     }
     .options{
         position: fixed;
@@ -352,7 +504,7 @@ input[type="range"]::-webkit-slider-thumb {
     .amiguePf{
         background-image:url('../img/bubSqr.png'), url('../img/wiggle.png'), linear-gradient(to right,  #9F8BEA, #6484E8, #6484E8, #6484E8);
         background-repeat: no-repeat;
-        background-position: 5% 10%, 100% 2%;
+        background-position: 5% 20%, 100% 12%;
     }   
     .xahiPf{
         background-image: url('../img/bubSqr.png'), url('../img/wiggle.png') ,linear-gradient(to right, #9F8BEA, #9F8BEA, #6484E8,#6484E8 )!important;
@@ -364,6 +516,43 @@ input[type="range"]::-webkit-slider-thumb {
         background-repeat: no-repeat;
         background-position: 5% 10%, 100% 2%;
     }
-
+    .btnQuiz{
+        position: fixed;
+        bottom: 10%;
+        right: 5%;
+        z-index: 1;
+        padding: 1em;
+        cursor: pointer;
+    }
+    #twtacc{
+        width:8em !important;
+        margin-bottom: -8%;
+    }
+    #twtdate{ 
+        margin-top: -8%;
+        margin-left: 0% !important;
+    }
+    .swiper-pagination{
+        top: 10% !important;
+    }
+    .swiper-pagination-bullet{
+        width: 3em;
+    }
+    .swiper-pagination-active{
+        width: 3em;
+    }
+    #start-content{
+        width: 100vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #start-quiz{
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
