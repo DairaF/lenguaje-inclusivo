@@ -25,12 +25,18 @@ function Menu() {
 const cls = visible ? "visible" : "hidden";
 
   return (
-
-    <header className={cls} >
-      {/* <div className= {window.location.pathname == "/caja-de-herramientas" ? "menu menu-bg-lila": "menu"}> */}
+    <header className={window.location.pathname == "/caja-de-herramientas" ? `bg-lila a-hover-blanco ${cls} `:window.location.pathname == "/acerca" ? `bg-offBlack blanco a-blanco ${cls} `: window.location.pathname == "/quiz" ? `blanco a-blanco bg-negro ${cls} `: `bg-crema ${cls} `} >
+      {/* <div className= {window.location.pathname == "/caja-de-herramientas" ? "menu menu-bg-lila": "menu"}>/</div> */}
       <div className= "menu">
-        <a id="flag" href='/' className="floatL"><img className="logo" alt="." src={require("../assets/img/FU_LogoFundar.png")} /></a>
-        <a id="burger" className="floatR" onClick={toggleBtn} ><img alt="." className="logo floatR" src={ active ? require("../assets/img/x.png") : require("../assets/img/burger.png")}/></a>
+      
+        <a id="flag" href='/' className="floatL">
+          {window.location.pathname == "/acerca" ? <img className="logo" alt="." src={require("../assets/img/flagW.png")} />: window.location.pathname == "/quiz" ? <img className="logo" alt="." src={require("../assets/img/flagW.png")} />: <img className="logo" alt="." src={require("../assets/img/FU_LogoFundar.png")} />}
+        </a>
+        <a id="burger" className="floatR" onClick={toggleBtn} >
+          {window.location.pathname == "/acerca" ? <img alt="." className="logo floatR" src={ active ? require("../assets/img/x.png") : require("../assets/img/burgerW.png")}/>
+          :window.location.pathname == "/quiz" ? <img alt="." className="logo floatR" src={ active ? require("../assets/img/x.png") : require("../assets/img/burgerW.png")}/>
+          : <img alt="." className="logo floatR" src={ active ? require("../assets/img/x.png") : require("../assets/img/burger.png")}/>}
+        </a>
       </div>
       <div className={active ? 'activa menu-content bg-lila container' : 'noactiva menu-content '}>
         <a id="cruz" className="col-12 hide-md p-3" onClick={toggleBtn} ><img alt="." className="mr-5 hide-md floatR" src={ require("../assets/img/x.png")}/></a>

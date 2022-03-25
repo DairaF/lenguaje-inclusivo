@@ -120,8 +120,10 @@ function Situacion(props) {
       <div id="modalInfo" className={info? "hidden": "block container"}>
         <a onClick={toggleInfo} className='f2 floatR m-2 mr-5'>x</a>
         <div className='row justify-content-center'>
-          <p className='col-10 col-md-5 mt-15'>Encontrá las 3 expresiones excluyentes en cada situación, clickealas y reemplazalas con una opción más inclusiva.</p>
-          <div className='col-10 col-md-5 bg-azul mt-15'>aca va gif</div>
+          <p className='col-10 col-md-5 mt-15 mt-md-20'>Encontrá las 3 expresiones excluyentes en cada situación, clickealas y reemplazalas con una opción más inclusiva.</p>
+          <div className='col-10 col-md-5 mt-15 mr-md-3'>
+            <img src={require("../assets/img/ejMobile.gif")} />
+          </div>
         </div>
       </div>
       <div id='situacionFull' className=' bg-crema '>

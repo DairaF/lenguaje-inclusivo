@@ -36,7 +36,7 @@ function Landing() {
         </div>
         <div className='row'><img id="home1" className='col-10' src={require("../assets/img/illus/home1.png")} /></div>
         <div className='row'><b id="" className='col-2 floatL blanco f6'>¿</b><img id="home2" className='col-10' src={require("../assets/img/illus/home2.png")} /></div>
-        <div className='row'><img style={{ transform: `translateY(-${offsetY / 5}px)` }} id="home3" className='col-10' src={require("../assets/img/illus/home3.png")} /><b style={{ transform: `translateY(-${offsetY * 0.8}px)` }} className='col-2 mt-25 blanco f6'>X</b></div>
+        <div className='row hide-sm'><img style={{ transform: `translateY(-${offsetY / 5}px)` }} id="home3" className='col-10' src={require("../assets/img/illus/home3.png")} /><b style={{ transform: `translateY(-${offsetY * 0.8}px)` }} className=' hide-sm col-2 mt-25 blanco f6'>X</b></div>
         <div className='landing2'>
           <img id="bocaGris" className='homeMisc hide-sm' src={require('../assets/img/bocaGris.png')}/>
           <img id="bubWiggle" style={{ transform: `translateY(-${offsetY * 1}px)` }} className='homeMisc hide-sm' src={require('../assets/img/bubWiggle.png')}/>
@@ -99,7 +99,7 @@ function Landing() {
             <p className="col-9 mt-1 mx-auto text-center playfair"><b>Aportes lingüísticos para una discusión <span className='playfairItalic'>incómoda</span></b></p>
           </div>
           <div className='row'>  
-            <a className="col-12 mt-5 mx-auto text-center playfair" href="/texto-expositivo"><img alt="." className="flechaRedir" src={require("../assets/img/flechaBlanca.png")}/></a>
+            <a className="col-12 mt-5 mx-auto text-center playfair" href="/texto-expositivo"><img alt="." className="flechaRedir" src={require("../assets/img/flechaNegra.png")}/></a>
           </div>
         </div>
       </div>

@@ -55,6 +55,9 @@ h1{
 .contenedorCaja a{
   padding: 0.5em !important;
 }
+.contenedorCaja a:hover{
+  color: white !important;
+}
 #btnGuia{
   width: 73%;
   border: solid 2px #000000;

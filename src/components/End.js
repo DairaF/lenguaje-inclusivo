@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Menu from './Menu';
+// import Menu from './Menu';
 import Fave from './Fave';
 
 
@@ -204,7 +204,7 @@ const End = (props) => {
         spaceBetween={0}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 6000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -214,14 +214,6 @@ const End = (props) => {
         modules={[Autoplay, Pagination]}
         className="mySwiper"
       >
-      {/* <Swiper
-        autoplay={{
-          delay: 2500} }       
-        spaceBetween={0}
-        centeredSlides={true}
-        modules={[Autoplay, Pagination,Navigation]}
-        className="mySwiper"
-      > */}
       <SwiperSlide>
         <div className='endSlide '>
           <div className='container procesando'>
@@ -308,7 +300,7 @@ const End = (props) => {
       <SwiperSlide>
         <div className={realize < 5 ? "endSlide amigue" : realize < 9 ? "endSlide xahi" : "endSlide anteojos" } >
         {faveN1 == 0? <div className='row justify-content-center pt-1'>
-          <img className='hide-sm col-6 col-md-2 mr-md-5 mt-md-15' src={ require('../assets/img/illus/nubeGris.png') } />
+          <img className='h-content hide-sm col-6 col-md-2 mr-md-5 mt-md-15' src={ require('../assets/img/illus/nubeGris.png') } />
           <div className='col-10 col-md-4 mt-15'>
           <h2 className=''>No tenemos suficiente información como para decirte cuál es tu herramienta favorita... </h2>
           <p className='negro'>¿No querés <span className='playfairItalic' >hacer el quiz de nuevo</span> y fijarte mejor en esas expresiones que no son inclusivas?</p>
@@ -341,7 +333,7 @@ const End = (props) => {
               <p className='text-center'>{faveName1}</p>
             </div>
             <div className='row justify-content-center '>
-              <a id="verResultados" className='col-10 col-md-2 f08 text-center mt-5 mt-md-10 negro py-2' onClick={()=>nextSlide("pos")} > <b>EXPLORÁ TU PERFIL </b></a>
+              <a id="verResultados" className='col-10 col-md-2 f08 text-center mt-5 mt-md-10 negro py-2 pointer' onClick={()=>nextSlide("pos")} > <b>EXPLORÁ TU PERFIL </b></a>
             </div>
           </div>
           }
@@ -353,7 +345,7 @@ const End = (props) => {
     {page === 1 && 
         <div className={realize < 5 ? " amiguePf" : realize < 9 ? " xahiPf" : " anteojosPf" } > 
         <div className='container'>
-          <Menu />
+          {/* <Menu /> */}
             <div className='row justify-content-center'>
               <h2 id="resultTitle" className='text-center mt-45 mt-md-15 col-10 m-center negro'> <b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Tenés los anteojos violetas activados" }</b></h2> 
             </div>
@@ -415,7 +407,7 @@ const End = (props) => {
 
 
 
-            <div className='redirects'>     
+            <div className='redirects ml-0'>     
               <div className='row justify-content-center p-5'>
                 <div className=' blanco-borde-negro col-12 col-md-3 redirect negro'>
                   <a  href='/quiz'>

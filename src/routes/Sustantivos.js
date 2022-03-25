@@ -22,7 +22,7 @@ function Sustantivos() {
           </div>
           <div className='col-12 col-md-9'>
             <ProgressBar/>  
-            <h2 className='mt-45 mt-md-15 pt-5 text-center col-9 mx-auto lila '>Sustantivos</h2>
+            <h2 className='mt-2 mt-md-15 pt-5 text-center col-9 mx-auto lila '>Sustantivos</h2>
             <hr className='negro mb-5' />
             <div className='bg-lila banner col-8 col-md-11 mx-auto mb-10'>
               <img src={require('../assets/img/illus/sustantivos.png')} />

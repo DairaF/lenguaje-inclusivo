@@ -28,9 +28,9 @@ const cls = visible ? "visible" : "hidden";
   return (
     <div className='menuHerramienta' >
       <div className='container' >
-      <header >
+      <header className="nombreActivo hide-md" >
           <div className='row justify-content-center negro '>
-            <a className="col-12 text-center lila hide-md tituloMenu" onClick={toggleBtn} ><b>Menu</b></a><br/>
+            <a className="col-12 text-center lila hide-md tituloMenu" onClick={toggleBtn} ><b>Indice</b></a><br/>
           </div>
         </header>
         <div className={menuState ? 'activa menu-tool-content pt-5' : 'noactiva menu-tool-content'}>
@@ -41,8 +41,7 @@ const cls = visible ? "visible" : "hidden";
             <a className='col-12 negro py-2 mx-3 -mt-1 under-negro ' href='/texto-expositivo#inclusion' ><b>Lenguaje e inclusión social</b></a><br/>
             <a className='col-12 negro py-2 mx-3 -mt-1  under-negro ' href='/texto-expositivo#biblio' ><b>Bibliografía</b></a><br/>
             <a className='col-12 negro py-2 mx-3 -mt-1  under-negro ' href='/texto-expositivo#autora' ><b>Acerca la autora</b></a><br/>
-            <a className='col-12 negro py-2 mx-3 -mt-1  under-negro ' href='/texto-expositivo#cita' ><b>Modo de citar citar</b></a><br/>
-            
+            <a className='col-12 negro py-2 mx-3 -mt-1  under-negro ' href='/texto-expositivo#cita' ><b>Modo de citar</b></a><br/>       
             </div>
         </div>
       </div>        

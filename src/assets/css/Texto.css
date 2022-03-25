@@ -15,7 +15,25 @@ p{
 }
 h3{
     font-weight: bold;
-    position: sticky !important;
-    top: 0 !important;
-    background-color: #F1F2F2;
+    background-color:#F1F2F2;
+}
+.titles{
+  padding-top: 0.5em;
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 2em;
+  align-self: flex-start;
+}
+.wrapper{
+    /* height: 100% !important; */
+    overflow: visible !important;
+}
+.App{
+    overflow: visible !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .titles{
+        top: 5px;
+      }
 }

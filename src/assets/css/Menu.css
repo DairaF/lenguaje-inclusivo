@@ -1,6 +1,8 @@
 .menu{
   width: 100vw;
   display: block;
+  padding: 0% !important;
+  margin: 0% !important;
 }
 .menu-content{
   position: fixed;
@@ -11,26 +13,11 @@
   width: 100vw;
   height: 100vh;
 }
-.menu-bg-negro{
-  background-color:#171617 !important;
-  height: 285%;
-  margin: -4%;
-  padding: 3em;
-}
-.menu-bg-lila{
-  background-color:#9F8BEA !important;
-  height: 285%;
-  margin: -4%;
-  padding: 3em;
-}
-.a-blanco a{
+.a-blanco .menu-content a{
   color: white !important;
 }
-.menu-content a:active{
-  color: #000000;
-}
-.menu-content a:hover{
-  color: #000000;
+.a-hover-blanco .menu-content a:hover{
+  color: white !important;
 }
 .activa{
   display: block;
@@ -48,7 +35,7 @@
   z-index: 1000 !important;
 }
 .progress-container {
-  width: 100%;
+  width: 100vw;
   height: 5px;
   background: #ccc;
   position: fixed;
@@ -66,7 +53,7 @@ header {
   justify-content: center;
   top: 0;
   position: fixed;
-  width: 100%;
+  width: 100vw;
 }
 #cruz img{
   height: 1em;
@@ -76,7 +63,7 @@ header {
   top: 0;
   transition: top 0.4s ease-out;
   z-index: 1100;
-  background-color: #F1F2F2;
+  /* background-color: #F1F2F2; */
 }
 
 .menu-content a{

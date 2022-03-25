@@ -41,7 +41,9 @@ function App() {
         :window.location.pathname =='/caja-de-herramientas/pronombres' ? <Footer/>
         :window.location.pathname =='/caja-de-herramientas/expresiones' ? <Footer/>
         :window.location.pathname =='/caja-de-herramientas/nuevos-morfemas' ? <Footer/>
-        :window.location.pathname =='/caja-de-herramientas/texto-expositivo' ? <Footer/>
+        :window.location.pathname =='/guia-autocorrecion' ? <Footer/>
+        :window.location.pathname =='/texto-expositivo' ? <Footer/>
+        :window.location.pathname =='/acerca' ? <Footer/>
         : null }
         
     </BrowserRouter>

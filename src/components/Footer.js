@@ -19,9 +19,9 @@ function Footer() {
         <div className='row justify-content-center justify-content-md-start -mt-2 f08'>
           <b className='col-6 col-md-3 offset-md-1 pl-8 pl-md-1'>contacto@fund.ar</b>
           <div className='col-6 col-md-3'>
-            <a><img className='mx-2 mx-md-4' alt="twitter" src={require('../assets/img/itwt.png')}/></a>
-            <a><img className='mx-2 mx-md-4' alt="facebook" src={require('../assets/img/ifb.png')}/></a>
-            <a><img className='mx-2 mx-md-4' alt="linkedin" src={require('../assets/img/iin.png')}/></a>
+            <a><img className='mx-1 mx-md-4' alt="twitter" src={require('../assets/img/itwt.png')}/></a>
+            <a><img className='mx-1 mx-md-4' alt="facebook" src={require('../assets/img/ifb.png')}/></a>
+            <a><img className='mx-1 mx-md-4' alt="linkedin" src={require('../assets/img/iin.png')}/></a>
           </div>
         </div>
       </div>
