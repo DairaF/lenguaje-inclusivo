@@ -12,7 +12,7 @@ function Caja() {
       <div className='container'>
         <div id="tituloCaja" className=''>
           <h2 className='col-5 blanco floatL'>Caja de <span className='playfairItalic'>herramientas</span></h2>
-          <p className='col-5 playfair floatR'><b>Elegí una de las opciones para empezar a ver las herramientas</b></p>
+          <p className='col-5 playfair floatR'><b>Explorá recursos para construir tu propio lenguaje inclusivo.</b></p>
         </div>
         <div className='row justify-content-between contenedorCaja playfair'>
           <a className='col-5 col-sm-3 col-lg-2 m-auto negro' href='caja-de-herramientas/sustantivos' >

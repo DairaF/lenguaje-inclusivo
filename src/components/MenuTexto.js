@@ -39,9 +39,7 @@ const cls = visible ? "visible" : "hidden";
             <a className='col-12 negro py-2 mx-3 under-negro over-negro' href='/texto-expositivo#espacioPublico' ><b>Lenguaje y género en el espacio público</b></a><br/>
             <a className='col-12 negro py-2 mx-3 -mt-1 under-negro' href='/texto-expositivo#debates' ><b>Debates en la lingüística</b></a><br/>
             <a className='col-12 negro py-2 mx-3 -mt-1 under-negro ' href='/texto-expositivo#inclusion' ><b>Lenguaje e inclusión social</b></a><br/>
-            <a className='col-12 negro py-2 mx-3 -mt-1  under-negro ' href='/texto-expositivo#biblio' ><b>Bibliografía</b></a><br/>
             <a className='col-12 negro py-2 mx-3 -mt-1  under-negro ' href='/texto-expositivo#autora' ><b>Acerca la autora</b></a><br/>
-            <a className='col-12 negro py-2 mx-3 -mt-1  under-negro ' href='/texto-expositivo#cita' ><b>Modo de citar</b></a><br/>       
             </div>
         </div>
       </div>        

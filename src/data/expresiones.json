@@ -3,15 +3,15 @@
         "id":1,
         "titulo":"Elipisis",
         "texto":"Con este recurso podemos eliminar la referencia a las personas, lo que no solo evita usar masculino genérico, sino también impide repeticiones innecesarias.",
-        "ejemplo1": "❌Los invitamos a  ✅Invitamos a | ❌Los funcionarios advierten que ✅ Advierten que",
-        "masInfo": "Para tener cuidado: la palabra que no usamos tiene que estar clara, para evitar ambiguedades",
+        "ejemplo1": "❌Los invitamos a  ✅Invitamos a",
+        "masInfo": "Para tener cuidado: la palabra que no usamos tiene que estar clara, para evitar ambiguedades.",
         "ejemplo2": ""
     },{
         "id":2,
         "titulo":"Sinécdoque",
         "camelCase":"Sinecdoque",
         "texto":"Este recurso se usa para nombrar a una cosa con el nombre de una de sus partes. Nos permite evitar el masculino genérico usando una parte del cuerpo o acción en lugar de la referencia a la persona.",
-        "ejemplo1": "Voces, Miradas. | Todavía hay voces que expresan desacuerdo | Traen una mirada fresca",
+        "ejemplo1": "Voces, miradas. Todavía hay voces que expresan desacuerdo.",
         "masInfo": "",
         "ejemplo2": ""
     },{
@@ -19,7 +19,7 @@
         "titulo":"Prosopopeya",
         "camelCase":"Prosopopeya",
         "texto":"En este contexto, podemos usar este recurso para mencionar el efecto en vez de la causa, o viceversa. Es decir, ponemos el peso en el resultado en lugar de las personas que lo crearon.",
-        "ejemplo1": "los estudios indican | hay argumentos a favor | existen cuestionamientos",
+        "ejemplo1": "los estudios indican | hay argumentos a favor.",
         "masInfo": "",
         "ejemplo2": ""
     },{
@@ -27,15 +27,15 @@
         "titulo":"Desdoblamiento",
         "camelCase":"Desdoblamiento",
         "texto":"Este recurso duplica la terminación de género. Incluye el femenino y el masculino con un nexo adversativo o copulativo.",
-        "ejemplo1": "un/a investigador/a | Autoras y autor.",
+        "ejemplo1": "un/a investigador/a | autoras y autor.",
         "masInfo": "Este recurso refleja una concepción binaria de los géneros, por lo que no representa a quienes no entran en esa dicotomía. Está dentro de lo gramaticalmente adecuado, aunque atenta contra la economía del lenguaje.",
         "ejemplo2": ""
     },{
         "id":5,
         "titulo":"Impersonales",
         "camelCase":"Impersonales",
-        "texto":"Una manera de evitar el masculino genérico es usar oraciones impersonales, que no tienen sujetos concretos. Para construirlas podemos usar el verbo 'haber' o expresiones con 'se' conjugadas con verbos en tercera persona.",
-        "ejemplo1": "se busca, hubo acuerdo",
+        "texto":"Una manera de evitar el masculino genérico es usar verbos impersonales en oraciones unimembres. Para construirlas podemos usar el verbo “haber” o expresiones con la palabra “se” y verbos en tercera persona.",
+        "ejemplo1": "se busca | hubo acuerdo",
         "masInfo": "",
         "ejemplo2": ""
     }

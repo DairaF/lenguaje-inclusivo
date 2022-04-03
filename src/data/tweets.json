@@ -64,7 +64,7 @@
     },
     {      
         "id":2,
-        "block1":" ",
+        "block1":"",
         "opciones1":[
             {
                 "texto":"Hubo un ganador y un perdedor ",
@@ -72,22 +72,22 @@
                 "valor":1
             },
             {
-                "texto":"Se ganó ",
+                "texto":"Se ganó y se perdió ",
                 "categoria":"formas impersonales",
                 "valor":9
             }, 
             {
-                "texto":"Alguien ganó ",
+                "texto":"Alguien ganó y alguién perdió ",
                 "categoria":"pronombres indefinidos",
                 "valor":10
             }, 
             {
-                "texto":"Hubo quien ganó ",
+                "texto":"Hubo quien ganó y quien perdió ",
                 "categoria":"pronombres relativos",
                 "valor":5
             }, 
             {
-                "texto":"Hubo une ganadore y une perdedore  ",
+                "texto":"Hubo une ganadore y une perdedore ",
                 "categoria":"morfemas nuevos",
                 "valor":3
             }
@@ -95,7 +95,7 @@
         "block2":", pero para ",
         "opciones2":[
             {
-                "texto":"Los expertos ",
+                "texto":"los expertos ",
                 "categoria":"rae",
                 "valor":1
             },

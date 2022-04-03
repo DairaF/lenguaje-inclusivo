@@ -7,6 +7,10 @@
   min-height: 8em;
   margin: 1em;
 }
+.redirect:hover{
+  background-color: #9F8BEA !important;
+  color: white !important;
+}
 .redirect-texto{
   min-height: 7em;
   padding: 1.2em;

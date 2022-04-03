@@ -1,25 +1,25 @@
 [
     {
         "id":1,
-        "block1":"Hay una alta diversidad en quienes forman parte de las movilizaciones lo que explica la alta incidencia en los resultados. Participaron organizaciones locales, " ,
+        "block1":"Hay una alta diversidad en quienes forman parte de las movilizaciones, lo que explica la alta incidencia en los resultados. Participaron organizaciones locales, " ,
         "opciones1":[
             {
-                "texto":"vecinos ",
+                "texto":"vecinos, ",
                 "categoria":"rae", 
                 "valor":1
             },
             {
-                "texto":"vecinos y vecinas ",
+                "texto":"vecinos y vecinas, ",
                 "categoria":"desdoblamiento",
                 "valor":2
             }, 
             {
-                "texto":"vecinxs ",
+                "texto":"vecinxs, ",
                 "categoria":"nuevos morfemas",
                 "valor":3
             },
             {
-                "texto":"la población ",
+                "texto":"la población, ",
                 "categoria":"sustantivo asociado a grupos",
                 "valor":7
             }
@@ -32,17 +32,17 @@
                 "valor":1
             },
             {
-                "texto":"funcionaries ",
+                "texto":"funcionaries, ",
                 "categoria":"nuevos morfemas",
                 "valor":3
             },
             {
-                "texto":"actores gubernamentales ", 
+                "texto":"actores gubernamentales, ", 
                 "categoria":"sustantivos asociados a grupos",
                 "valor":7
             },
             {
-                "texto":"autoridades ",
+                "texto":"autoridades, ",
                 "categoria":"sustantivo epiceno",
                 "valor":11
             }
@@ -71,5 +71,141 @@
             }
         ],
         "block4":"."
+    },
+    {
+        "id":2,
+        "block1":"La pandemia demostró que " ,
+        "opciones1":[
+            {
+                "texto":"los científicos ",
+                "categoria":"rae", 
+                "valor":1
+            },
+            {
+                "texto":"la ciencia ",
+                "categoria":"sustantivo abstracto",
+                "valor":4
+            }, 
+            {
+                "texto":"los científicos y científicas ",
+                "categoria":"desdoblamiento",
+                "valor":2
+            }
+        ],
+        "block2":"y ",
+        "opciones2":[
+            {
+                "texto":"los empresarios argentinos ",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"las empresas argentinas ",
+                "categoria":"sustantivos asociados a entidades",
+                "valor":12
+            },
+            {
+                "texto":"les empresaries argentines ", 
+                "categoria":"nuevos morfemas",
+                "valor":3
+            }
+        ],
+        "block3":"están para más. ",
+        "opciones3":[
+            {
+                "texto":"Los expertos afirman ",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"Expertos y expertas afirman ",
+                "categoria":"desdoblamiento", 
+                "valor":2
+            },
+            {
+                "texto":"Se afirma que ",
+                "categoria":"elipsis",
+                "valor":8
+            },
+            {
+                "texto":"Hay voces que afiman",
+                "categoria":"prosopopeya",
+                "valor":14
+            }
+        ],
+        "block4":"que solo con fondos no alcanza, sino que es necesaria la coordinación entre actores, pero es un buen comienzo y compromiso."
+    },
+    {
+        "id":3,
+        "block1":"" ,
+        "opciones1":[
+            {
+                "texto":"Bienvenidos ",
+                "categoria":"rae", 
+                "valor":1
+            },
+            {
+                "texto":"Bienvenidos y bienvenidas  ",
+                "categoria":"desdoblamiento",
+                "valor":2
+            }, 
+            {
+                "texto":"Bienvenides",
+                "categoria":"nuevos morfemas",
+                "valor":2
+            }, 
+            {
+                "texto":"Les damos la bienvenida ",
+                "categoria":"elipsis",
+                "valor":8
+            }
+        ],
+        "block2":"a la conversación sobre las experiencias provinciales en la gestión sanitaria de la pandemia.  ",
+        "opciones2":[
+            {
+                "texto":"Somos autores del ",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"Somos autores y autoras del  ",
+                "categoria":"desdoblamiento",
+                "valor":2
+            },
+            {
+                "texto":"Escribimos el ", 
+                "categoria":"elipsis",
+                "valor":8
+            },
+            {
+                "texto":"Somos les autores del ", 
+                "categoria":"nuevos morfemas",
+                "valor":3
+            }
+        ],
+        "block3":"documento que vamos a presentar y contamos con la presencia de tres ",
+        "opciones3":[
+            {
+                "texto":"invitados ",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"personas invitadas ",
+                "categoria":"sustantivos  asociados a personas o entidades", 
+                "valor":12
+            },
+            {
+                "texto":"invitades ",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            },
+            {
+                "texto":"invitados e invitadas ",
+                "categoria":"desdoblamiento",
+                "valor":2
+            }
+        ],
+        "block4":"de lujo..."
     }
 ]

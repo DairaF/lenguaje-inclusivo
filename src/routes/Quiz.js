@@ -34,10 +34,10 @@ function Quiz() {
     nextSituatcion();
   };
   const setRandomValues = () => {
-    setRandomTweet( Math.floor(Math.random() * ((Object.keys(tweets).length) - 1))) ;
-    setRandomNota( Math.floor(Math.random() * ((Object.keys(notas).length) - 1))) ;
-    setRandomPaper( Math.floor(Math.random() * ((Object.keys(papers).length) - 1))) ;
-    setRandomSpeak( Math.floor(Math.random() * ((Object.keys(hablados).length) - 1))) ;
+    setRandomTweet( Math.floor(Math.random()*(3))) ;
+    setRandomNota( Math.floor(Math.random()*(3))) ;
+    setRandomPaper( Math.floor(Math.random()*(3))) ;
+    setRandomSpeak( Math.floor(Math.random()*(3))) ;
   }
   const handleRealize = useCallback(() =>{
     setRealize(realize+1);

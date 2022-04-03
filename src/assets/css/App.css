@@ -303,6 +303,10 @@ a:hover{
   height: 20px;
   width: auto;
 }
+.icons{
+  height: 50px;
+  width: auto;
+}
 .footer{
   padding: 2em;
 }
@@ -545,6 +549,10 @@ margin-left: 0% !important;
   .mt-md-75{
     margin-top: 75% !important;
   }
+  #footerIcons{
+    width: 70% !important;
+    margin-left: 2% !important;
+  }
 }
 
 .row{
@@ -556,3 +564,15 @@ margin-left: 0% !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important;
 } */
+
+@media only screen and (min-width: 1200px) {
+  .mt-xl-30{
+    margin-top: 30%;
+  }
+  .mt-xl-35{
+    margin-top: 35%;
+  }
+  .mt-xl-40{
+    margin-top: 40%;
+  }
+}

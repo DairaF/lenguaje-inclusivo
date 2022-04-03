@@ -22,19 +22,19 @@ function Fave(props) {
     }
     switch (props.name){
       case "Rae": ejemplo = "Tu empleo del lenguaje no demuestra inclusión-"; break;
-      case "Desdoblamiento" : ejemplo = "los estudios indican | hay argumentos a favor | existen cuestionamientos"; break;
+      case "Desdoblamiento" : ejemplo = "Un/a investigador/a | Autoras y autor."; break;
       case "Nuevos morfemas": ejemplo = "Todes, lxs trabajadorxs, l@s jugador@s"; break;
-      case "Sustantivo abstracto": ejemplo = "jefatura, presidencia"; break;
-      case "Pronombres relativos": ejemplo = "'hay quienes sostienen que' / 'quien lo desee puede...'"; break;
-      case "Sustantivos abstractos": ejemplo = "jefatura, presidencia"; break;
-      case "Sustantivos colectivos": ejemplo = "sectores, población, audiencia"; break;
+      case "Sustantivo abstracto": ejemplo = "Jefatura, presidencia"; break;
+      case "Pronombres relativos": ejemplo = "'Hay quienes sostienen que' / 'Quien lo desee puede...'"; break;
+      case "Sustantivos abstractos": ejemplo = "Jefatura, presidencia"; break;
+      case "Sustantivos colectivos": ejemplo = "Sectores, población, audiencia"; break;
       case "Elipsis": ejemplo = "❌Los invitamos a  ✅Invitamos a | ❌Los funcionarios advierten que ✅ Advierten que"; break;
-      case "Formas impersonales": ejemplo = "se busca, hubo acuerdo"; break;
-      case "Pronombres indefinidos": ejemplo = "alguien, cualquiera, nadie."; break;
-      case "Sustantivos epicenos": ejemplo = "persona, víctima, individuo, autoridades."; break;
-      case "Sustantivos asociados a entidades": ejemplo = "agentes, actores"; break;
-      case "Sustantivos con terminaciones especiales": ejemplo = "cliente, intérprete, joven"; break;
-      case "Prosopopeya": descripcion = "los estudios indican | hay argumentos a favor | existen cuestionamientos"; break;
+      case "Formas impersonales": ejemplo = "Se busca, hubo acuerdo"; break;
+      case "Pronombres indefinidos": ejemplo = "Alguien, cualquiera, nadie."; break;
+      case "Sustantivos epicenos": ejemplo = "Persona, víctima, individuo, autoridades."; break;
+      case "Sustantivos asociados a entidades": ejemplo = "Agentes, actores"; break;
+      case "Sustantivos con terminaciones especiales": ejemplo = "Cliente, intérprete, joven"; break;
+      case "Prosopopeya": descripcion = "Los estudios indican | Hay argumentos a favor | Existen cuestionamientos"; break;
       default: ejemplo = "" 
     }
 

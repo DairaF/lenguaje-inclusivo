@@ -111,17 +111,18 @@ function Situacion(props) {
   return (
     <div className=''>
       <div id="segure" className={segure? "hidden": "block"}>
-        <p className='col-10 col-md-5 mt-15 mx-auto'>¿Estás segure que querés finalizar y volver?</p>
-        <div className='row justify-content-center '>
-          <a href='/#quiz' className='col-2 text-center'>Si</a>
-          <a onClick={toggleSegure} className='col-2 text-center'><b>No</b></a>
+        <a onClick={toggleSegure} className='f2 mx-3 floatR'>x</a>
+        <p className='col-10 col-md-8 mt-5 mx-auto'>¿Estás segure que querés finalizar y volver?</p>
+        <div className='row justify-content-center mb-5'>
+          <a href='/#quiz' className='col-2 text-center f1-5'>Si</a>
+          <a onClick={toggleSegure} className='col-2 text-center f1-5'><b>No</b></a>
         </div>
       </div>
-      <div id="modalInfo" className={info? "hidden": "block container"}>
-        <a onClick={toggleInfo} className='f2 floatR m-2 mr-5'>x</a>
+      <div id="modalInfo" className={info? "hidden": "block"}>
+        <a onClick={toggleInfo} className='f2 mx-3 floatR'>x</a>
         <div className='row justify-content-center'>
-          <p className='col-10 col-md-5 mt-15 mt-md-20'>Encontrá las 3 expresiones excluyentes en cada situación, clickealas y reemplazalas con una opción más inclusiva.</p>
-          <div className='col-10 col-md-5 mt-15 mr-md-3'>
+          <p className='col-10 my-5'>Encontrá las 3 expresiones excluyentes en cada situación, clickealas y reemplazalas con una opción más inclusiva.</p>
+          <div className='col-10 col-md-5 mb-5'>
             <img src={require("../assets/img/ejMobile.gif")} />
           </div>
         </div>
@@ -129,15 +130,16 @@ function Situacion(props) {
       <div id='situacionFull' className=' bg-crema '>
         <div className='container'>
           <img onClick={toggleInfo} id="ayuda" src={require("../assets/img/ayuda.png")} />
-          <a onClick={toggleSegure} id="volver"><img src={require("../assets/img/volver.png")} /></a>
-          <span id="stepGuia" className='f08 col-2 lila'><b>{step}/4</b></span> 
+          <a onClick={toggleSegure} id="volver"><img src={require("../assets/img/volver.png")} /><span> Volver</span></a>
+          <span id="stepGuia" className='f08 col-2 lila'><b>Situación {step}/4</b></span> 
           <div className='fondoSituacion'>
               <img src={  situation=="tweets" ? require('../assets/img/illus/tweetF.png'):  
                           situation=="papers" ? require('../assets/img/illus/paperF.png'): 
                           situation=="hablados" ? require('../assets/img/illus/habladoF.png'): 
                           situation=="notas" ? require('../assets/img/illus/notaF.png'): "" } />
           </div>
-          <div className='row justify-content-center'>  
+          <div className='row justify-content-center'> 
+          {/* <h3 className='lila mt-5 col-10 pt-2 hide-sm'>Encontrá las expresiones exclusivas en este texto!</h3>  */}
             <div className='mt-25 mt-md-1 bg-white border-negro-redondeado col-10 col-md-6 mx-auto m-md-1 situacion'>
               <div className={situation=="tweets"?"twitter": situation=="papers"?"playfair":situation=="hablados"?"comilla":""}>
                 <AnimationOnScroll animateIn='animate__fadeIn'>

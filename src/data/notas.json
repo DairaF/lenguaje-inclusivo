@@ -144,5 +144,73 @@
             }
         ],
         "block4":"."
+    },
+    {
+        "id":3,
+        "block1":"" ,
+        "opciones1":[
+            {
+                "texto":"Los investigadores",
+                "categoria":"rae", 
+                "valor":1
+            },
+            {
+                "texto":"Los/as investigadores/as",
+                "categoria":"desdoblamiento",
+                "valor":2
+            }, 
+            {
+                "texto":"Lxs investigadorxs",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            }
+        ],
+        "block2":" debatieron sobre la necesidad de tener una política de ingresos consensuada junto con ",
+        "opciones2":[
+            {
+                "texto":"los principales empresarios ",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"las principales empresas",
+                "categoria":"sustantivos asociados a personas o entidades ",
+                "valor":12
+            },
+            {
+                "texto":"las corporaciones ", 
+                "categoria":"sustantivos abstractos",
+                "valor":4
+            },
+            {
+                "texto":"lxs empresarixs ",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            }
+        ],
+        "block3":"y ",
+        "opciones3":[
+            {
+                "texto":"los sindicalistas ",
+                "categoria":"rae",
+                "valor":1
+            },
+            {
+                "texto":"los sindicatos ",
+                "categoria":"sustantivo colectivo", 
+                "valor":7
+            },
+            {
+                "texto":"les sindicalistas ",
+                "categoria":"nuevos morfemas",
+                "valor":3
+            },
+            {
+                "texto":"los y las sindicalistas ",
+                "categoria":"desdoblamiento",
+                "valor":2
+            }
+        ],
+        "block4":"acerca de la importancia de los acuerdos sociales y la coordinación salarial en el país."
     }
 ]

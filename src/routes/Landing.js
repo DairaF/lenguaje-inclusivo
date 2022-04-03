@@ -51,7 +51,7 @@ function Landing() {
         <div id="landing3">
           <div className="row">
             <br/>
-            <p style={{ transform: `translateY(-${offsetY * 0.3}px)` }} id="lenguaje" className="col-9 mt-2 mx-auto text-center playfair"> El <b className='lila bg-blanco aktiv'>lenguaje</b> no solo representa la realidad: la construye
+            <p style={{ transform: `translateY(-${offsetY * 0.3}px)` }} id="lenguaje" className="col-9 mt-2 mx-auto text-center playfair"> El <b className='lila bg-blanco aktiv'>lenguaje</b> no solo representa la realidad: la construye.
             <br/><span className='bg-white aktiv'>No es neutral</span> y no es ajeno a lo que nos pasa como sociedad</p>            
             <p style={{ transform: `translateY(-${offsetY * 0.2}px)` }} id="cuestionas" className="col-10 mt-5 offset-1 border-lila lila text-center">Si a veces <span className='under-lila'>cuestionás</span> un poco la lengua, <span className='playfairItalic'>pero no te sale escribir con la e</span>, esto es para vos</p>
           </div>
@@ -61,7 +61,7 @@ function Landing() {
         {/* QUIZ */}
         <div id="quiz" className='bg-negro blanco'>
           <div className="row justify-content-center">
-            <b className="mt-15 mt-md-10 mx-auto text-center py-1 f06 col-10 lila">EXPERIENCIA INTERACTIVA</b>
+            <b className="mt-15 mt-md-10 mt-xl-30 mx-auto text-center py-1 f06 col-10 lila">EXPERIENCIA INTERACTIVA</b>
           </div>
           <div className="row justify-content-center">
             <a href="/quiz"><h2 className="col-9 col-md-4 mt-4 mx-auto text-center ">Descubrí tu propio lenguaje <span className='playfairItalic under-lila pb-2'>inclusivo</span></h2></a>
@@ -77,13 +77,13 @@ function Landing() {
         {/* CAJA DE HERRAMIENTAS */}
         <div id="caja" className='bg-lila'>
           <div className="row">
-            <b className="col-4 col-md-2 mt-25 mt-md-10 mx-auto text-center py-1 f06 col-3 negro">RECURSOS</b>
+            <b className="col-4 col-md-2 mt-25 mt-md-10 mt-xl-30 mx-auto text-center py-1 f06 col-3 negro">RECURSOS</b>
           </div>
           <div className="row justify-content-center">
             <a href="/caja-de-herramientas"><h2 className="col-9 col-md-4 mt-3 mx-auto text-center blanco pb-5">Caja de <span className='playfairItalic'>herramientas</span></h2></a>
           </div>
           <div className="row justify-content-center">
-            <p className="col-9 col-md-4 mt-1 mx-auto text-center playfair"><b>Recursos gramaticales y no tan gramaticales para hacer que tus textos sean un poco más <span className='playfairItalic'>inclusivos</span></b></p>
+            <p className="col-9 col-md-4 mt-1 mx-auto text-center playfair"><b>Recursos gramaticales y no tan gramaticales para crear tu propio lenguaje <span className='playfairItalic'>inclusivo</span></b></p>
           </div>
           <div className='row'>  
             <a className="col-12 mt-5 mx-auto text-center playfair" href="/caja-de-herramientas"><img alt="." className="flechaRedir" src={require("../assets/img/flechaBlanca.png")}/></a>
@@ -92,7 +92,7 @@ function Landing() {
         {/* TEXTO EXPOSITIVO */}
         <div id="texto" className=' bg-gris'>
           <div className="row">
-            <b className="mt-25 mt-md-15 mx-auto text-center py-1 f06 col-4 col-md-2 negro">RECURSOS</b>
+            <b className="mt-25 mt-md-15 mt-xl-40 mx-auto text-center py-1 f06 col-4 col-md-2 negro">RECURSOS</b>
           </div>
           <div className="row">
             <a className="" href="/texto-expositivo"><h2 className="col-9 mt-3 mx-auto text-center  lila pb-5">¿Qué <span className='playfairItalic'>sentido</span> tiene el lenguaje inclusivo?</h2></a>
