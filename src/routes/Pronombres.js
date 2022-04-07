@@ -59,7 +59,7 @@ function Pronombres() {
       </div>
 
       <div className=' mx-5 blanco-borde-negro col-12 col-md-3 redirect negro'>
-        <a href='/texto-expositivo'>
+        <a href='/que-sentido-tiene-el-lenguaje-inclusivo'>
           <div className='row redirect-texto negro'>
             <b>¿Qué sentido tiene el lenguaje <span className='playfair'>inclusivo?</span></b>
           </div>

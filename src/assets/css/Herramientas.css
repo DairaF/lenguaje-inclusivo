@@ -51,7 +51,7 @@ h1{
 .contenedorCaja{
   width: 80%;
   position: fixed;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -122,6 +122,7 @@ h1{
   text-transform: uppercase !important;
 }
 .redirects{
+  margin-top: 20%;
   background-color: #9F8BEA;
 }
 @media only screen and (min-width: 768px) {
@@ -134,7 +135,7 @@ h1{
   }
   .menu-tool-content{
     position: fixed;
-    margin-top: 12%;
+    margin-top: 8%;
     left:2%;
     height: auto;
     width: 15%;
@@ -151,7 +152,7 @@ h1{
     background-image: url('../img/Sbg1.png'),url('../img/Sbg2.png');
     background-repeat: no-repeat;
     background-size: 25%,25%;
-    background-position:5%center,95%center ;
+    background-position:5% center,95% center ;
   }
   .banner img{
     width: 15% !important;

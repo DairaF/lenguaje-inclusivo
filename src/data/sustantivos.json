@@ -4,7 +4,7 @@
         "titulo":"Sustantivos asociados a personas o entidades",
         "camelCase":"AsociadosAPersonasOEntidades",
         "texto":"Son los que agrupan a personas, instituciones, empresas u otras entidades. Como no se refieren exclusivamente a personas, entendemos que el género gramatical no se refiere a un género social.",
-        "ejemplo1": "agentes, actores",
+        "ejemplo1": "agentes, actores.",
         "masInfo": "",
         "ejemplo2": ""
     },{
@@ -12,7 +12,7 @@
         "titulo":"Sustantivos abstractos",
         "camelCase":"SustantivosAbstractos",
         "texto":"En este contexto, son palabras que hablan de condiciones, posiciones laborales o habilidades, en lugar de personas u objetos concretos.",
-        "ejemplo1": "jefatura, presidencia",
+        "ejemplo1": "jefatura, presidencia.",
         "masInfo": "",
         "ejemplo2": ""
     },{
@@ -20,7 +20,7 @@
         "titulo":"Sustantivos con terminaciones especiales",
         "camelCase":"TerminacionesEspeciales",
         "texto":"Son sustantivos que por sí mismos no marcan género, pero que adoptan el de las palabras que los rodean.",
-        "ejemplo1": "cliente, intérprete, joven",
+        "ejemplo1": "cliente, intérprete, joven.",
         "masInfo": " La marca de género aparece en las palabras que rodean al sustantivo, por lo que tenemos que tener cuidado a la hora de elegir artículos y adjetivos.",
         "ejemplo2": {
             "no":"Los economistas ",
@@ -38,7 +38,7 @@
         "titulo":"Sustantivos asociados a grupos",
         "camelCase":"SustantivosColectivos",
         "texto":"Son aquellos que se refieren a un conjunto de personas a las que no se les asigna un género particular. También acá podemos incluir sustantivos colectivos o algunos que designan a una porción de la sociedad.",
-        "ejemplo1": "sectores, población, audiencia",
+        "ejemplo1": "sectores, población, audiencia.",
         "masInfo": "",
         "ejemplo2": ""
     }

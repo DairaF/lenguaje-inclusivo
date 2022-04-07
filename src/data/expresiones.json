@@ -3,7 +3,7 @@
         "id":1,
         "titulo":"Elipisis",
         "texto":"Con este recurso podemos eliminar la referencia a las personas, lo que no solo evita usar masculino genérico, sino también impide repeticiones innecesarias.",
-        "ejemplo1": "❌Los invitamos a  ✅Invitamos a",
+        "ejemplo1": "❌Los invitamos a  ✅Invitamos a.",
         "masInfo": "Para tener cuidado: la palabra que no usamos tiene que estar clara, para evitar ambiguedades.",
         "ejemplo2": ""
     },{
@@ -11,7 +11,7 @@
         "titulo":"Sinécdoque",
         "camelCase":"Sinecdoque",
         "texto":"Este recurso se usa para nombrar a una cosa con el nombre de una de sus partes. Nos permite evitar el masculino genérico usando una parte del cuerpo o acción en lugar de la referencia a la persona.",
-        "ejemplo1": "Voces, miradas. Todavía hay voces que expresan desacuerdo.",
+        "ejemplo1": "voces, miradas. Todavía hay voces que expresan desacuerdo.",
         "masInfo": "",
         "ejemplo2": ""
     },{
@@ -32,10 +32,10 @@
         "ejemplo2": ""
     },{
         "id":5,
-        "titulo":"Impersonales",
+        "titulo":"Verbos impersonales",
         "camelCase":"Impersonales",
         "texto":"Una manera de evitar el masculino genérico es usar verbos impersonales en oraciones unimembres. Para construirlas podemos usar el verbo “haber” o expresiones con la palabra “se” y verbos en tercera persona.",
-        "ejemplo1": "se busca | hubo acuerdo",
+        "ejemplo1": "se busca | hubo acuerdo.",
         "masInfo": "",
         "ejemplo2": ""
     }

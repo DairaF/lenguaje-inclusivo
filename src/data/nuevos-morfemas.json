@@ -3,7 +3,7 @@
         "id":1,
         "titulo":"Nuevos Morfemas",
         "texto":"Con la  x, el @ o la e podemos crear nuevos morfemas de género, por afuera de lo masculino/femenino. Sirven para hacer referencia a colectivos diversos que se identifican por fuera de esta dualidad.",
-        "ejemplo1": "Todes | lxs trabajadorxs | l@s jugador@s",
+        "ejemplo1": "Todes | lxs trabajadorxs | l@s jugador@s.",
         "masInfo": "Los caracteres especiales, como el @ o la x, generan palabras que no pueden pronunciarse en la oralidad. Además, su uso puede generar dificultades para personas con alguna discapacidad visual, porque hay procesadores que pasan textos escritos a orales que no los identifican.",
         "ejemplo2": ""
     }

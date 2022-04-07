@@ -1,41 +1,3 @@
-.swiper {
-    width: 100vw !important;
-    height: 100vh !important;
-    background: rgb(199, 163, 163);
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-  
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-
-
-
-
-
 #situacionFull{
     height: 100vh;
     width: 100vw;
@@ -118,34 +80,7 @@ font-weight: bold;
   margin-top: 25%;
   padding: 1em;
 }
-/* .swiper-pagination-bullets{
-    margin-top: 0%;
-}
-.swiper-pagination-bullet{
-    width: 2em !important;
-    background-color: #D1D3D4 !important;
-    border-radius: 2px !important;
-}
-.swiper-pagination-bullet-active{
-    width: 2em !important;
-    background-color: #F1F2F2 !important;
-    border-radius: 2px !important;
-}
-.swiper-pagination{
-    top:2% !important;
-}
-.swiper-pagination-horizontal{
-    height: 2em !important;
-}
-.swiper-button-next{
-    display: none !important;
-}
-.swiper-button-prev{
-    display: none !important;
-}
-.swiper-slide-active{
-    width: 100vw !important;
-} */
+
 .endSlide{
     padding: 10%;
     height: 100%;
@@ -259,7 +194,12 @@ font-weight: bold;
     color: white !important;
     border-radius: 10px;
 }
-
+#verResultados:hover{
+    border: solid 2px #BBA1FC;
+    background-color: white;
+    color: #BBA1FC !important;
+    border-radius: 10px;
+}
 input[type="range"] {
     -webkit-appearance: none;
     height: 2em;
@@ -373,6 +313,7 @@ h1{
     transform: translate(-50%, -50%);
     z-index: 500;
     border: solid 2px black; 
+    text-align: center;
 }
 #modalInfo img{
     width: 100%; 
@@ -388,16 +329,22 @@ h1{
     transform: translate(-50%, -50%);
     z-index: 500;
     border: solid 2px black; 
+    font-weight: bold;
 }
 #segure a{
     cursor: pointer;
+}
+#segure a:hover{
+    cursor: pointer;
+    text-decoration: underline !important;
 }
 #volver{
     position: absolute;
     top: 3%;
     left:5%;
 }
-#volver a{
+#volver:hover{
+    font-weight: bolder;
     cursor: pointer;
 }
 #ayuda:hover{
@@ -412,11 +359,7 @@ h1{
     font-size: 2em !important;
 }
 @media only screen and (min-width: 768px) {
-    .swiper {
-        max-width: 375px !important;
-        max-height: 667px !important;
-        background: rgb(199, 163, 163);
-      }
+
     .flechaEnBorde{
         display: none;
     }
@@ -465,13 +408,13 @@ h1{
         background-position:10% 8%, 12% 100%;
         background-size: 20%, 55%;
     }
-    #input1
+    /* #input1
     {
         transform: rotate(270deg);
         position: fixed;
         top: 40%;
         left: 5%;
-    }
+    } */
     .ruido{
         background-position: 20% 25%, 75% 80%;
         background-size:10%, 5%, 100%;
@@ -486,12 +429,10 @@ h1{
         background-position: 15% 80%, 85% 15%;
         background-size:5%,5%,100%;
     }
-    .amigueF{
-        background-position: left;
-        background-size: auto;
-    }
     .endSlide{
         padding: 0%;
+        width: 375px;
+        height: 667px;
     }
     .fondoSituacion{
         display: block;
@@ -575,15 +516,7 @@ h1{
         margin-top: -8%;
         margin-left: 0% !important;
     }
-    /* .swiper-pagination{
-        top: 10% !important;
-    }
-    .swiper-pagination-bullet{
-        width: 3em;
-    }
-    .swiper-pagination-active{
-        width: 3em;
-    } */
+
     #start-content{
         width: 100vw;
         position: absolute;
@@ -596,6 +529,9 @@ h1{
         top: 85%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    #start-quiz img{
+        width:40%
     }
 }
 

@@ -80,8 +80,8 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-.visible{
-  height: 15%;}
+  .visible{
+    height: 15%;}
   #burger{
     display: none;
   }  
@@ -120,3 +120,7 @@ header {
     background-color: transparent !important;
   }
 }
+@media only screen and (min-width: 834px) {
+  .visible{
+    height: 10%;}
+  }

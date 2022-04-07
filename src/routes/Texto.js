@@ -4,23 +4,37 @@ import ProgressBar from '../components/ProgressBar';
 import ReactGa from 'react-ga';
 import MenuTexto from '../components/MenuTexto';
 import'../assets/css/Texto.css';
+import DocumentMeta from 'react-document-meta';
 function Texto() {
+  const meta = {
+    title: '¿Qué sentido tiene el lenguaje inclusivo?',
+    description: 'Aportes lingüísticos para una discusión incómoda',
+    canonical: 'https://lenguajeinclusivo.fund.ar/que-sentido-tiene-el-lenguaje-inclusivo',
+    meta: {
+      charset: 'utf-8',
+      name: {
+        keywords: 'lenguaje,inclusividad'
+      }
+    }
+  };
     useEffect(()=>{
       ReactGa.initialize('G-BQYF4G0HMV')
       ReactGa.pageview(window.location.pathname + window.location.search)
       },[]);
   return (
+    <DocumentMeta {...meta}>
     <div className='texto'>
       <div className='row justify-content-center'>
         <MenuTexto/>
         <ProgressBar/>
-        <div className='col-10 col-md-6 mt-25 mt-md-5 offset-md-1 '>
+        <div className='col-10 col-md-6 mt-25 mt-md-5 offset-md-1 mb-10'>
           <div className='row justify-content-center justify-content-md-left'>
             <h2 className='lila mt-10 mt-md-15 mb-5 mb-md-3 f3'>¿Qué <span className='playfairItalic'>sentido</span> tiene el “lenguaje inclusivo”? </h2>
-            <h3 className='playfair mt-1 mb-5 my-md-5 '>Aportes lingüísticos para una discusión <span className='playfair'>incómoda</span></h3>
+            <h3 className='playfair mt-1 mt-md-5 '>Aportes lingüísticos para una discusión <span className='playfair'>incómoda</span></h3>
+            <h3 className='playfair mt-1 my-md-5 '>Por Paula Salerno</h3>
           </div>
-          <div className='my-5'>
-            <span className='col-12 col-md-5'><b className='f08'>TIEMPO DE LECTURA: 15 MIN. APROX.</b></span>
+          <div className='mb-5'>
+            <span className='col-12 col-md-5'><b className='f08'>Tiempo de lectura: 15 minutos.</b></span>
           </div>
           <div className='my-5 pb-5 under-negro'>
             <a className=' col-10 mx-auto col-md-5 bg-lila p-3 mt-5 blanco' target="_blank" href="FU_DOC_LenguajeInclusivo3.pdf" ><b>Descargá el PDF</b></a>
@@ -68,7 +82,7 @@ function Texto() {
             </div>
               <div id="autora">
               <h3 className='mt-15 mb-5 titles'>Acerca de la autora </h3>
-              <p>
+              <p className='mb-3'>
               Paula Salerno</p><p>
               Doctora en Lingüística (UBA). Postdoctoranda de CONICET en el Centro de Estudios del Lenguaje en Sociedad (UNSAM). Investigadora responsable del proyecto Las memorias de Malvinas entre lo individual y lo social (FONCYT). Docente del Doctorado en Humanidades (UNSAM) y de la Licenciatura en Letras (UBA).
               </p><p>
@@ -79,6 +93,7 @@ function Texto() {
         </div>
         </div>
     </div>
+    </DocumentMeta>
   );
 }
 

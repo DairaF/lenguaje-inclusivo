@@ -281,11 +281,7 @@ a:hover{
   border: solid 1px #9F8BEA;
   padding:1.5em;
 }
-.border-blanco{
-  border: solid 1px #fff;
-  padding:1.5em;
-  height: 90vh !important;
-}
+
 .border-negro-redondeado{
   border: solid 2px #000000;
   border-radius: 10px;
@@ -404,6 +400,9 @@ a:hover{
 .f1{
   font-size: 1em !important;
 }
+.f1-2{
+  font-size: 1.2em !important;
+}
 .f1-5{
   font-size: 1.5em !important;
 }
@@ -446,9 +445,6 @@ a:hover{
   background-color: #171617;
 }
 
-#acerca p{
-  font-weight: 300;
-}
 
 .fw-100{
   font-weight:100 !important ;

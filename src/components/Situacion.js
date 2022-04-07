@@ -112,16 +112,16 @@ function Situacion(props) {
     <div className=''>
       <div id="segure" className={segure? "hidden": "block"}>
         <a onClick={toggleSegure} className='f2 mx-3 floatR'>x</a>
-        <p className='col-10 col-md-8 mt-5 mx-auto'>¿Estás segure que querés finalizar y volver?</p>
+        <p className='col-10 col-md-8 my-5 mx-auto'><b>¿Estás segure que querés finalizar y volver?</b></p>
         <div className='row justify-content-center mb-5'>
-          <a href='/#quiz' className='col-2 text-center f1-5'>Si</a>
+          <a href='/#quiz' className='col-2 text-center f1-5'>Sí</a>
           <a onClick={toggleSegure} className='col-2 text-center f1-5'><b>No</b></a>
         </div>
       </div>
       <div id="modalInfo" className={info? "hidden": "block"}>
         <a onClick={toggleInfo} className='f2 mx-3 floatR'>x</a>
         <div className='row justify-content-center'>
-          <p className='col-10 my-5'>Encontrá las 3 expresiones excluyentes en cada situación, clickealas y reemplazalas con una opción más inclusiva.</p>
+          <p className='col-10 my-5'><b>Encontrá las 3 expresiones excluyentes en cada situación, clickealas y reemplazalas con una opción más inclusiva.</b></p>
           <div className='col-10 col-md-5 mb-5'>
             <img src={require("../assets/img/ejMobile.gif")} />
           </div>

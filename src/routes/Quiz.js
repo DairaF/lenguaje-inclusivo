@@ -9,9 +9,24 @@ import papers from '../data/papers.json';
 import hablados from '../data/hablados.json';
 import ReactGa from 'react-ga'
 import "animate.css/animate.min.css";
+import DocumentMeta from 'react-document-meta';
 
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 function Quiz() {
+
+  const meta = {
+    title: 'Descubrí tu propio lenguaje inclusivo',
+    description: 'Un experimento para poner en cuestión cómo hablamos',
+    canonical: 'https://lenguajeinclusivo.fund.ar/quiz',
+    meta: {
+      charset: 'utf-8',
+      name: {
+        keywords: 'lenguaje,inclusividad'
+      }
+    }
+  };
+
+
     useEffect(()=>{
       ReactGa.initialize('G-BQYF4G0HMV')
       ReactGa.pageview(window.location.pathname + window.location.search)
@@ -57,6 +72,8 @@ const nextSituatcion = () =>{
   setRandomValues();
 }
   return (
+    
+    <DocumentMeta {...meta}>
     <div className="App">
       {page === 0 && <AnimationOnScroll animateIn="animate__slideInLeft" animateOut="animate__slideOutDown"><Start handleStart={nextSituatcion} /></AnimationOnScroll>}
       {page === 1 && <AnimationOnScroll animateIn="animate__slideInUp" animateOut="animate__slideOutRight" ><Situacion 
@@ -158,6 +175,7 @@ const nextSituatcion = () =>{
       {page === 5 && <End fullArray={pushArray} realize={realize} /> }
 
     </div>
+    </DocumentMeta>
   );
 }
 

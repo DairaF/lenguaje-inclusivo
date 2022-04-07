@@ -1,13 +1,25 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import '../assets/css/Herramientas.css';
-import ReactGa from 'react-ga'
+import ReactGa from 'react-ga';
+import DocumentMeta from 'react-document-meta';
 function Caja() {
     useEffect(()=>{
       ReactGa.initialize('G-BQYF4G0HMV')
       ReactGa.pageview(window.location.pathname + window.location.search)
       },[])
-      
+      const meta = {
+        title: 'Caja de Herramientas',
+        description: 'Recursos gramaticales y no tan gramaticales para no hablar solo de los varones',
+        canonical: 'https://lenguajeinclusivo.fund.ar/caja-de-herramientas',
+        meta: {
+          charset: 'utf-8',
+          name: {
+            keywords: 'lenguaje,inclusividad'
+          }
+        }
+      };
   return (
+    <DocumentMeta {...meta}>
     <div className=' bg-lila full' >
       <div className='container'>
         <div id="tituloCaja" className=''>
@@ -42,6 +54,7 @@ function Caja() {
         {/* <span className='bottomText blanco opacity-05'>herramientas</span>        */}
       </div>
     </div>
+    </DocumentMeta>
   );
 }
 

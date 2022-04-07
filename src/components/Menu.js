@@ -43,7 +43,7 @@ const cls = visible ? "visible" : "hidden";
         <div className='mt-1 mb-2 mt-md-0 mx-1 mx-md-0 ml-md-5 row justify-content-md-end'>
           <a className='mt-5 mt-md-4 mb-2 blanco col-10 col-md-2 offset-md-1' href='/quiz'> Descubrí tu propio lenguaje <span className='playfairItalic'>inclusivo</span></a>
           <a className='mt-5 mt-md-4 mb-2 blanco col-10 col-md-2 offset-md-1' href='/caja-de-herramientas'>Caja de <span className='playfairItalic'>herramientas</span></a>
-          <a className='mt-5 mt-md-4 mb-2 blanco col-10 col-md-2 offset-md-1' href='/texto-expositivo'> ¿Qué sentido tiene el nuevo lenguaje<span className='playfairItalic'> inclusivo</span>? </a>
+          <a className='mt-5 mt-md-4 mb-2 blanco col-10 col-md-2 offset-md-1' href='/que-sentido-tiene-el-lenguaje-inclusivo'> ¿Qué sentido tiene el nuevo lenguaje<span className='playfairItalic'> inclusivo</span>? </a>
           <a className='mt-5 mt-md-4 mb-2 blanco col-10 col-md-2 offset-md-1' href='/acerca'>Acerca del proyecto</a>
           <hr className='lila col-11 hidden-sm'/>
         </div>

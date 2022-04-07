@@ -17,7 +17,7 @@ const Start = (props) => {
           </div>
         </div>
         <div className='row '>
-          <a id="start-quiz" className='col-2 col-md-1 p-md-4 mt-2 mx-auto lila f2 text-center' onClick={handleStart}><img alt="." className="" src={require("../assets/img/flechaBlanca.png")}/></a>
+          <a id="start-quiz" className='col-2 p-md-4 mt-2 mx-auto lila f2 text-center' onClick={handleStart}><span>Empezar</span><img alt="." className="" src={require("../assets/img/flechaBlanca.png")}/></a>
         </div>
       </div>
     </div>

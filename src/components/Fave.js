@@ -22,19 +22,19 @@ function Fave(props) {
     }
     switch (props.name){
       case "Rae": ejemplo = "Tu empleo del lenguaje no demuestra inclusión-"; break;
-      case "Desdoblamiento" : ejemplo = "Un/a investigador/a | Autoras y autor."; break;
-      case "Nuevos morfemas": ejemplo = "Todes, lxs trabajadorxs, l@s jugador@s"; break;
-      case "Sustantivo abstracto": ejemplo = "Jefatura, presidencia"; break;
+      case "Desdoblamiento" : ejemplo = "Un investigador/a | autoras y autor."; break;
+      case "Nuevos morfemas": ejemplo = "Todes, lxs trabajadorxs, l@s jugador@s."; break;
+      case "Sustantivo abstracto": ejemplo = "Jefatura, presidencia."; break;
       case "Pronombres relativos": ejemplo = "'Hay quienes sostienen que' / 'Quien lo desee puede...'"; break;
-      case "Sustantivos abstractos": ejemplo = "Jefatura, presidencia"; break;
-      case "Sustantivos colectivos": ejemplo = "Sectores, población, audiencia"; break;
-      case "Elipsis": ejemplo = "❌Los invitamos a  ✅Invitamos a | ❌Los funcionarios advierten que ✅ Advierten que"; break;
+      case "Sustantivos abstractos": ejemplo = "Jefatura, presidencia."; break;
+      case "Sustantivos colectivos": ejemplo = "Sectores, población, audiencia."; break;
+      case "Elipsis": ejemplo = "❌Los invitamos a  ✅Invitamos a | ❌Los funcionarios advierten que ✅ Advierten que."; break;
       case "Formas impersonales": ejemplo = "Se busca, hubo acuerdo"; break;
       case "Pronombres indefinidos": ejemplo = "Alguien, cualquiera, nadie."; break;
       case "Sustantivos epicenos": ejemplo = "Persona, víctima, individuo, autoridades."; break;
       case "Sustantivos asociados a entidades": ejemplo = "Agentes, actores"; break;
-      case "Sustantivos con terminaciones especiales": ejemplo = "Cliente, intérprete, joven"; break;
-      case "Prosopopeya": descripcion = "Los estudios indican | Hay argumentos a favor | Existen cuestionamientos"; break;
+      case "Sustantivos con terminaciones especiales": ejemplo = "Cliente, intérprete, joven."; break;
+      case "Prosopopeya": descripcion = "Los estudios indican | Hay argumentos a favor | Existen cuestionamientos."; break;
       default: ejemplo = "" 
     }
 
@@ -52,7 +52,7 @@ function Fave(props) {
         {props.name == "Rae"? <img className='col-6 col-md-2 h-content mt-3' src={ require('../assets/img/illus/nubeGris.png') } />:
                   props.name == "Desdoblamiento" ?<img className='col-6 col-md-2 h-content mt-3' src={ require('../assets/img/illus/expresion.png') } />:
                   props.name == "Nuevos morfemas"?<img className='col-6 col-md-2 h-content mt-3' src={ require('../assets/img/illus/morfema.png') } />:
-                  props.name == "Sustantivo abstracto"? <img className='col-6 col-md-2 h-content mt-3' src={ require('../assets/img/illus/end1.png') } />:
+                  props.name == "Sustantivo abstracto"? <img className='col-6 col-md-2 h-content mt-3' src={ require('../assets/img/illus/sustantivo.png') } />:
                   props.name == "Pronombres relativos"? <img className='col-6 col-md-2 h-content mt-3' src={ require('../assets/img/illus/pronombre.png') } />:
                   props.name == "Sustantivos abstractos"? <img className='col-6 col-md-2 h-content mt-3' src={ require('../assets/img/illus/sustantivo.png') } />:
                   props.name == "Sustantivos colectivos"? <img className='col-6 col-md-2 h-content mt-3' src={ require('../assets/img/illus/sustantivo.png') } />:

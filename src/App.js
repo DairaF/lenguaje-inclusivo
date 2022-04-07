@@ -33,7 +33,7 @@ function App() {
           <Route path="/caja-de-herramientas/pronombres" element={<Pronombres/>} />
           <Route path="/caja-de-herramientas/expresiones" element={<Expresiones/>} />
           <Route path="/caja-de-herramientas/nuevos-morfemas" element={<NuevosMorfemas/>} />
-          <Route path="/texto-expositivo" element={<Texto/>} />
+          <Route path="/que-sentido-tiene-el-lenguaje-inclusivo" element={<Texto/>} />
           <Route path="/acerca" element={<Acerca/>} />
         </Routes>
         { window.location.pathname =='/' ? <Footer/>
@@ -42,7 +42,7 @@ function App() {
         :window.location.pathname =='/caja-de-herramientas/expresiones' ? <Footer/>
         :window.location.pathname =='/caja-de-herramientas/nuevos-morfemas' ? <Footer/>
         :window.location.pathname =='/guia-autocorrecion' ? <Footer/>
-        :window.location.pathname =='/texto-expositivo' ? <Footer/>
+        :window.location.pathname =='/que-sentido-tiene-el-lenguaje-inclusivo' ? <Footer/>
         :window.location.pathname =='/acerca' ? <Footer/>
         : null }
         

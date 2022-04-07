@@ -67,27 +67,27 @@
         "block1":"",
         "opciones1":[
             {
-                "texto":"Hubo un ganador y un perdedor ",
+                "texto":"Hubo un ganador y un perdedor",
                 "categoria":"rae", 
                 "valor":1
             },
             {
-                "texto":"Se ganó y se perdió ",
+                "texto":"Se ganó y se perdió",
                 "categoria":"formas impersonales",
                 "valor":9
             }, 
             {
-                "texto":"Alguien ganó y alguién perdió ",
+                "texto":"Alguien ganó y alguién perdió",
                 "categoria":"pronombres indefinidos",
                 "valor":10
             }, 
             {
-                "texto":"Hubo quien ganó y quien perdió ",
+                "texto":"Hubo quien ganó y quien perdió",
                 "categoria":"pronombres relativos",
                 "valor":5
             }, 
             {
-                "texto":"Hubo une ganadore y une perdedore ",
+                "texto":"Hubo une ganadore y une perdedore",
                 "categoria":"morfemas nuevos",
                 "valor":3
             }
@@ -115,20 +115,20 @@
                 "valor":13
             }
         ],
-        "block3":", pero eso no es lo importante aquí, sino mostrar que ese concurso anticipaba un cambio de época. El uso de datos se volvió un elemento fundamental en las decisiones ",
+        "block3":"eso no es lo importante aquí, sino mostrar que ese concurso anticipaba un cambio de época. El uso de datos se volvió un elemento fundamental en las decisiones ",
         "opciones3":[
             {
-                "texto":"de los empresarios ",
+                "texto":"de los empresarios",
                 "categoria":"rae",
                 "valor":1
             },
             {
-                "texto":"corporativas ",
+                "texto":"corporativas",
                 "categoria":"sustantivos abstractos", 
                 "valor":4
             },
             {
-                "texto":"de las empresas ",
+                "texto":"de las empresas",
                 "categoria":"sustantivos asociados a personas o entidades", 
                 "valor":12
             }

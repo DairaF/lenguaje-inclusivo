@@ -19,6 +19,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "../assets/css/Stories.css";
+
 
 // import required modules
 import {Zoom, Autoplay, Pagination, Navigation } from "swiper";
@@ -210,7 +212,7 @@ const End = (props) => {
 
         {sortResults()}
         {page === 0 && 
-        <div>
+        <div id="endSlides">
         <Swiper
         slidesPerView={1}
         spaceBetween={0}
@@ -224,35 +226,13 @@ const End = (props) => {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        {/* <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-      </Swiper>
-        <Swiper
-        loop={false}
-        spaceBetween={0}
-        centeredSlides={true}
-        autoplay={{
-          delay: 6000,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination]}
-        className="mySwiper"
-      > */}
         <SwiperSlide>
           <div className='endSlide '>
             <div className='container procesando'>
               <div className='row justify-content-center'>
                 <span className='blanco opacity-05 text-center'>xxx</span>
-                <h2 className='blanco text-center col-9 col-md-5 mt-20 under-blanco pb-3'><b>Estamos procesando tus respuestas para saber </b><span className='playfairItalic'>cómo hablás</span></h2>
-                <input id="input1" className='col-8 col-md-3 m-5 mt-md-25 hide-md' type="range" min={1} max={12} value={morfemasCounter} ></input>
+                <h2 className='blanco text-center col-9 mt-20 under-blanco pb-3'><b>Estamos procesando tus respuestas para saber </b><span className='playfairItalic'>cómo hablás</span></h2>
+                <input id="input1" className='col-8 m-5 ' type="range" min={1} max={12} value={morfemasCounter} ></input>
               </div>
             </div>
           </div>
@@ -261,10 +241,10 @@ const End = (props) => {
           <div className='endSlide aca'>
             <div className='container'>
                 <div className='row justify-content-center'>
-                  <h2 className='blanco col-9 col-md-5 mt-20 mt-md-20 text-center pb-5'> <b>Acá no hay respuestas buenas ni malas.</b> </h2> 
+                  <h2 className='blanco col-9 mt-35 text-center pb-5'> <b>Acá no hay respuestas buenas ni malas.</b> </h2> 
                 </div>
                 <div className='row justify-content-center'>
-                  <p className='playfair col-10 mt-25 col-md-5 mt-md-1 text-center'><b> Al lenguaje lo construimos todos los días y siempre podemos seguir aprendiendo: <span className='playfairItalic'>se trata de hacerse preguntas.</span> </b></p>
+                  <p className='playfair col-10 mt-8 text-center'><b> Al lenguaje lo construimos todos los días y siempre podemos seguir aprendiendo: <span className='playfairItalic'>se trata de hacerse preguntas.</span> </b></p>
                 </div>
             </div>
           </div>
@@ -272,23 +252,22 @@ const End = (props) => {
         <SwiperSlide>
           <div className='endSlide ruido'> 
             <div className='row justify-content-center'>
-              <h2 className='blanco col-9 col-md-5 mt-55 mt-md-25 text-center'>Veamos cuántas <span className='playfairItalic'>expresiones</span> te hicieron <span className='playfairItalic'>ruido</span> </h2> 
+              <h2 className='blanco col-9 mt-55 text-center'>Veamos cuántas <span className='playfairItalic'>expresiones</span> te hicieron <span className='playfairItalic'>ruido</span> </h2> 
             </div>
           </div>
         </SwiperSlide>
-        {vw<768?<div><SwiperSlide>
-
+          <SwiperSlide>
           <div className={realize < 5 ? "endSlide amigue" : realize < 9 ? "endSlide xahi" : "endSlide anteojos" } > 
-            <div className={realize < 5 ? "row justify-content-center border-blanco  amigueF" : realize < 9 ? "row justify-content-center border-blanco  xahiF" : "row justify-content-center border-blanco  anteojosF" }>
+            <div className={realize < 5 ? " border-blanco  amigueF" : realize < 9 ? "border-blanco  xahiF" : "border-blanco  anteojosF" }>
               <h2 className='text-center'><b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Tenés los anteojos violetas activados" }</b></h2> 
-              <input className='col-8 mt-75' type="range" min={1} max={12} value={morfemasCounter} ></input>
-              <p className='blanco mt-5 text-center f08 col-8'><b>Identificaste {realize} de 12 expresiones</b></p>
+              <input className='col-8 mt-75' type="range" min={1} max={12} value={realize} ></input>
+              <p className='blanco mt-5 text-center f08 col-12'><b>Identificaste {realize} de 12 expresiones</b></p>
             </div>
           </div> 
         </SwiperSlide>
         <SwiperSlide>
           <div className={realize < 5 ? "endSlide amigue" : realize < 9 ? "endSlide xahi" : "endSlide anteojos" } > 
-            <div className='row justify-content-center border-blanco'>
+            <div className='border-blanco'>
                 <p className='mt-25 under-blanco text-center playfair f1-5'><b>{realize < 5 ? "Tenés que entrenar un poco más la mirada. Aunque no nos demos cuenta, el lenguaje que nos rodea todos los días puede ser una anteojera. " 
                   : realize < 9 ? "Vas por el buen camino. Podés identificar muchas situaciones pero hay otras que todavía cuestan." 
                   : "Tu radar cuestionador de lenguaje ve un término excluyente a 100km a la redonda." }
@@ -300,72 +279,51 @@ const End = (props) => {
                 </div>
             </div>
           </div>
-        </SwiperSlide></div>
-        :<SwiperSlide>
-          <div className={realize < 5 ? "endSlide amigue" : realize < 9 ? "endSlide xahi" : "endSlide anteojos" } > 
-            <div className='row justify-content-between'>
-              <div className='col-5  mt-5'>
-                { realize < 5 ? <img className=' border-blanco p-0 floatR' src={require('../assets/img/illus/end1.png')}/> : 
-                  realize < 9 ? <img className=' border-blanco p-0 floatR' src={require('../assets/img/illus/end2.png')}/> : 
-                  <img className=' border-blanco p-0 floatR' src={require('../assets/img/illus/end3.png')}/> } 
-              </div>
-              <div className='col-6'>
-                <h2 className='text-center col-8 mt-25 f3'><b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Tenés los anteojos violetas activados" }</b></h2> 
-                <input className='col-8 mx-auto mt-4' type="range" min={1} max={12} value={morfemasCounter} ></input>
-                <p className='blanco mt-2 col-8 text-center f1 '><b>Identificaste {realize} de 12 expresiones</b></p>
-                  <p className='col-8 text-left playfair text-center f1'>{realize < 5 ? "Tenés que entrenar un poco más la mirada. Aunque no nos demos cuenta, el lenguaje que nos rodea todos los días puede ser una anteojera. Nos acostumbramos a leer y escuchar palabras que parecen correctas pero que a veces dejan afuera a mucha gente. Si llegaste hasta acá, ya es el primer paso." 
-                    : realize < 9 ? "Vas por el buen camino. Podés identificar muchas situaciones en las que las palabras excluyen, pero hay otras que todavía cuestan, como todo en la vida. Lo importante: hay cosas que te hacen ruido y querés cambiarlas." 
-                    : "Tu radar cuestionador de lenguaje ve un término excluyente a 100km a la redonda. El masculino genérico te hace más ruido que una bocina a las 3AM: necesitás eliminarlo a toda costa." }
-                  </p>
-              </div>
-            </div>
-          </div> 
-        </SwiperSlide>}
-        {vw<768? <SwiperSlide>
+        </SwiperSlide>
+        <SwiperSlide>
           <div className='endSlide'>
             <div className='row justify-content-center '>
-              <h2 className='blanco text-center col-9 mt-45 mt-md-25'><b>Miremos ahora tu </b><span className='playfairItalic'>herramienta</span><b> favorita, la que usaste más veces</b> </h2> 
+              <h2 className='blanco text-center col-9 mt-45 '><b>Miremos ahora tu </b><span className='playfairItalic'>herramienta</span><b> favorita, la que usaste más veces</b> </h2> 
             </div>
           </div>
         </SwiperSlide>
-        :""}
         <SwiperSlide>
           <div className={realize < 5 ? "endSlide amigue" : realize < 9 ? "endSlide xahi" : "endSlide anteojos" } >
           {faveN1 == 0? <div className='row justify-content-center pt-1'>
-            <img className='h-content hide-sm col-6 col-md-2 mr-md-5 mt-md-15' src={ require('../assets/img/illus/nubeGris.png') } />
-            <div className='col-10 col-md-4 mt-15'>
+            <div className='col-10 mt-15'>
             <h2 className=''>No tenemos suficiente información como para decirte cuál es tu herramienta favorita... </h2>
             <p className='negro'>¿No querés <span className='playfairItalic' >hacer el experimento de nuevo</span> y fijarte mejor en esas expresiones que no son inclusivas?</p>
-            <a href='/quiz' className='btnRedo mt-5' >Repetí el experimento</a>
             </div>
+            <a  href='/quiz' className='btnRedo mt-3 col-8 '>Repetí el experimento</a>
+
             </div>:
             <div className='container'>
               <div className='row justify-content-center text-center'>
-                <p className='col-8 text-center blanco mt-25 mt-md-8 f2'>Usaste <br/><b>{faveN1} {faveN1 >1?"veces":"vez"}</b></p>
+                <p className='col-8 text-center blanco mt-25 f2'>Usaste <br/><b>{faveN1} {faveN1 >1?"veces":"vez"}</b></p>
               </div>          
               <div className='row justify-content-center '>
-                  {faveName1 == "Rae"? <img className='col-6 col-md-2 ' src={ require('../assets/img/illus/end1.png') } />:
-                    faveName1 == "Desdoblamiento" ?<img className='col-6 col-md-2 ' src={ require('../assets/img/illus/expresion.png') } />:
-                    faveName1 == "Nuevos morfemas"?<img className='col-6 col-md-2 ' src={ require('../assets/img/illus/morfema.png') } />:
-                    faveName1 == "Sustantivo abstracto"? <img className='col-6 col-md-2 ' src={ require('../assets/img/illus/end1.png') } />:
-                    faveName1 == "Pronombres relativos"? <img className='col-6 col-md-2 ' src={ require('../assets/img/illus/pronombre.png') } />:
-                    faveName1 == "Sustantivos abstractos"? <img className='col-6 col-md-2 ' src={ require('../assets/img/illus/sustantivo.png') } />:
-                    faveName1 == "Sustantivos colectivos"? <img className='col-6 col-md-2 ' src={ require('../assets/img/illus/sustantivo.png') } />:
-                    faveName1 == "Elipsis"? <img className='col-6 col-md-2 ' src={ require('../assets/img/illus/expresion.png') } />:
-                    faveName1 == "Formas impersonales"? <img className='col-6 col-md-2 ' src={ require('../assets/img/illus/sustantivo.png') } />:
-                    faveName1 == "Pronombres indefinidos"? <img className='col-6 col-md-2 ' src={ require('../assets/img/illus/pronombres.png') } />:
-                    faveName1 == "Sustantivos epicenos"? <img className='col-6 col-md-2 ' src={ require('../assets/img/illus/sustantivo.png') } />:
-                    faveName1 == "Sustantivos asociados a entidades"? <img className='col-6 col-md-2 ' src={ require('../assets/img/illus/sustantivo.png') } />:
-                    faveName1 == "Sustantivos con terminaciones especiales"? <img className='col-6 col-md-2 ' src={ require('../assets/img/illus/sustantivo.png') } />:
-                    faveName1 == "Prosopopeya"? <img className='col-6 col-md-2 ' src={ require('../assets/img/illus/sustantivo.png') } />
-                    :<img className='col-6 col-md-2 ' src={ require('../assets/img/illus/end1.png') } />
+                  {faveName1 == "Rae"? <img className='col-6' src={ require('../assets/img/illus/nubeGris.png') } />:
+                    faveName1 == "Desdoblamiento" ?<img className='col-6 ' src={ require('../assets/img/illus/expresion.png') } />:
+                    faveName1 == "Nuevos morfemas"?<img className='col-6 ' src={ require('../assets/img/illus/morfema.png') } />:
+                    faveName1 == "Sustantivo abstracto"? <img className='col-6 ' src={ require('../assets/img/illus/sustantivo.png') } />:
+                    faveName1 == "Pronombres relativos"? <img className='col-6 ' src={ require('../assets/img/illus/pronombre.png') } />:
+                    faveName1 == "Sustantivos abstractos"? <img className='col-6 ' src={ require('../assets/img/illus/sustantivo.png') } />:
+                    faveName1 == "Sustantivos colectivos"? <img className='col-6 ' src={ require('../assets/img/illus/sustantivo.png') } />:
+                    faveName1 == "Elipsis"? <img className='col-6 ' src={ require('../assets/img/illus/expresion.png') } />:
+                    faveName1 == "Formas impersonales"? <img className='col-6 ' src={ require('../assets/img/illus/sustantivo.png') } />:
+                    faveName1 == "Pronombres indefinidos"? <img className='col-6 ' src={ require('../assets/img/illus/pronombres.png') } />:
+                    faveName1 == "Sustantivos epicenos"? <img className='col-6 ' src={ require('../assets/img/illus/sustantivo.png') } />:
+                    faveName1 == "Sustantivos asociados a entidades"? <img className='col-6 ' src={ require('../assets/img/illus/sustantivo.png') } />:
+                    faveName1 == "Sustantivos con terminaciones especiales"? <img className='col-6 ' src={ require('../assets/img/illus/sustantivo.png') } />:
+                    faveName1 == "Prosopopeya"? <img className='col-6 ' src={ require('../assets/img/illus/sustantivo.png') } />
+                    :<img className='col-6 ' src={ require('../assets/img/illus/nubeGris.png') } />
                   }
               </div>
               <div className='row justify-content-center playfair mt-3'>
                 <p className='text-center'>{faveName1}</p>
               </div>
               <div className='row justify-content-center '>
-                <a id="verResultados" className='col-10 col-md-2 f08 text-center mt-5 mt-md-10 negro py-2 pointer' onClick={()=>nextSlide("pos")} > <b>EXPLORÁ TU PERFIL </b></a>
+                <a id="verResultados" className='col-10 f08 text-center mt-3 negro py-2 pointer' onClick={()=>nextSlide("pos")} > <b>EXPLORÁ TU PERFIL </b></a>
               </div>
             </div>
             }
@@ -464,7 +422,7 @@ const End = (props) => {
                 </div>
 
                 <div className=' blanco-borde-negro col-12 col-md-3 redirect negro'>
-                  <a  href='/texto-expositivo'>
+                  <a  href='/que-sentido-tiene-el-lenguaje-inclusivo'>
                     <div className='row redirect-texto negro '>
                       <b>¿Qué sentido tiene el lenguaje <span className='playfair'>inclusivo?</span></b>
                     </div>
