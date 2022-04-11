@@ -21,7 +21,7 @@ import Texto from "./routes/Texto";
 function App() {
 
   return (
-    <div className="App">
+    <div className={ window.location.pathname =='/' ? "App" : "App AppOV"}>
       <BrowserRouter>
         { window.location.pathname!=='/quiz' ? <Menu/>: null }
         <Routes>
@@ -34,7 +34,7 @@ function App() {
           <Route path="/caja-de-herramientas/expresiones" element={<Expresiones/>} />
           <Route path="/caja-de-herramientas/nuevos-morfemas" element={<NuevosMorfemas/>} />
           <Route path="/que-sentido-tiene-el-lenguaje-inclusivo" element={<Texto/>} />
-          <Route path="/acerca" element={<Acerca/>} />
+          <Route path="/acerca-del-proyecto" element={<Acerca/>} />
         </Routes>
         { window.location.pathname =='/' ? <Footer/>
         :window.location.pathname =='/caja-de-herramientas/sustantivos' ? <Footer/>
@@ -43,7 +43,7 @@ function App() {
         :window.location.pathname =='/caja-de-herramientas/nuevos-morfemas' ? <Footer/>
         :window.location.pathname =='/guia-autocorrecion' ? <Footer/>
         :window.location.pathname =='/que-sentido-tiene-el-lenguaje-inclusivo' ? <Footer/>
-        :window.location.pathname =='/acerca' ? <Footer/>
+        :window.location.pathname =='/acerca-del-proyecto' ? <Footer/>
         : null }
         
     </BrowserRouter>

@@ -2,6 +2,11 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    background: linear-gradient(302deg, #F1F2F2, #d1d3d4, white);
+    background-size: 800% 800%;
+    -webkit-animation: GradAnimation 6s ease infinite;
+    -moz-animation: GradAnimation 6s ease infinite;
+    animation: GradAnimation 6s ease infinite;
 }
 .gif{
     height: 200px;
@@ -29,11 +34,11 @@ font-weight: bold;
 .activa{
     display: block;
 
-    -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 0.5s; /* Firefox < 16 */
-        -ms-animation: fadein 0.5s; /* Internet Explorer */
-         -o-animation: fadein 0.5s; /* Opera < 12.1 */
-            animation: fadein 0.5s;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
 }
 
 @keyframes fadein {
@@ -69,10 +74,10 @@ font-weight: bold;
 }
 #start-quiz{
     cursor: pointer;  
+    position: absolute;
+    bottom: 5%;
 }
-#start-quiz img{
-    width:-webkit-fill-available
-}
+
 .title{
     display: block;
 }
@@ -144,22 +149,22 @@ font-weight: bold;
     background: linear-gradient(302deg, #9f8bea, #6484e8, #9f8bea, #6484e8);
     background-size: 800% 800%;
 
-    -webkit-animation: AnimationName 4s ease infinite;
-    -moz-animation: AnimationName 4s ease infinite;
-    animation: AnimationName 4s ease infinite;
+    -webkit-animation: GradAnimation 4s ease infinite;
+    -moz-animation: GradAnimation 4s ease infinite;
+    animation: GradAnimation 4s ease infinite;
 }
 
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes GradAnimation {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-@-moz-keyframes AnimationName {
+@-moz-keyframes GradAnimation {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-@keyframes AnimationName {
+@keyframes GradAnimation {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
@@ -318,7 +323,16 @@ h1{
 #modalInfo img{
     width: 100%; 
 }
-
+.blackScreen{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 40%;
+    z-index: 100;
+}
 #segure{
     text-align: center;
     background-color: #d1d3d4;
@@ -357,6 +371,10 @@ h1{
 }
 #resultTitle{
     font-size: 2em !important;
+}
+#start-quiz img{
+    width:auto;
+    height: 40px;
 }
 @media only screen and (min-width: 768px) {
 
@@ -529,9 +547,6 @@ h1{
         top: 85%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
-    #start-quiz img{
-        width:40%
     }
 }
 

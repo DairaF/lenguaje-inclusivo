@@ -2,7 +2,7 @@ import React, { useState, useCallback, useEffect } from 'react';
 
 function Guia(props) {
   return (
-    <div className='col-11 col-md-4 mx-auto ml-5' >
+    <div className='col-11 col-md-4 mx-md-auto' >
         <h1 className='playfair blanco f15 guiaN text-center'>{props.number}</h1>
         <div className='guia mx-auto p-3 p-md-5 text-center'>
           <h2 className='playfair py-5 under-negro'>{props.titulo}</h2>

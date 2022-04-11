@@ -30,14 +30,14 @@ function Texto() {
         <div className='col-10 col-md-6 mt-25 mt-md-5 offset-md-1 mb-10'>
           <div className='row justify-content-center justify-content-md-left'>
             <h2 className='lila mt-10 mt-md-15 mb-5 mb-md-3 f3'>¿Qué <span className='playfairItalic'>sentido</span> tiene el “lenguaje inclusivo”? </h2>
-            <h3 className='playfair mt-1 mt-md-5 '>Aportes lingüísticos para una discusión <span className='playfair'>incómoda</span></h3>
+            <h3 className='playfair mt-1 mt-md-5 '>Aportes lingüísticos para una discusión <span className='playfair'>incómoda</span>.</h3>
             <h3 className='playfair mt-1 my-md-5 '>Por Paula Salerno</h3>
           </div>
           <div className='mb-5'>
             <span className='col-12 col-md-5'><b className='f08'>Tiempo de lectura: 15 minutos.</b></span>
           </div>
           <div className='my-5 pb-5 under-negro'>
-            <a className=' col-10 mx-auto col-md-5 bg-lila p-3 mt-5 blanco' target="_blank" href="FU_DOC_LenguajeInclusivo3.pdf" ><b>Descargá el PDF</b></a>
+            <a id="download" className=' col-10 mx-auto col-md-5 bg-lila p-3 mt-5 blanco' target="_blank" href="FU_DOC_LenguajeInclusivo3.pdf" ><b>Descargá el PDF</b></a>
           </div>
           <div className='wrapper'>
             <div  id='espacioPublico'>

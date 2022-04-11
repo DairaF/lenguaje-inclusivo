@@ -110,6 +110,7 @@ function Situacion(props) {
 
   return (
     <div className=''>
+      <div className={segure == false ? 'blackScreen': info == false ? 'blackScreen':'hidden'}></div>
       <div id="segure" className={segure? "hidden": "block"}>
         <a onClick={toggleSegure} className='f2 mx-3 floatR'>x</a>
         <p className='col-10 col-md-8 my-5 mx-auto'><b>¿Estás segure que querés finalizar y volver?</b></p>
@@ -127,13 +128,13 @@ function Situacion(props) {
           </div>
         </div>
       </div>
-      <div id='situacionFull' className=' bg-crema '>
+      <div id='situacionFull' className=' '>
         <div className='container'>
-          <img onClick={toggleInfo} id="ayuda" src={require("../assets/img/ayuda.png")} />
+          <img onClick={toggleInfo} className="pulse" id="ayuda" src={require("../assets/img/ayuda.png")} />
           <a onClick={toggleSegure} id="volver"><img src={require("../assets/img/volver.png")} /><span> Volver</span></a>
           <span id="stepGuia" className='f08 col-2 lila'><b>Situación {step}/4</b></span> 
           <div className='fondoSituacion'>
-              <img src={  situation=="tweets" ? require('../assets/img/illus/tweetF.png'):  
+              <img className='wiggle' src={  situation=="tweets" ? require('../assets/img/illus/tweetF.png'):  
                           situation=="papers" ? require('../assets/img/illus/paperF.png'): 
                           situation=="hablados" ? require('../assets/img/illus/habladoF.png'): 
                           situation=="notas" ? require('../assets/img/illus/notaF.png'): "" } />
@@ -158,7 +159,7 @@ function Situacion(props) {
               </div>
             </div>
             <div className='col-7 col-md-3 m-2 m-md-5 quizImg'>
-              <img src={  situation=="tweets" ? require('../assets/img/illus/tweet.png'):  
+              <img className='wiggle' src={  situation=="tweets" ? require('../assets/img/illus/tweet.png'):  
                           situation=="papers" ? require('../assets/img/illus/paper.png'): 
                           situation=="hablados" ? require('../assets/img/illus/hablado.png'): 
                           situation=="notas" ? require('../assets/img/illus/nota.png'): "" } />

@@ -259,7 +259,7 @@ const End = (props) => {
           <SwiperSlide>
           <div className={realize < 5 ? "endSlide amigue" : realize < 9 ? "endSlide xahi" : "endSlide anteojos" } > 
             <div className={realize < 5 ? " border-blanco  amigueF" : realize < 9 ? "border-blanco  xahiF" : "border-blanco  anteojosF" }>
-              <h2 className='text-center'><b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Tenés los anteojos violetas activados" }</b></h2> 
+              <h3 className='text-center bg-none'><b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Tenés los anteojos violetas activados" }</b></h3> 
               <input className='col-8 mt-75' type="range" min={1} max={12} value={realize} ></input>
               <p className='blanco mt-5 text-center f08 col-12'><b>Identificaste {realize} de 12 expresiones</b></p>
             </div>

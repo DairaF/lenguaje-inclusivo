@@ -14,6 +14,9 @@ bg-none{
   width: 100vw;
   background-color: #F1F2F2;
 }
+.bg-none{
+  background-color: transparent;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 5px !important;
@@ -193,6 +196,7 @@ a{
 }
 a:hover{
   color:#9F8BEA !important;
+  cursor: pointer;
 }
 .floatR{
   float: right;
@@ -300,11 +304,12 @@ a:hover{
   width: auto;
 }
 .icons{
-  height: 50px;
+  height: 30px;
   width: auto;
 }
 .footer{
   padding: 2em;
+  font-size: 1em;
 }
 .footer a{
   display: block;
@@ -470,8 +475,59 @@ a:hover{
 .ml-0{
 margin-left: 0% !important;
 }
+
+#footerIcons b{
+  padding-left: 7% !important;
+}
+
+
+.pulse{
+  animation: pulse 1.5s infinite;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+.wiggle{
+  animation: wiggleA 4s infinite;
+}
+@keyframes wiggleA {
+  0% { transform: rotate(0deg); }
+ 80% { transform: rotate(0deg); }
+ 85% { transform: rotate(5deg); }
+ 95% { transform: rotate(-5deg); }
+100% { transform: rotate(0deg); }
+}
+
+
 @media only screen and (min-width: 768px) {
-  
+  .wiggle-md{
+    animation: wiggleA 4s infinite;
+  }
+  .footer{
+    font-size: 0.8em;
+  }
   .mr-md-3{
     margin-right: 3% !important;
   }
