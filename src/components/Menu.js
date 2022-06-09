@@ -14,7 +14,7 @@ function Menu() {
          let moving = window.pageYOffset
          
          setVisible(position > moving);
-         setPosition(moving)
+         setPosition(moving);
       };
       window.addEventListener("scroll", handleScroll);
       return(() => {
@@ -22,7 +22,7 @@ function Menu() {
       })
   })
 
-const cls = visible ? "visible" : "hidden";
+const cls = visible ? "vis" : "hid";
 
   return (
     <header className={window.location.pathname == "/caja-de-herramientas" ? `bg-lila a-hover-blanco ${cls} `:window.location.pathname == "/acerca-del-proyecto" ? `bg-offBlack blanco a-blanco ${cls} `: window.location.pathname == "/quiz" ? `blanco a-blanco bg-negro ${cls} `: `bg-crema ${cls} `} >
@@ -30,7 +30,7 @@ const cls = visible ? "visible" : "hidden";
       <div className= "menu">
       
         <a id="flag" href='/' className="floatL">
-          {window.location.pathname == "/acerca-del-proyecto" ? <img className="logo" alt="." src={require("../assets/img/flagW.png")} />: window.location.pathname == "/quiz" ? <img className="logo" alt="." src={require("../assets/img/flagW.png")} />: <img className="logo" alt="." src={require("../assets/img/FU_LogoFundar.png")} />}
+          {window.location.pathname == "/acerca-del-proyecto" ? <img className="logoIcon" alt="." src={require("../assets/img/flagW.png")} />: window.location.pathname == "/quiz" ? <img className="logoIcon" alt="." src={require("../assets/img/flagW.png")} />: <img className="logoIcon" alt="." src={require("../assets/img/FU_LogoFundar.png")} />}
         </a>
         <a id="burger" className="floatR" onClick={toggleBtn} >
           {window.location.pathname == "/acerca-del-proyecto" ? <img alt="." className="logo floatR" src={ active ? require("../assets/img/x.png") : require("../assets/img/burgerW.png")}/>
@@ -45,7 +45,7 @@ const cls = visible ? "visible" : "hidden";
           <a className='mt-5 mt-md-4 mb-2 blanco col-10 col-md-2 offset-md-1' href='/caja-de-herramientas'>Caja de <span className='playfairItalic'>herramientas</span></a>
           <a className='mt-5 mt-md-4 mb-2 blanco col-10 col-md-2 offset-md-1' href='/que-sentido-tiene-el-lenguaje-inclusivo'> ¿Qué sentido tiene el nuevo lenguaje<span className='playfairItalic'> inclusivo</span>? </a>
           <a className='mt-5 mt-md-4 mb-2 blanco col-10 col-md-2 offset-md-1' href='/acerca-del-proyecto'>Acerca del proyecto</a>
-          <hr className='lila col-11 hidden-sm'/>
+          {/* <hr className='lila col-11 hidden-sm'/> */}
         </div>
       </div>
     </header>

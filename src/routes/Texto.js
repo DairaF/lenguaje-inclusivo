@@ -29,9 +29,9 @@ function Texto() {
         <ProgressBar/>
         <div className='col-10 col-md-6 mt-25 mt-md-5 offset-md-1 mb-10'>
           <div className='row justify-content-center justify-content-md-left'>
-            <h2 className='lila mt-10 mt-md-15 mb-5 mb-md-3 f3'>¿Qué <span className='playfairItalic'>sentido</span> tiene el “lenguaje inclusivo”? </h2>
-            <h3 className='playfair mt-1 mt-md-5 '>Aportes lingüísticos para una discusión <span className='playfair'>incómoda</span>.</h3>
-            <h3 className='playfair mt-1 my-md-5 '>Por Paula Salerno</h3>
+            <h2 className='p-0 lila mt-10 mt-md-15 mb-5 mb-md-3 f2'>¿Qué <span className='playfairItalic'>sentido</span> tiene el “lenguaje inclusivo”? </h2>
+            <h3 className='p-0 playfair mt-1 mt-md-5 f1-2'>Aportes lingüísticos para una discusión <span className='playfair'>incómoda</span>.</h3>
+            <h3 className='p-0 playfair mt-1 mt-md-2 mb-md-5 f1-2 '>Por Paula Salerno</h3>
           </div>
           <div className='mb-5'>
             <span className='col-12 col-md-5'><b className='f08'>Tiempo de lectura: 15 minutos.</b></span>

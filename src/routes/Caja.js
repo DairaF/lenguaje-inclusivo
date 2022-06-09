@@ -27,25 +27,25 @@ function Caja() {
           <p className='col-5 playfair floatR'><b>Explorá recursos para construir tu propio lenguaje inclusivo.</b></p>
         </div>
         <div className='row justify-content-between contenedorCaja playfair'>
-          <a className='col-5 col-sm-3 col-lg-2 m-auto negro' href='caja-de-herramientas/sustantivos' >
+          <a className='col-5 col-sm-3 col-lg-2 m-auto negro' href='caja-de-herramientas/herramientas#sustantivos' >
             <img className='herramientaImg mb-3' src={require('../assets/img/illus/sustantivo.png')} />
             <b>Sustantivos</b>
           </a>
-          <a className='col-5 col-sm-3 col-lg-2 m-auto negro' href='caja-de-herramientas/pronombres' >
+          <a className='col-5 col-sm-3 col-lg-2 m-auto negro' href='caja-de-herramientas/herramientas#pronombres' >
             <img className='herramientaImg mb-3' src={require('../assets/img/illus/pronombre.png')} />
             <b>Pronombres</b>
           </a>
-          <a className='col-5 col-sm-3 col-lg-2 m-auto negro' href='caja-de-herramientas/expresiones' >
+          <a className='col-5 col-sm-3 col-lg-2 m-auto negro' href='caja-de-herramientas/herramientas#expresiones' >
             <img className='herramientaImg mb-3' src={require('../assets/img/illus/expresion.png')} />
             <b>Expresiones</b>
           </a>
-          <a className='col-5 col-sm-3 col-lg-2 m-auto negro' href='caja-de-herramientas/nuevos-morfemas' >
+          <a className='col-5 col-sm-3 col-lg-2 m-auto negro' href='caja-de-herramientas/herramientas#morfemas' >
             <img className='herramientaImg mb-3' src={require('../assets/img/illus/morfema.png')} />
             <b>Nuevos morfemas</b>
           </a>
         </div>
         <div className='text-center'>
-          <a id='btnGuia' className='negro' href='/guia-autocorrecion'>
+          <a id='btnGuia' className='negro' href='caja-de-herramientas/herramientas#guia'>
             <img className='floatL' src={require('../assets/img/sonrisaAbierta.png')} />
             <b className='f08 negro text-center'>GUÍA AUTOREVISIÓN</b>
             <img className='floatR' src={require('../assets/img/uwu.png')} />

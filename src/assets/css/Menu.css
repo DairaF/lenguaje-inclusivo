@@ -1,3 +1,37 @@
+.vis{
+  animation-name:downup;
+  animation-duration: 1.5s;
+  z-index: 1100;
+}
+.hid{
+  animation-name:test;
+  animation-duration: 1.5s;
+  top: -20%;
+}
+@keyframes test {
+  from{
+    top:0%;
+  }
+  to{
+    top:-20%;
+}
+}
+@keyframes updown {
+  from{
+    transform: translateY(0%);
+  }
+  to{
+    transform: translateY(-200%);
+}
+}
+@keyframes downup {
+  from{
+    transform: translateY(-200%);
+  }
+  to{
+    transform: translateY(0%);
+}
+}
 .menu{
   width: 100vw;
   display: block;
@@ -15,6 +49,7 @@
 }
 .a-blanco .menu-content a{
   color: white !important;
+  line-height: 1.2;
 }
 .a-hover-blanco .menu-content a:hover{
   color: white !important;
@@ -41,6 +76,7 @@
   position: fixed;
   top: 0%;
   left:0%;
+  z-index: 200;
 }
 .progress-bar {
   height: 5px;
@@ -58,16 +94,7 @@ header {
 #cruz img{
   height: 1em;
 }
-.visible {
-  top: 0;
-  transition: top 0.4s ease-out;
-  z-index: 1100;
-}
 
-.hidden {
-  top: -20%;
-  transition: top 0.4s ease-out;
-}
 .menu-content a{
   display: block;
   color: white;
@@ -76,8 +103,6 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  .visible{
-    height: 15%;}
   #burger{
     display: none;
   }  
@@ -116,7 +141,3 @@ header {
     background-color: transparent !important;
   }
 }
-@media only screen and (min-width: 834px) {
-  .visible{
-    height: 10%;}
-  }

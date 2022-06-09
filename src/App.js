@@ -18,6 +18,7 @@ import Expresiones from "./routes/Expresiones";
 import Landing from "./routes/Landing";
 import Acerca from "./routes/Acerca";
 import Texto from "./routes/Texto";
+import Herramienta from "./routes/Herramienta";
 function App() {
 
   return (
@@ -35,11 +36,13 @@ function App() {
           <Route path="/caja-de-herramientas/nuevos-morfemas" element={<NuevosMorfemas/>} />
           <Route path="/que-sentido-tiene-el-lenguaje-inclusivo" element={<Texto/>} />
           <Route path="/acerca-del-proyecto" element={<Acerca/>} />
+          <Route path="/caja-de-herramientas/herramientas" element={<Herramienta/>} />
         </Routes>
         { window.location.pathname =='/' ? <Footer/>
         :window.location.pathname =='/caja-de-herramientas/sustantivos' ? <Footer/>
         :window.location.pathname =='/caja-de-herramientas/pronombres' ? <Footer/>
         :window.location.pathname =='/caja-de-herramientas/expresiones' ? <Footer/>
+        :window.location.pathname =='/caja-de-herramientas/herramientas' ? <Footer/>
         :window.location.pathname =='/caja-de-herramientas/nuevos-morfemas' ? <Footer/>
         :window.location.pathname =='/guia-autocorrecion' ? <Footer/>
         :window.location.pathname =='/que-sentido-tiene-el-lenguaje-inclusivo' ? <Footer/>

@@ -4,7 +4,7 @@
   transition: top 0.4s ease-out;
 }
 .redirect{
-  min-height: 8em;
+  min-height: 6em;
   margin: 1em;
 }
 .redirect:hover{
@@ -12,6 +12,7 @@
   color: white !important;
 }
 .redirect-texto{
+  line-height: 1.2;
   min-height: 7em;
   padding: 1.2em;
 }
@@ -122,7 +123,7 @@ h1{
   text-transform: uppercase !important;
 }
 .redirects{
-  margin-top: 20%;
+  margin-top: 5%;
   background-color: #9F8BEA;
 }
 .redirects .row{

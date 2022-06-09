@@ -122,7 +122,7 @@ function Situacion(props) {
       <div id="modalInfo" className={info? "hidden": "block"}>
         <a onClick={toggleInfo} className='f2 mx-3 floatR'>x</a>
         <div className='row justify-content-center'>
-          <p className='col-10 my-5'><b>Encontrá las 3 expresiones excluyentes en cada situación, clickealas y reemplazalas con una opción más inclusiva.</b></p>
+          <p className='col-12 col-md-10 my-5'><b>Encontrá las 3 expresiones excluyentes en cada situación, clickealas y reemplazalas con una opción más inclusiva.</b></p>
           <div className='col-10 col-md-5 mb-5'>
             <img src={require("../assets/img/ejMobile.gif")} />
           </div>
@@ -131,30 +131,24 @@ function Situacion(props) {
       <div id='situacionFull' className=' '>
         <div className='container'>
           <img onClick={toggleInfo} className="pulse" id="ayuda" src={require("../assets/img/ayuda.png")} />
-          <a onClick={toggleSegure} id="volver"><img src={require("../assets/img/volver.png")} /><span> Volver</span></a>
-          <span id="stepGuia" className='f08 col-2 lila'><b>Situación {step}/4</b></span> 
-          <div className='fondoSituacion'>
-              <img className='wiggle' src={  situation=="tweets" ? require('../assets/img/illus/tweetF.png'):  
-                          situation=="papers" ? require('../assets/img/illus/paperF.png'): 
-                          situation=="hablados" ? require('../assets/img/illus/habladoF.png'): 
-                          situation=="notas" ? require('../assets/img/illus/notaF.png'): "" } />
-          </div>
-          <div className='row justify-content-center'> 
+          <a onClick={toggleSegure} id="volver"><img src={require("../assets/img/volver.png")} /><span><b> Volver</b></span></a>
+          <span id="stepGuia" className='col-5 lila'><b><span className='hide-sm'>Situación</span> {step}/4</b></span> 
+          <div className='row justify-content-center m-0'> 
           {/* <h3 className='lila mt-5 col-10 pt-2 hide-sm'>Encontrá las expresiones exclusivas en este texto!</h3>  */}
             <div className='mt-25 mt-md-1 bg-white border-negro-redondeado col-10 col-md-6 mx-auto m-md-1 situacion'>
               <div className={situation=="tweets"?"twitter": situation=="papers"?"playfair":situation=="hablados"?"comilla":""}>
                 <AnimationOnScroll animateIn='animate__fadeIn'>
-                  {situation == "tweets" ?  <img id="twtacc" className='m-3 ' src={require('../assets/img/twtacc.jpg')}/>:""}
+                  {situation == "tweets" ?  <img id="twtacc" className='mx-3' src={require('../assets/img/twtacc.jpg')}/>:""}
                 <p className='ml-3 p-3 ml-md-5'>
                   <span>{block1}</span>
-                  <span className={isActive1 ? 'activo1': 'noactivo1'} onClick={()=>{toggleOnce(1);toggleOptions(1)}}>{oportunidad1}</span>
+                  <span className={isActive1 ? 'activo1': 'noactivo1'} onClick={()=>{if(activeOptions1==false && activeOptions2==false && activeOptions3==false){toggleOnce(1);toggleOptions(1)}}}>{oportunidad1}</span>
                   <span>{block2}</span>
-                  <span className={isActive2 ? 'activo2': 'noactivo2'} onClick={()=>{toggleOnce(2);toggleOptions(2)}}>{oportunidad2}</span>
+                  <span className={isActive2 ? 'activo2': 'noactivo2'} onClick={()=>{if(activeOptions1==false && activeOptions2==false && activeOptions3==false){toggleOnce(2);toggleOptions(2)}}}>{oportunidad2}</span>
                   {block3}
-                  <span className={isActive3 ? 'activo3': 'noactivo3'} onClick={()=>{toggleOnce(3);toggleOptions(3)}}>{oportunidad3}</span>
+                  <span className={isActive3 ? 'activo3': 'noactivo3'} onClick={()=>{if(activeOptions1==false && activeOptions2==false && activeOptions3==false){toggleOnce(3);toggleOptions(3)}}}>{oportunidad3}</span>
                   <span>{block4}</span>
                 </p>
-                {situation == "tweets" ?  <img id="twtdate" className='ml-3 mt-1 ' src={require('../assets/img/twtbrdr.png')}/>:""}
+                {situation == "tweets" ?  <img id="twtdate" className='ml-3 ' src={require('../assets/img/twtbrdr.png')}/>:""}
                 </AnimationOnScroll>
               </div>
             </div>
@@ -178,7 +172,7 @@ function Situacion(props) {
           </div>
         </div> 
         <div className='btnQuiz'>
-              <a id="siguenteBtn" onClick={()=>{handleAnswers(); setActiveOptions1(false); setActiveOptions2(false); setActiveOptions3(false);}}><b>SIGUIENTE</b></a>
+              <a id="siguenteBtn" onClick={()=>{handleAnswers(); setActiveOptions1(false); setActiveOptions2(false); setActiveOptions3(false);}}><b>Siguiente</b></a>
               <a id="flechaBtn" onClick={()=>{handleAnswers(); setActiveOptions1(false); setActiveOptions2(false); setActiveOptions3(false);}}><img alt="." src={require("../assets/img/flecha.png")}/></a>
         </div>
       </div>  

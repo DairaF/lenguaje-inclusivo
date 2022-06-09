@@ -2,6 +2,7 @@
     {
         "id":1,
         "titulo":"Elipisis",
+        "camelCase":"Elipisis",
         "texto":"Con este recurso podemos eliminar la referencia a las personas, lo que no solo evita usar masculino genérico, sino también impide repeticiones innecesarias.",
         "ejemplo1": "❌Los invitamos a  ✅Invitamos a.",
         "masInfo": "Para tener cuidado: la palabra que no usamos tiene que estar clara, para evitar ambiguedades.",

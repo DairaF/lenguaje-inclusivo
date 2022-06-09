@@ -12,7 +12,7 @@ function Herramienta(props) {
             <b>{props.masInfo}</b>
           </td>
         </tr>
-        {props.ejemplo2 !== "" ? <div>
+        {props.ejemplo2 !== "" ? <div className='mt-2'>
           <tr className=''>
             <td className='col-10 col-md-12 text-left p-3'>
               <b className='negro playfair'>{props.ejemplo2.no}</b>

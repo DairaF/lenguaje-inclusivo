@@ -1,7 +1,8 @@
 #endSlides{
     height: 100%;
     width: 100%;
-    background-image:linear-gradient(to bottom left,  #7b6bb7, #b6a8db);
+    background-color: #414042;
+    /* background-image:linear-gradient(to bottom left,  #7b6bb7, #b6a8db); */
 }
 .swiper {
     width: 100vw !important;
@@ -45,7 +46,7 @@
     border-radius: 2px !important;
 }
 .swiper-pagination{
-    top:2% !important;
+    top:5% !important;
 }  
 .swiper-pagination-horizontal{
     height: 2em !important;
@@ -53,9 +54,6 @@
 .swiper-slide-active{
     width: 100% !important;
 }
-
-
-
 
 .swiper-button-prev {
     z-index: 100;
@@ -66,10 +64,8 @@
     background-repeat: no-repeat;
     background-size: 2em;
     background-image: url("../img/storyL.png") !important;
-    left: 10%;
   }
   .swiper-button-next {
-    right: 10%;
     z-index: 100;
     border-radius:100%; 
     color:rgba(0, 0, 0, 0); 
@@ -107,7 +103,11 @@
     .border-blanco{
         padding:1.5em;
         height: 90% !important;
-    }
+    }  
+    .swiper-button-next {
+      right: 10%;}
+    .swiper-button-prev {
+      left: 10%;}
 /* .swiper-pagination{
         top: 10% !important;
     }

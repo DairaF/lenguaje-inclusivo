@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Menu from './Menu';
 import Fave from './Fave';
+import Footer from './Footer';
 
 
 import {
@@ -65,7 +66,8 @@ const End = (props) => {
         else if (result === 13) { sEspecialCounter = sEspecialCounter+1}
         else if (result === 14) { prosopopeyaCounter = prosopopeyaCounter+1}
       });
-      let recount = [raeCounter, 
+      let recount = [
+        raeCounter, 
         desdoblamientoCounter, 
         morfemasCounter, 
         sabstractoCounter, 
@@ -142,8 +144,6 @@ const End = (props) => {
         }
       }
       
-
-      
       console.log("faveName1"+faveName1+" faveName2"+faveName2+ " faveName3"+faveName3)
   }
   
@@ -153,51 +153,48 @@ const End = (props) => {
       case 0: faveName1 =  "Rae"; break;
       case 1: faveName1 =  "Desdoblamiento"; break;
       case 2: faveName1 =  "Nuevos morfemas"; break;
-      case 3: faveName1 =  "Sustantivo abstracto"; break;
+      case 3: faveName1 =  "Sustantivos abstractos"; break;
       case 4: faveName1 =  "Pronombres relativos"; break;
-      case 5: faveName1 =  "Sustantivos abstractos"; break;
-      case 7: faveName1 =  "Sustantivos colectivos"; break;
-      case 8: faveName1 =  "Elipsis"; break;
-      case 9: faveName1 =  "Formas impersonales"; break;
-      case 10: faveName1 =  "Pronombres indefinidos"; break;
-      case 11: faveName1 =  "Sustantivos epicenos"; break;
-      case 12: faveName1 =  "Sustantivos asociados a entidades"; break;
-      case 13: faveName1 =  "Sustantivos con terminaciones especiales"; break;
-      case 14: faveName1 =  "Prosopopeya"; break;
+      case 5: faveName1 =  "Sustantivos colectivos"; break;
+      case 6: faveName1 =  "Elipsis"; break;
+      case 7: faveName1 =  "Formas impersonales"; break;
+      case 8: faveName1 =  "Pronombres indefinidos"; break;
+      case 9: faveName1 =  "Sustantivos epicenos"; break;
+      case 10: faveName1 =  "Sustantivos asociados a entidades"; break;
+      case 11: faveName1 =  "Sustantivos con terminaciones especiales"; break;
+      case 12: faveName1 =  "Prosopopeya"; break;
       default:faveName1 =  "Unkown";
     }}else if(toolN=="faveName2"){
     switch (toolIndex){
       case 0: faveName2 =  "Rae"; break;
       case 1: faveName2 =  "Desdoblamiento"; break;
       case 2: faveName2 =  "Nuevos morfemas"; break;
-      case 3: faveName2 =  "Sustantivo abstracto"; break;
+      case 3: faveName2 =  "Sustantivos abstractos"; break;
       case 4: faveName2 =  "Pronombres relativos"; break;
-      case 5: faveName2 =  "Sustantivos abstractos"; break;
-      case 7: faveName2 =  "Sustantivos colectivos"; break;
-      case 8: faveName2 =  "Elipsis"; break;
-      case 9: faveName2 =  "Formas impersonales"; break;
-      case 10: faveName2 =  "Pronombres indefinidos"; break;
-      case 11: faveName2 =  "Sustantivos epicenos"; break;
-      case 12: faveName2 =  "Sustantivos asociados a entidades"; break;
-      case 13: faveName2 =  "Sustantivos con terminaciones especiales"; break;
-      case 14: faveName2 =  "Prosopopeya"; break;
+      case 5: faveName2 =  "Sustantivos colectivos"; break;
+      case 6: faveName2 =  "Elipsis"; break;
+      case 7: faveName2 =  "Formas impersonales"; break;
+      case 8: faveName2 =  "Pronombres indefinidos"; break;
+      case 9: faveName2 =  "Sustantivos epicenos"; break;
+      case 10: faveName2 =  "Sustantivos asociados a entidades"; break;
+      case 11: faveName2 =  "Sustantivos con terminaciones especiales"; break;
+      case 12: faveName2 =  "Prosopopeya"; break;
       default:faveName2 =  "Unkown";
     }}else if(toolN=="faveName3"){
     switch (toolIndex){
       case 0: faveName3 =  "Rae"; break;
       case 1: faveName3 =  "Desdoblamiento"; break;
       case 2: faveName3 =  "Nuevos morfemas"; break;
-      case 3: faveName3 =  "Sustantivo abstracto"; break;
+      case 3: faveName3 =  "Sustantivos abstractos"; break;
       case 4: faveName3 =  "Pronombres relativos"; break;
-      case 5: faveName3 =  "Sustantivos abstractos"; break;
-      case 7: faveName3 =  "Sustantivos colectivos"; break;
-      case 8: faveName3 =  "Elipsis"; break;
-      case 9: faveName3 =  "Formas impersonales"; break;
-      case 10: faveName3 =  "Pronombres indefinidos"; break;
-      case 11: faveName3 =  "Sustantivos epicenos"; break;
-      case 12: faveName3 =  "Sustantivos asociados a entidades"; break;
-      case 13: faveName3 =  "Sustantivos con terminaciones especiales"; break;
-      case 14: faveName3 =  "Prosopopeya"; break;
+      case 5: faveName3 =  "Sustantivos colectivos"; break;
+      case 6: faveName3 =  "Elipsis"; break;
+      case 7: faveName3 =  "Formas impersonales"; break;
+      case 8: faveName3 =  "Pronombres indefinidos"; break;
+      case 9: faveName3 =  "Sustantivos epicenos"; break;
+      case 10: faveName3 =  "Sustantivos asociados a entidades"; break;
+      case 11: faveName3 =  "Sustantivos con terminaciones especiales"; break;
+      case 12: faveName3 =  "Prosopopeya"; break;
       default:faveName3 =  "Unkown";
     }}
   }
@@ -230,76 +227,70 @@ const End = (props) => {
           <div className='endSlide '>
             <div className='container procesando'>
               <div className='row justify-content-center'>
-                <span className='blanco opacity-05 text-center'>xxx</span>
-                <h2 className='blanco text-center col-9 mt-20 under-blanco pb-3'><b>Estamos procesando tus respuestas para saber </b><span className='playfairItalic'>cómo hablás</span></h2>
-                <input id="input1" className='col-8 m-5 ' type="range" min={1} max={12} value={morfemasCounter} ></input>
+                {/* <span className='blanco opacity-05 text-center'>xxx</span> */}
+                <h2 className='blanco text-center col-8 mt-55 pb-3'><b>Estamos procesando tus respuestas para saber </b><span className='playfairItalic'>cómo hablás</span></h2>
+                {/* <input id="input1" className='col-8 m-5 ' type="range" min={1} max={12} value={morfemasCounter} ></input> */}
               </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className='endSlide aca'>
+          <div className='endSlide '>
             <div className='container'>
                 <div className='row justify-content-center'>
-                  <h2 className='blanco col-9 mt-35 text-center pb-5'> <b>Acá no hay respuestas buenas ni malas.</b> </h2> 
+                  <h2 className='blanco col-8 mt-45 text-center pb-5'> <b>Acá no hay respuestas buenas ni malas.</b> </h2> 
                 </div>
                 <div className='row justify-content-center'>
-                  <p className='playfair col-10 mt-8 text-center'><b> Al lenguaje lo construimos todos los días y siempre podemos seguir aprendiendo: <span className='playfairItalic'>se trata de hacerse preguntas.</span> </b></p>
+                  <p className='playfair col-8 mt-7 text-center'>Al lenguaje lo construimos todos los días y siempre podemos seguir aprendiendo: <span className='playfairItalic'>se trata de hacerse preguntas.</span></p>
                 </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className='endSlide ruido'> 
+          <div className='endSlide'> 
             <div className='row justify-content-center'>
-              <h2 className='blanco col-9 mt-55 text-center'>Veamos cuántas <span className='playfairItalic'>expresiones</span> te hicieron <span className='playfairItalic'>ruido</span> </h2> 
+              <h2 className='blanco col-9 mt-65 text-center'>Veamos cuántas <span className='playfairItalic'>expresiones</span> te hicieron <span className='playfairItalic'>ruido</span> </h2> 
             </div>
           </div>
         </SwiperSlide>
           <SwiperSlide>
           <div className={realize < 5 ? "endSlide amigue" : realize < 9 ? "endSlide xahi" : "endSlide anteojos" } > 
-            <div className={realize < 5 ? " border-blanco  amigueF" : realize < 9 ? "border-blanco  xahiF" : "border-blanco  anteojosF" }>
+            <div className={realize < 5 ? " border-blanco mt-4 amigueF" : realize < 9 ? "border-blanco mt-4 xahiF" : "border-blanco mt-4 anteojosF" }>
               <h3 className='text-center bg-none'><b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Tenés los anteojos violetas activados" }</b></h3> 
-              <input className='col-8 mt-75' type="range" min={1} max={12} value={realize} ></input>
-              <p className='blanco mt-5 text-center f08 col-12'><b>Identificaste {realize} de 12 expresiones</b></p>
+              <p className='blanco botText text-center f08 col-4'><b>Identificaste {realize} de 12 expresiones</b></p>
             </div>
           </div> 
         </SwiperSlide>
         <SwiperSlide>
-          <div className={realize < 5 ? "endSlide amigue" : realize < 9 ? "endSlide xahi" : "endSlide anteojos" } > 
+          <div className={realize < 5 ? "endSlide amiguec" : realize < 9 ? "endSlide xahic" : "endSlide anteojosc" } > 
             <div className='border-blanco'>
-                <p className='mt-25 under-blanco text-center playfair f1-5'><b>{realize < 5 ? "Tenés que entrenar un poco más la mirada. Aunque no nos demos cuenta, el lenguaje que nos rodea todos los días puede ser una anteojera. " 
+                <p className='mt-75 text-center px-3'>{realize < 5 ? "Tenés que entrenar un poco más la mirada. Aunque no nos demos cuenta, el lenguaje que nos rodea todos los días puede ser una anteojera. " 
                   : realize < 9 ? "Vas por el buen camino. Podés identificar muchas situaciones pero hay otras que todavía cuestan." 
                   : "Tu radar cuestionador de lenguaje ve un término excluyente a 100km a la redonda." }
-                </b></p>
-                <div className=''>
-                {realize < 5 ? <img className='mt-5' src={require('../assets/img/pfmisc1.png')}/> : 
-                  realize < 9 ? <img src={require('../assets/img/pfmisc2.png')}/> : 
-                  <img src={require('../assets/img/pfmisc3.png')}/> } 
-                </div>
+                </p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className='endSlide'>
             <div className='row justify-content-center '>
-              <h2 className='blanco text-center col-9 mt-45 '><b>Miremos ahora tu </b><span className='playfairItalic'>herramienta</span><b> favorita, la que usaste más veces</b> </h2> 
+              <h2 className='blanco text-center col-8 mt-55 '>Miremos ahora tu <span className='playfairItalic'>herramienta</span> favorita, la que usaste más veces</h2> 
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className={realize < 5 ? "endSlide amigue" : realize < 9 ? "endSlide xahi" : "endSlide anteojos" } >
           {faveN1 == 0? <div className='row justify-content-center pt-1'>
-            <div className='col-10 mt-15'>
-            <h2 className=''>No tenemos suficiente información como para decirte cuál es tu herramienta favorita... </h2>
+            <div className='col-8 mt-45'>
+            <p className=''>No tenemos suficiente información como para decirte cuál es tu herramienta favorita... </p>
             <p className='negro'>¿No querés <span className='playfairItalic' >hacer el experimento de nuevo</span> y fijarte mejor en esas expresiones que no son inclusivas?</p>
             </div>
-            <a  href='/quiz' className='btnRedo mt-3 col-8 '>Repetí el experimento</a>
+            <a onClick={() => window.location.reload()} className='btnRedo mt-3 col-8 '>Repetí el experimento</a>
 
             </div>:
             <div className='container'>
               <div className='row justify-content-center text-center'>
-                <p className='col-8 text-center blanco mt-25 f2'>Usaste <br/><b>{faveN1} {faveN1 >1?"veces":"vez"}</b></p>
+                <p className='col-8 text-center blanco mt-25 f1'>Usaste <br/><b>{faveN1} {faveN1 >1?"veces":"vez"}</b></p>
               </div>          
               <div className='row justify-content-center '>
                   {faveName1 == "Rae"? <img className='col-6' src={ require('../assets/img/illus/nubeGris.png') } />:
@@ -320,10 +311,10 @@ const End = (props) => {
                   }
               </div>
               <div className='row justify-content-center playfair mt-3'>
-                <p className='text-center'>{faveName1}</p>
+                <p className='text-center f-'>{faveName1}</p>
               </div>
               <div className='row justify-content-center '>
-                <a id="verResultados" className='col-10 f08 text-center mt-3 negro py-2 pointer' onClick={()=>nextSlide("pos")} > <b>EXPLORÁ TU PERFIL </b></a>
+                <a id="verResultados" className='col-8 f08 text-center mt-15 negro py-2 pointer' onClick={()=>nextSlide("pos")} > <b>EXPLORÁ TU PERFIL </b></a>
               </div>
             </div>
             }
@@ -337,7 +328,7 @@ const End = (props) => {
         <div className='container'>
           <Menu />
             <div className='row justify-content-center'>
-              <h2 id="resultTitle" className='text-center mt-45 mt-md-15 col-10 m-center negro'> <b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Tenés los anteojos violetas activados" }</b></h2> 
+              <h2 id="resultTitle" className='text-center mt-25 mt-md-15 col-10 m-center blanco'> <b>{realize < 5 ? "Amigue date cuenta" : realize < 9 ? "Es por ahí" : "Tenés los anteojos violetas activados" }</b></h2> 
             </div>
             <hr className='blanco hide-md' />
             <div className='row justify-content-center'>
@@ -353,7 +344,7 @@ const End = (props) => {
                   {faveN3 !==0 ? <Fave key = {3} number = {3} name = {faveName3} />: "" }
             </div>
             <div className='my-5'>
-              <h2 className='text-center my-5'>Compartí tus resultados</h2>
+              <h2 className='text-center my-5 mx-1'>Compartí tus resultados</h2>
               <div className='row justify-content-center'>
                 <FacebookShareButton
                   url={"https://lenguajeinclusivo.fund.ar/quiz"}
@@ -399,39 +390,40 @@ const End = (props) => {
 
             <div className='redirectsQuiz ml-0'>     
               <div className='row justify-content-center p-5'>
-                <div className=' blanco-borde-negro col-12 col-md-3 redirect negro'>
-                  <a  href='/quiz'>
+                <div className=' blanco-borde-negro col-12 col-md-8 col-xl-3 redirect negro'>
+                  <a onClick={() => window.location.reload()}>
                     <div className='row redirect-texto negro'>
                       <b>Ahora que conocés tus resultados, desafiate otra vez: hacé el experimento de nuevo</b>
                     </div>
-                    <div className='flechaEnBorde'>
+                    {/* <div className='flechaEnBorde'>
                       <img alt="." className="logo" src={require("../assets/img/flechaBgLila.png")}/>
-                    </div>   
+                    </div>    */}
                   </a>       
                 </div>
 
-                <div className=' blanco-borde-negro col-12 col-md-3 redirect negro'>
+                <div className=' blanco-borde-negro col-12 col-md-8 col-xl-3 redirect negro'>
                   <a  href='/caja-de-herramientas'>
                     <div className='row redirect-texto negro'>
                       <b>Explorá más recursos y descubrí más herramientas para no hablar solo de los varones.</b>
                     </div>
-                    <div className='flechaEnBorde'>
+                    {/* <div className='flechaEnBorde'>
                       <img alt="." className="logo" src={require("../assets/img/flechaBgLila.png")}/>
-                    </div>   
+                    </div>    */}
                   </a>       
                 </div>
 
-                <div className=' blanco-borde-negro col-12 col-md-3 redirect negro'>
+                <div className=' blanco-borde-negro col-12 col-md-8 col-xl-3 redirect negro'>
                   <a  href='/que-sentido-tiene-el-lenguaje-inclusivo'>
                     <div className='row redirect-texto negro '>
-                      <b>¿Qué sentido tiene el lenguaje <span className='playfair'>inclusivo?</span></b>
+                      <b>¿Qué sentido tiene el lenguaje inclusivo?</b>
                     </div>
-                    <div className='flechaEnBorde'>
+                    {/* <div className='flechaEnBorde'>
                       <img alt="." className="logo" src={require("../assets/img/flechaBgLila.png")}/>
-                    </div>   
+                    </div>    */}
                   </a>       
-                </div>                
+                </div>           
               </div>
+                <Footer/>     
             </div>
 
 

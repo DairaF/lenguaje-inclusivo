@@ -43,11 +43,11 @@ function Fave(props) {
   return (
     <div >
       {texto()}
+      <hr className='negro b-negro mb-5 col-6 mx-auto my-5' />
       <div className='mx-auto text-center my-5'>
         <div id="faveIndex">
           <h2 className='playfair blanco text-center mx-auto'>{props.number}</h2>
         </div>
-        <hr className='blanco'></hr>
         <div className='row justify-content-center'>
         {props.name == "Rae"? <img className='col-6 col-md-2 h-content mt-3' src={ require('../assets/img/illus/nubeGris.png') } />:
                   props.name == "Desdoblamiento" ?<img className='col-6 col-md-2 h-content mt-3' src={ require('../assets/img/illus/expresion.png') } />:
