@@ -7,7 +7,7 @@ import tweets from '../data/tweets.json';
 import notas from '../data/notas.json';
 import papers from '../data/papers.json';
 import hablados from '../data/hablados.json';
-import ReactGa from 'react-ga'
+//import ReactGa from 'react-ga';
 import "animate.css/animate.min.css";
 import DocumentMeta from 'react-document-meta';
 
@@ -27,10 +27,10 @@ function Quiz() {
   };
 
 
-    useEffect(()=>{
-      ReactGa.initialize('G-BQYF4G0HMV')
-      ReactGa.pageview(window.location.pathname + window.location.search)
-      },[])
+    // useEffect(()=>{
+    //   ReactGa.initialize('G-BQYF4G0HMV')
+    //   ReactGa.pageview(window.location.pathname + window.location.search)
+    //   },[])
       
   const [randomTweet, setRandomTweet] = useState(0);
   const [randomNota, setRandomNota] = useState(0);

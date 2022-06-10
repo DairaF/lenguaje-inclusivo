@@ -6,7 +6,7 @@ import morfemas from '../data/nuevos-morfemas.json';
 import pronombres from '../data/pronombres.json';
 import expresiones from '../data/expresiones.json';
 import MenuHerramienta from '../components/MenuHerramienta';
-import ReactGa from 'react-ga'
+//import ReactGa from 'react-ga';
 import ProgressBar from '../components/ProgressBar';
 import '../assets/css/Guia.css'
 import guias from '../data/guias.json';
@@ -14,10 +14,10 @@ import Guia from "../components/Guia";
 
 function Sustantivos() {
 
-  useEffect(()=>{
-    ReactGa.initialize('G-BQYF4G0HMV')
-    ReactGa.pageview(window.location.pathname + window.location.search)
-    },[])
+  // useEffect(()=>{
+  //   ReactGa.initialize('G-BQYF4G0HMV')
+  //   ReactGa.pageview(window.location.pathname + window.location.search)
+  //   },[])
     
   return (
     <div className='bg-crema toolBody'>

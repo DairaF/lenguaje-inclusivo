@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import '../assets/css/Landing.css';
-import ReactGa from 'react-ga';
+//import ReactGa from 'react-ga';;
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import DocumentMeta from 'react-document-meta';
@@ -18,10 +18,10 @@ function Landing() {
     }
   };
 
-  useEffect(()=>{
-    ReactGa.initialize('G-BQYF4G0HMV')
-    ReactGa.pageview(window.location.pathname + window.location.search)
-    },[])
+    // useEffect(()=>{
+  //   ReactGa.initialize('G-BQYF4G0HMV')
+  //   ReactGa.pageview(window.location.pathname + window.location.search)
+  //   },[])
     
 
     const [offsetY, setOffsetY] = useState(0);

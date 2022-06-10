@@ -1,4 +1,4 @@
-import React, { } from 'react';
+import React, { useEffect } from 'react';
 import './assets/css/App.css';
 import {
   HashRouter,
@@ -19,7 +19,12 @@ import Landing from "./routes/Landing";
 import Acerca from "./routes/Acerca";
 import Texto from "./routes/Texto";
 import Herramienta from "./routes/Herramienta";
+import ReactGA from "react-ga4";
 function App() {
+  ReactGA.initialize("G-SQS0ZVGHKM");
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
 
   return (
     <div className={ window.location.pathname =='/' ? "App" : "App AppOV"}>

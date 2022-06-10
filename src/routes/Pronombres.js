@@ -3,15 +3,15 @@ import React, { useState, useCallback, useEffect } from 'react';
 import Herramienta from '../components/Herramienta';
 import pronombres from '../data/pronombres.json';
 import MenuCaja from '../components/MenuCaja';
-import ReactGa from 'react-ga'
+//import ReactGa from 'react-ga';
 import ProgressBar from '../components/ProgressBar';
 
 function Pronombres() {
    
-  useEffect(()=>{
-    ReactGa.initialize('G-BQYF4G0HMV')
-    ReactGa.pageview(window.location.pathname + window.location.search)
-    },[])
+    // useEffect(()=>{
+  //   ReactGa.initialize('G-BQYF4G0HMV')
+  //   ReactGa.pageview(window.location.pathname + window.location.search)
+  //   },[])
     
   return (    <div className='bg-crema toolBody'>
   <div className='container' >

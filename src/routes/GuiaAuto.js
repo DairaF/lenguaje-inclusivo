@@ -1,13 +1,13 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import guias from '../data/guias.json';
 import Guia from "../components/Guia";
-import ReactGa from 'react-ga'
+//import ReactGa from 'react-ga';
 import '../assets/css/Guia.css'
 function GuiaAuto() {
-    useEffect(()=>{
-      ReactGa.initialize('G-BQYF4G0HMV')
-      ReactGa.pageview(window.location.pathname + window.location.search)
-      },[])
+    // useEffect(()=>{
+    //   ReactGa.initialize('G-BQYF4G0HMV')
+    //   ReactGa.pageview(window.location.pathname + window.location.search)
+    //   },[])
       
   return (
     <div className='guias pb-5'>

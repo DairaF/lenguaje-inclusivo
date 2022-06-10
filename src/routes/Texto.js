@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
  
 import ProgressBar from '../components/ProgressBar';
-import ReactGa from 'react-ga';
+//import ReactGa from 'react-ga';;
 import MenuTexto from '../components/MenuTexto';
 import'../assets/css/Texto.css';
 import DocumentMeta from 'react-document-meta';
@@ -17,10 +17,10 @@ function Texto() {
       }
     }
   };
-    useEffect(()=>{
-      ReactGa.initialize('G-BQYF4G0HMV')
-      ReactGa.pageview(window.location.pathname + window.location.search)
-      },[]);
+    // useEffect(()=>{
+    //   ReactGa.initialize('G-BQYF4G0HMV')
+    //   ReactGa.pageview(window.location.pathname + window.location.search)
+    //   },[]);
   return (
     <DocumentMeta {...meta}>
     <div className='texto'>
